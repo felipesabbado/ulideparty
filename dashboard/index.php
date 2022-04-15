@@ -39,7 +39,7 @@
             <div class="header-mobile__bar">
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
-                        <a class="logo" href="public/dashboard/index.html">
+                        <a class="logo" href="index.php">
                             <img src="images/icon/logo.png" alt="CoolAdmin" />
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
@@ -54,7 +54,7 @@
                 <div class="container-fluid">
                     <ul class="navbar-mobile__list list-unstyled">
                         <li>
-                            <a href="public/dashboard/index.html">
+                            <a href="index.php">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         </li>
                         <li class="has-sub">
@@ -62,10 +62,10 @@
                                 <i class="fas fa-desktop"></i>Comunidade</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="empresario.html">Empresários</a>
+                                    <a href="empresario.php">Empresários</a>
                                 </li>
                                 <li>
-                                    <a href="utilizador.html">Utilizadores</a>
+                                    <a href="utilizador.php">Utilizadores</a>
                                 </li>
                             </ul>
                         </li>
@@ -74,7 +74,7 @@
                                 <i class="fas fa-check"></i>Meus Locais</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="local01.html">Local 1</a>
+                                    <a href="local01.php">Local 1</a>
                                 </li>
                                 <li>
                                     <a href="local02.html">Local 2</a>
@@ -89,7 +89,7 @@
                                 <i class="fas fa-user"></i>Grupos</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="grupo01.html">Grupo 1</a>
+                                    <a href="grupo01.php">Grupo 1</a>
                                 </li>
                                 <li>
                                     <a href="grupo02.html">Grupo 2</a>
@@ -97,23 +97,23 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="favorito.html">
+                            <a href="favorito.php">
                                 <i class="fas fa-user"></i>Favoritos</a>
                         </li>
                         <li>
-                            <a href="amigo.html">
+                            <a href="amigo.php">
                                 <i class="fas fa-user"></i>Amigos</a>
                         </li>
                         <li>
-                            <a href="evento.html">
+                            <a href="evento.php">
                                 <i class="fas fa-check"></i>Eventos</a>
                         </li>
                         <li>
-                            <a href="mensagem.html">
+                            <a href="mensagem.php">
                                 <i class="fas fa-check"></i>Mensagem</a>
                         </li>
                         <li>
-                            <a href="avaliacao.html">
+                            <a href="avaliacao.php">
                                 <i class="fas fa-user"></i>Avaliações</a>
                         </li>
                         <li class="has-sub">
@@ -121,10 +121,10 @@
                                 <i class="fas fa-check"></i>Perfil</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="perfil_utilizador.html">Utilizador</a>
+                                    <a href="perfil_utilizador.php">Utilizador</a>
                                 </li>
                                 <li>
-                                    <a href="perfil_local.html">Local</a>
+                                    <a href="perfil_local.php">Local</a>
                                 </li>
                             </ul>
                         </li>
@@ -145,7 +145,7 @@
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li>
-                            <a href="public/dashboard/index.html">
+                            <a href="index.php">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         </li>
                         <li class="has-sub">
@@ -153,10 +153,10 @@
                                 <i class="fas fa-desktop"></i>Comunidade</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="empresario.html">Empresários</a>
+                                    <a href="empresario.php">Empresários</a>
                                 </li>
                                 <li>
-                                    <a href="utilizador.html">Utilizadores</a>
+                                    <a href="utilizador.php">Utilizadores</a>
                                 </li>
                             </ul>
                         </li>
@@ -165,7 +165,7 @@
                                 <i class="fas fa-check"></i>Meus Locais</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="local01.html">Local 1</a>
+                                    <a href="local01.php">Local 1</a>
                                 </li>
                                 <li>
                                     <a href="local02.html">Local 2</a>
@@ -180,7 +180,7 @@
                                 <i class="fas fa-user"></i>Grupos</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="grupo01.html">Grupo 1</a>
+                                    <a href="grupo01.php">Grupo 1</a>
                                 </li>
                                 <li>
                                     <a href="grupo02.html">Grupo 2</a>
@@ -188,23 +188,23 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="favorito.html">
+                            <a href="favorito.php">
                                 <i class="fas fa-user"></i>Favoritos</a>
                         </li>
                         <li>
-                            <a href="amigo.html">
+                            <a href="amigo.php">
                                 <i class="fas fa-user"></i>Amigos</a>
                         </li>
                         <li>
-                            <a href="evento.html">
+                            <a href="evento.php">
                                 <i class="fas fa-check"></i>Eventos</a>
                         </li>
                         <li>
-                            <a href="mensagem.html">
+                            <a href="mensagem.php">
                                 <i class="fas fa-check"></i>Mensagem</a>
                         </li>
                         <li>
-                            <a href="avaliacao.html">
+                            <a href="avaliacao.php">
                                 <i class="fas fa-user"></i>Avaliações</a>
                         </li>
                         <li class="has-sub">
@@ -212,10 +212,10 @@
                                 <i class="fas fa-check"></i>Perfil</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="perfil_utilizador.html">Utilizador</a>
+                                    <a href="perfil_utilizador.php">Utilizador</a>
                                 </li>
                                 <li>
-                                    <a href="perfil_local.html">Local</a>
+                                    <a href="perfil_local.php">Local</a>
                                 </li>
                             </ul>
                         </li>

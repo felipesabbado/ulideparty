@@ -12,10 +12,10 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD - register as an anonymous module
-    define(['jquery'], factory);
+    define(['javascripts/jquery'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // Node/CommonJS
-    var $ = require('jquery');
+    var $ = require('javascripts/jquery');
     factory($);
     module.exports = $;
   } else {

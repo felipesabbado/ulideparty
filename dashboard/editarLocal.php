@@ -26,6 +26,7 @@
     <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
     <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    <link href="vendor/vector-map/jqvmap.min.css" rel="stylesheet" media="all">
 
     <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
@@ -39,13 +40,13 @@
             <div class="header-mobile__bar">
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
-                        <a class="logo" href="index.html">
+                        <a class="logo" href="index.php">
                             <img src="images/icon/logo.png" alt="CoolAdmin" />
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
                         </button>
                     </div>
                 </div>
@@ -54,7 +55,7 @@
                 <div class="container-fluid">
                     <ul class="navbar-mobile__list list-unstyled">
                         <li>
-                            <a href="index.html">
+                            <a href="index.php">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         </li>
                         <li class="has-sub">
@@ -62,10 +63,10 @@
                                 <i class="fas fa-desktop"></i>Comunidade</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="empresario.html">Empresários</a>
+                                    <a href="empresario.php">Empresários</a>
                                 </li>
                                 <li>
-                                    <a href="utilizador.html">Utilizadores</a>
+                                    <a href="utilizador.php">Utilizadores</a>
                                 </li>
                             </ul>
                         </li>
@@ -74,7 +75,7 @@
                                 <i class="fas fa-check"></i>Meus Locais</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="local01.html">Local 1</a>
+                                    <a href="local01.php">Local 1</a>
                                 </li>
                                 <li>
                                     <a href="local02.html">Local 2</a>
@@ -89,7 +90,7 @@
                                 <i class="fas fa-user"></i>Grupos</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="grupo01.html">Grupo 1</a>
+                                    <a href="grupo01.php">Grupo 1</a>
                                 </li>
                                 <li>
                                     <a href="grupo02.html">Grupo 2</a>
@@ -97,23 +98,23 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="favorito.html">
+                            <a href="favorito.php">
                                 <i class="fas fa-user"></i>Favoritos</a>
                         </li>
                         <li>
-                            <a href="amigo.html">
+                            <a href="amigo.php">
                                 <i class="fas fa-user"></i>Amigos</a>
                         </li>
                         <li>
-                            <a href="evento.html">
+                            <a href="evento.php">
                                 <i class="fas fa-check"></i>Eventos</a>
                         </li>
                         <li>
-                            <a href="mensagem.html">
+                            <a href="mensagem.php">
                                 <i class="fas fa-check"></i>Mensagem</a>
                         </li>
                         <li>
-                            <a href="avaliacao.html">
+                            <a href="avaliacao.php">
                                 <i class="fas fa-user"></i>Avaliações</a>
                         </li>
                         <li class="has-sub">
@@ -121,10 +122,10 @@
                                 <i class="fas fa-check"></i>Perfil</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="perfil_utilizador.html">Utilizador</a>
+                                    <a href="perfil_utilizador.php">Utilizador</a>
                                 </li>
                                 <li>
-                                    <a href="perfil_local.html">Local</a>
+                                    <a href="perfil_local.php">Local</a>
                                 </li>
                             </ul>
                         </li>
@@ -145,7 +146,7 @@
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li>
-                            <a href="index.html">
+                            <a href="index.php">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         </li>
                         <li class="has-sub">
@@ -153,10 +154,10 @@
                                 <i class="fas fa-desktop"></i>Comunidade</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="empresario.html">Empresários</a>
+                                    <a href="empresario.php">Empresários</a>
                                 </li>
                                 <li>
-                                    <a href="utilizador.html">Utilizadores</a>
+                                    <a href="utilizador.php">Utilizadores</a>
                                 </li>
                             </ul>
                         </li>
@@ -165,7 +166,7 @@
                                 <i class="fas fa-check"></i>Meus Locais</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="local01.html">Local 1</a>
+                                    <a href="local01.php">Local 1</a>
                                 </li>
                                 <li>
                                     <a href="local02.html">Local 2</a>
@@ -180,7 +181,7 @@
                                 <i class="fas fa-user"></i>Grupos</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="grupo01.html">Grupo 1</a>
+                                    <a href="grupo01.php">Grupo 1</a>
                                 </li>
                                 <li>
                                     <a href="grupo02.html">Grupo 2</a>
@@ -188,23 +189,23 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="favorito.html">
+                            <a href="favorito.php">
                                 <i class="fas fa-user"></i>Favoritos</a>
                         </li>
                         <li>
-                            <a href="amigo.html">
+                            <a href="amigo.php">
                                 <i class="fas fa-user"></i>Amigos</a>
                         </li>
                         <li>
-                            <a href="evento.html">
+                            <a href="evento.php">
                                 <i class="fas fa-check"></i>Eventos</a>
                         </li>
                         <li>
-                            <a href="mensagem.html">
+                            <a href="mensagem.php">
                                 <i class="fas fa-check"></i>Mensagem</a>
                         </li>
                         <li>
-                            <a href="avaliacao.html">
+                            <a href="avaliacao.php">
                                 <i class="fas fa-user"></i>Avaliações</a>
                         </li>
                         <li class="has-sub">
@@ -212,10 +213,10 @@
                                 <i class="fas fa-check"></i>Perfil</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="perfil_utilizador.html">Utilizador</a>
+                                    <a href="perfil_utilizador.php">Utilizador</a>
                                 </li>
                                 <li>
-                                    <a href="perfil_local.html">Local</a>
+                                    <a href="perfil_local.php">Local</a>
                                 </li>
                             </ul>
                         </li>
@@ -363,147 +364,154 @@
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-4">
-                                <aside class="profile-nav alt">
-                                    <section class="card">
-                                        <div class="card-header user-header alt bg-dark">
-                                            <div class="media">
-                                                <a href="#">
-                                                    <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="images/icon/avatar-01.jpg">
-                                                </a>
-                                                <div class="media-body">
-                                                    <h2 class="text-light display-6">João Andarilho</h2>
-                                                    <p>Empresário</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">
-                                                <a href="#">
-                                                    <i class="fa fa-envelope-o"></i> Mail Inbox
-                                                    <span class="badge badge-primary pull-right">10</span>
-                                                </a>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <a href="#">
-                                                    <i class="fa fa-tasks"></i> Atividade Recente
-                                                    <span class="badge badge-danger pull-right">15</span>
-                                                </a>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <a href="#">
-                                                    <i class="fa fa-bell-o"></i> Locais
-                                                    <span class="badge badge-success pull-right">11</span>
-                                                </a>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <a href="#">
-                                                    <i class="fa fa-comments-o"></i> Message
-                                                    <span class="badge badge-warning pull-right r-activity">03</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                    </section>
-                                </aside>
+                            <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">Editar Local</h2>
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <aside class="profile-nav alt">
-                                    <section class="card">
-                                        <div class="card-header user-header alt bg-dark">
-                                            <div class="media">
-                                                <a href="#">
-                                                    <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="images/icon/avatar-01.jpg">
-                                                </a>
-                                                <div class="media-body">
-                                                    <h2 class="text-light display-6">Jim Doe</h2>
-                                                    <p>Project Manager</p>
-                                                </div>
+                        </div>
+
+                        <div class="row m-t-25">
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <strong>Informações Gerais</strong>
+                                    </div>
+                                    <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                                        <div class="card-body card-block">
+                                            <div class="form-group">
+                                                <label for="spotName" class="form-control-label">Nome do local</label>
+                                                <input type="text" id="spotName" placeholder="Digite o nome do local" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="telefone" class="form-control-label">Número de Telefone <small>(Opcional)</small></label>
+                                                <input type="text" id="telefone" placeholder="Digite o número do telefone" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="website" class="form-control-label">Web Site <small>(Opcional)</small></label>
+                                                <input type="text" id="website" placeholder="http://" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email" class="form-control-label">E-mail <small>(Opcional)</small></label>
+                                                <input type="text" id="email" placeholder="Digite o endereço de e-mail" class="form-control">
                                             </div>
                                         </div>
-
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">
-                                                <a href="#">
-                                                    <i class="fa fa-envelope-o"></i> Mail Inbox
-                                                    <span class="badge badge-primary pull-right">10</span>
-                                                </a>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <a href="#">
-                                                    <i class="fa fa-tasks"></i> Recent Activity
-                                                    <span class="badge badge-danger pull-right">15</span>
-                                                </a>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <a href="#">
-                                                    <i class="fa fa-bell-o"></i> Notification
-                                                    <span class="badge badge-success pull-right">11</span>
-                                                </a>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <a href="#">
-                                                    <i class="fa fa-comments-o"></i> Message
-                                                    <span class="badge badge-warning pull-right r-activity">03</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                    </section>
-                                </aside>
+                                        <div class="card-footer">
+                                            <button type="submit" class="btn btn-success btn-sm">
+                                                <i class="fa fa-dot-circle-o"></i> Submit
+                                            </button>
+                                            <button type="reset" class="btn btn-danger btn-sm">
+                                                <i class="fa fa-ban"></i> Reset
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <aside class="profile-nav alt">
-                                    <section class="card">
-                                        <div class="card-header user-header alt bg-dark">
-                                            <div class="media">
-                                                <a href="#">
-                                                    <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="images/icon/avatar-01.jpg">
-                                                </a>
-                                                <div class="media-body">
-                                                    <h2 class="text-light display-6">Jim Doe</h2>
-                                                    <p>Project Manager</p>
+
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <strong>Horário de Funcionamento</strong>
+                                    </div>
+                                    <div class="card-body card-block">
+                                        <strong>Segunda-feira</strong><br>
+                                        <strong>Terça-feira</strong><br>
+                                        <strong>Quarta-feira</strong><br>
+                                        <strong>Quinta-feira</strong><br>
+                                        <strong>Sexta-feira</strong><br>
+                                        <strong>Sábado</strong><br>
+                                        <strong>Domingo</strong><br>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button type="button" class="btn btn-outline-secondary btn-lg" data-toggle="modal" data-target="#largeModal">
+                                            <i class="fa fa-pencil-square-o"></i> Alterar horários
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <strong>Localização</strong>
+                                    </div>
+                                    <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                                        <div class="card-body card-block">
+                                            <div class="row form-group">
+                                                <div class="col col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="address" class="form-control-label">Endereço Postal <small>(Opcional)</small></label>
+                                                        <input type="text" id="address" placeholder="Nome da rua e número do edifício" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="info" class="form-control-label">Informação complementar <small>(Opcional)</small></label>
+                                                        <input type="text" id="info" placeholder="Andar, bairro, praça, etc" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="city" class="form-control-label">Cidade/Localidade</label>
+                                                        <input type="text" id="city" placeholder="Alterar para busca" class="form-control">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="cep" class="form-control-label">Código Postal <small>(Opcional)</small></label>
+                                                        <input type="text" id="cep" placeholder="Código Postal" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col col-md-6">
+                                                    <!-- MAP DATA-->
+                                                    <h3 class="title-3 m-b-30">
+                                                        <i class="zmdi zmdi-map"></i>Mapa</h3>
+                                                    <div class="map-wrap">
+                                                        <div class="vmap" id="vmap6"></div>
+                                                    </div>
+                                                    <!-- END MAP DATA-->
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">
-                                                <a href="#">
-                                                    <i class="fa fa-envelope-o"></i> Mail Inbox
-                                                    <span class="badge badge-primary pull-right">10</span>
-                                                </a>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <a href="#">
-                                                    <i class="fa fa-tasks"></i> Recent Activity
-                                                    <span class="badge badge-danger pull-right">15</span>
-                                                </a>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <a href="#">
-                                                    <i class="fa fa-bell-o"></i> Notification
-                                                    <span class="badge badge-success pull-right">11</span>
-                                                </a>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <a href="#">
-                                                    <i class="fa fa-comments-o"></i> Message
-                                                    <span class="badge badge-warning pull-right r-activity">03</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-
-                                    </section>
-                                </aside>
+                                        <div class="card-footer">
+                                            <button type="submit" class="btn btn-success btn-sm">
+                                                <i class="fa fa-dot-circle-o"></i> Submit
+                                            </button>
+                                            <button type="reset" class="btn btn-danger btn-sm">
+                                                <i class="fa fa-ban"></i> Reset
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- modal large -->
+            <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="largeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="largeModalLabel">Large Modal</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                There are three species of zebras: the plains zebra, the mountain zebra and the Grévy's zebra. The plains zebra and the mountain
+                                zebra belong to the subgenus Hippotigris, but Grévy's zebra is the sole species of subgenus Dolichohippus. The latter
+                                resembles an ass, to which it is closely related, while the former two are more horse-like. All three belong to the
+                                genus Equus, along with other living equids.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modal large -->
             <!-- END MAIN CONTENT-->
-
         </div>
         <!-- END PAGE CONTAINER-->
 
@@ -525,6 +533,17 @@
     <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
     <script src="vendor/chartjs/Chart.bundle.min.js"></script>
     <script src="vendor/select2/select2.min.js"></script>
+
+    <script src="vendor/vector-map/jquery.vmap.js"></script>
+    <script src="vendor/vector-map/jquery.vmap.min.js"></script>
+    <script src="vendor/vector-map/jquery.vmap.sampledata.js"></script>
+    <script src="vendor/vector-map/jquery.vmap.world.js"></script>
+    <script src="vendor/vector-map/jquery.vmap.brazil.js"></script>
+    <script src="vendor/vector-map/jquery.vmap.europe.js"></script>
+    <script src="vendor/vector-map/jquery.vmap.france.js"></script>
+    <script src="vendor/vector-map/jquery.vmap.germany.js"></script>
+    <script src="vendor/vector-map/jquery.vmap.russia.js"></script>
+    <script src="vendor/vector-map/jquery.vmap.usa.js"></script>
 
     <!-- Main JS-->
     <script src="js/main.js"></script>

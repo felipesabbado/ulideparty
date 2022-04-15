@@ -1,5 +1,5 @@
  .u-section-1 {
-  background-image: url("images/lisboa.png");
+  background-image: url("../images/lisboa.png");
   background-position: 50% 50%;
 }
 
@@ -84,7 +84,7 @@
 
 .u-section-2 .u-image-1 {
   min-height: 663px;
-  background-image: url("images/volkan-vardar-1H30uRC1plc-unsplash.jpg");
+  background-image: url("../images/volkan-vardar-1H30uRC1plc-unsplash.jpg");
   transition-duration: 0.5s;
   background-position: 50% 50%;
   transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
@@ -103,7 +103,7 @@
 
 .u-section-2 .u-image-2 {
   min-height: 663px;
-  background-image: url("images/drew-beamer-bTN-zKFy9uA-unsplash.jpg");
+  background-image: url("../images/drew-beamer-bTN-zKFy9uA-unsplash.jpg");
   transition-duration: 0.5s;
   background-position: 50% 50%;
   transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
@@ -122,7 +122,7 @@
 
 .u-section-2 .u-image-3 {
   min-height: 663px;
-  background-image: url("images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg");
+  background-image: url("../images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg");
   transition-duration: 0.5s;
   background-position: 50% 50%;
   transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
@@ -662,7 +662,7 @@
     margin-right: 275px;
   }
 } .u-section-5 {
-  background-image: url("images/download.jfif");
+  background-image: url("../images/download.jfif");
   background-position: 50% 50%;
 }
 
