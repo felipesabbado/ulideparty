@@ -364,25 +364,31 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
+                            <div class="overview-wrap">
+                                <h2 class="title-1">Nome do Local</h2><span class="verificado"><i class="fa fa-check"></i> verificado</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-t-25">
+                        <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h3>Nome do Local</h3>
                                     <button type="button" class="btn btn-primary btn-sm">Avaliar</button>
                                     <button type="button" class="btn btn-outline-primary btn-sm">Favorito</button>
                                     <button type="button" class="btn btn-outline-primary btn-sm">Compartilhar</button>
                                     <a href="editarLocal.php"><button type="button" class="btn btn-outline-danger btn-sm">Editar Local</button></a>
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <img class="img" src="images/bg-title-01.jpg" alt="Card image cap">
+                                <div class="card-body row">
+                                    <div class="col-6 p-0">
+                                        <img class="img-fluid rounded p-1" src="images/bg-title-01.jpg" alt="Card image cap">
                                     </div>
-                                    <div class="col-3">
-                                        <img class="img" src="images/bg-title-01.jpg" alt="Card image cap">
-                                        <img class="img" src="images/bg-title-01.jpg" alt="Card image cap">
+                                    <div class="col-3 p-0">
+                                        <img class="img-fluid rounded p-1" src="images/bg-title-01.jpg" alt="Card image cap">
+                                        <img class="img-fluid rounded p-1" src="images/bg-title-01.jpg" alt="Card image cap">
                                     </div>
-                                    <div class="col-3">
-                                        <img class="img" src="images/bg-title-01.jpg" alt="Card image cap">
-                                        <img class="img" src="images/bg-title-01.jpg" alt="Card image cap">
+                                    <div class="col-3 p-0">
+                                        <img class="img-fluid rounded p-1" src="images/bg-title-01.jpg" alt="Card image cap">
+                                        <img class="img-fluid rounded p-1" src="images/bg-title-01.jpg" alt="Card image cap">
                                     </div>
                                 </div>
                                 <div class="card-body">

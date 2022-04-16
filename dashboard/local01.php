@@ -364,11 +364,17 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">Nome do Local</h2><span class="verificado"><i class="fa fa-check"></i> verificado</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-t-25">
+                            <div class="col-md-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h4>Informações do Local</h4>
-                                    </div><br>
-                                    <img class="card-img col-lg-6 align-self-center" src="images/bg-title-01.jpg" alt="Card image cap">
+                                        <img class="card-img col-lg-6" src="images/bg-title-01.jpg" alt="Card image cap">
+                                    </div>
                                     <div class="card-body">
                                         <div class="custom-tab">
                                             <nav>
