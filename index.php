@@ -39,18 +39,18 @@
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-palette-1-base u-text-white" href="home-page.php" style="padding: 10px 20px;">Home</a>
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-palette-1-base u-text-white" href="index.php" style="padding: 10px 20px;">Home</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-palette-1-base u-text-white" href="dashboard/index.php" target="_blank" style="padding: 10px 20px;">DashBoard</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-palette-1-base u-text-white" href="home-page.php" style="padding: 10px 20px;">Pagina inicial</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-palette-1-base u-text-white" href="index.php" style="padding: 10px 20px;">Pagina inicial</a>
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="home-page.php">Home</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.php">Home</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="dashboard/index.php" target="_blank">DashBoard</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="home-page.php">Pagina inicial</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.php">Pagina inicial</a>
 </li></ul>
               </div>
             </div>
@@ -84,17 +84,17 @@
         <div class="u-clearfix u-disable-padding u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
             <div class="u-layout-row">
-              <div class="u-align-left u-container-style u-hover-feature u-image u-image-default u-layout-cell u-left-cell u-opacity u-opacity-90 u-size-20 u-size-20-md u-image-1" data-image-width="3264" data-image-height="4928" data-href="Listas.html" data-page-id="152516469">
+              <div class="u-align-left u-container-style u-hover-feature u-image u-image-default u-layout-cell u-left-cell u-opacity u-opacity-90 u-size-20 u-size-20-md u-image-1" data-image-width="3264" data-image-height="4928" data-href="listas.php" data-page-id="152516469">
                 <div class="u-container-layout u-container-layout-1">
                   <h6 class="u-text u-text-default u-text-white u-text-1">Restaurantes</h6>
                 </div>
               </div>
-              <div class="u-align-left u-container-style u-hover-feature u-image u-layout-cell u-opacity u-opacity-90 u-size-20 u-size-20-md u-image-2" data-image-width="1067" data-image-height="1600">
+              <div class="u-align-left u-container-style u-hover-feature u-image u-layout-cell u-opacity u-opacity-90 u-size-20 u-size-20-md u-image-2" data-image-width="1067" data-image-height="1600" data-href="listas.php">
                 <div class="u-container-layout u-container-layout-2">
                   <h6 class="u-text u-text-default u-text-white u-text-2">Bares</h6>
                 </div>
               </div>
-              <div class="u-align-left u-container-style u-hover-feature u-image u-layout-cell u-opacity u-opacity-90 u-right-cell u-size-20 u-size-20-md u-image-3" data-image-width="1600" data-image-height="1067">
+              <div class="u-align-left u-container-style u-hover-feature u-image u-layout-cell u-opacity u-opacity-90 u-right-cell u-size-20 u-size-20-md u-image-3" data-image-width="1600" data-image-height="1067" data-href="listas.php">
                 <div class="u-container-layout u-container-layout-3">
                   <h6 class="u-text u-text-default u-text-white u-text-3">Discotecas</h6>
                 </div>

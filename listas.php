@@ -36,18 +36,18 @@
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-palette-1-base u-text-white" href="home-page.php" style="padding: 10px 20px;">Home</a>
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-palette-1-base u-text-white" href="index.php" style="padding: 10px 20px;">Home</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-palette-1-base u-text-white" style="padding: 10px 20px;">DashBoard</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-palette-1-base u-text-white" href="home-page.php" style="padding: 10px 20px;">Pagina inicial</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-palette-1-base u-text-white" href="index.php" style="padding: 10px 20px;">Pagina inicial</a>
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="home-page.php">Home</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.php">Home</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link">DashBoard</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="home-page.php">Pagina inicial</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.php">Pagina inicial</a>
 </li></ul>
               </div>
             </div>
@@ -73,7 +73,7 @@
         </a>
         <div class="u-expanded-width u-list u-list-1">
           <div class="u-repeater u-repeater-1">
-            <div class="u-container-style u-hover-feature u-list-item u-repeater-item u-video-cover u-white u-list-item-1" data-href="Info.html" data-page-id="170745537">
+            <div class="u-container-style u-hover-feature u-list-item u-repeater-item u-video-cover u-white u-list-item-1" data-href="info.php" data-page-id="170745537">
               <div class="u-container-layout u-similar-container u-valign-bottom-lg u-container-layout-1">
                 <h3 class="u-text u-text-default-xl u-text-1"> Amélia Lisboa</h3>
                 <div class="u-border-4 u-border-palette-3-base u-expanded-width u-line u-line-horizontal u-line-1"></div>
