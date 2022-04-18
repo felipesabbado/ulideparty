@@ -101,14 +101,6 @@
                             <i class="fas fa-user"></i>Favoritos</a>
                     </li>
                     <li>
-                        <a href="amigo.php">
-                            <i class="fas fa-user"></i>Amigos</a>
-                    </li>
-                    <li>
-                        <a href="evento.php">
-                            <i class="fas fa-check"></i>Eventos</a>
-                    </li>
-                    <li>
                         <a href="mensagem.php">
                             <i class="fas fa-check"></i>Mensagem</a>
                     </li>
@@ -190,14 +182,6 @@
                     <li>
                         <a href="favorito.php">
                             <i class="fas fa-user"></i>Favoritos</a>
-                    </li>
-                    <li>
-                        <a href="amigo.php">
-                            <i class="fas fa-user"></i>Amigos</a>
-                    </li>
-                    <li>
-                        <a href="evento.php">
-                            <i class="fas fa-check"></i>Eventos</a>
                     </li>
                     <li>
                         <a href="mensagem.php">

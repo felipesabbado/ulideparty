@@ -44,9 +44,9 @@
                             <img src="images/icon/logo.png" alt="CoolAdmin" />
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
-                  <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                  </span>
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
                         </button>
                     </div>
                 </div>
@@ -100,14 +100,6 @@
                         <li>
                             <a href="favorito.php">
                                 <i class="fas fa-user"></i>Favoritos</a>
-                        </li>
-                        <li>
-                            <a href="amigo.php">
-                                <i class="fas fa-user"></i>Amigos</a>
-                        </li>
-                        <li>
-                            <a href="evento.php">
-                                <i class="fas fa-check"></i>Eventos</a>
                         </li>
                         <li>
                             <a href="mensagem.php">
@@ -191,14 +183,6 @@
                         <li>
                             <a href="favorito.php">
                                 <i class="fas fa-user"></i>Favoritos</a>
-                        </li>
-                        <li>
-                            <a href="amigo.php">
-                                <i class="fas fa-user"></i>Amigos</a>
-                        </li>
-                        <li>
-                            <a href="evento.php">
-                                <i class="fas fa-check"></i>Eventos</a>
                         </li>
                         <li>
                             <a href="mensagem.php">
