@@ -354,9 +354,47 @@
                             </div>
                         </div>
                         <div class="row m-t-25">
+                            <!-- Menu de opções do grupo -->
                             <div class="col-6">
-
+                                <div class="au-card au-card--no-pad m-b-40">
+                                    <div class="au-card-title p-t-20 p-b-20" style="background-image:url('images/bg-title-02.jpg');">
+                                        <div class="bg-overlay bg-overlay--blue"></div>
+                                        <h3><i class="zmdi zmdi-menu"></i>Opções</h3>
+                                    </div>
+                                    <div class="au-inbox-wrap">
+                                        <div class="au-message">
+                                            <div class="au-message__noti">
+                                                <p>Notificação</p>
+                                            </div>
+                                            <div class="au-task-list">
+                                                <div class="au-task__item">
+                                                    <div class="au-message__item-inner">
+                                                        <p><i class="fa fa-check"></i> Criar votação</p>
+                                                        <button type="button" class="btn btn-primary btn-sm">
+                                                            <i class="fa fa-star"></i>&nbsp; Botão</button>
+                                                    </div>
+                                                </div>
+                                                <div class="au-task__item">
+                                                    <div class="au-message__item-inner">
+                                                        <p><i class="fa fa-check"></i> Sugerir local</p>
+                                                    </div>
+                                                </div>
+                                                <div class="au-task__item">
+                                                    <div class="au-message__item-inner">
+                                                        <p><i class="fa fa-check"></i> Enviar fotos</p>
+                                                    </div>
+                                                </div>
+                                                <div class="au-task__item">
+                                                    <div class="au-message__item-inner">
+                                                        <p><i class="zmdi zmdi-battery"></i> Opção 4</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- Amigos/Membros do Grupo -->
                             <div class="col-6">
                                 <div class="au-card au-card--no-pad m-b-40">
                                     <div class="au-card-title p-t-20 p-b-20" style="background-image:url('images/bg-title-02.jpg');">
@@ -449,6 +487,66 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- Mensagens do Grupo -->
+                            <div class="col-lg-12">
+                                <div class="au-card au-card--no-pad m-b-40">
+                                    <div class="au-card-title p-t-20 p-b-20" style="background-image:url('images/bg-title-02.jpg');">
+                                        <div class="bg-overlay bg-overlay--blue"></div>
+                                        <h3>
+                                            <i class="zmdi zmdi-comment-text"></i>Mensagens</h3>
+                                        <button class="au-btn-plus">
+                                            <i class="zmdi zmdi-account-add"></i>
+                                        </button>
+                                    </div>
+                                    <div class="au-inbox-wrap">
+                                        <div class="au-chat au-chat--border">
+                                            <div class="au-chat__title">
+                                                <div class="au-chat-info">
+                                                    <div class="avatar-wrap online">
+                                                        <div class="avatar avatar--small">
+                                                            <img src="images/icon/avatar-02.jpg" alt="John Smith">
+                                                        </div>
+                                                    </div>
+                                                    <span class="nick">
+                                                        <a href="#">John Smith</a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="au-chat__content au-chat__content2 js-scrollbar5">
+                                                <div class="recei-mess-wrap">
+                                                    <span class="mess-time">12 Min ago</span>
+                                                    <div class="recei-mess__inner">
+                                                        <div class="avatar avatar--tiny">
+                                                            <img src="images/icon/avatar-02.jpg" alt="John Smith">
+                                                        </div>
+                                                        <div class="recei-mess-list">
+                                                            <div class="recei-mess">Lorem ipsum dolor sit amet elit</div>
+                                                            <div class="recei-mess">Donec tempor viverra</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="send-mess-wrap">
+                                                    <span class="mess-time">30 Sec ago</span>
+                                                    <div class="send-mess__inner">
+                                                        <div class="send-mess-list">
+                                                            <div class="send-mess">Lorem ipsum dolor sit amet elit</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="au-chat-textfield">
+                                                <form class="au-form-icon">
+                                                    <input class="au-input au-input--full au-input--h65" type="text" placeholder="Type a message">
+                                                    <button class="au-input-icon">
+                                                        <i class="zmdi zmdi-mail-send"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
