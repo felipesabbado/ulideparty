@@ -726,6 +726,11 @@ section {
     transition: all 0.5s ease;
 }
 
+.au-input-border {
+    border-radius: 8px;
+    border-color: #4272d7;
+}
+
 .au-input--style2 {
     color: #808080;
     line-height: 43px;
@@ -838,6 +843,12 @@ section {
     border-radius: 3px;
     background: #4272d7;
     margin-left: -3px;
+}
+
+.au-btn-radius {
+    border-radius: 8px;
+    margin-left: -15px;
+    border-color: #4272d7;
 }
 
 .au-btn--submit:hover {
