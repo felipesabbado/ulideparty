@@ -29,7 +29,7 @@
     <meta property="og:type" content="website">
   </head>
   <body data-home-page="Pagina-inicial.html" data-home-page-title="Pagina inicial" class="u-body u-xl-mode"><header class="u-clearfix u-grey-80 u-header u-sticky u-sticky-c6e0 u-header" id="sec-fbb9"><div class="u-clearfix u-sheet u-valign-middle-lg u-sheet-1">
-        <img class="u-image u-image-default u-image-1" src="images/logoNovo.png" alt="" data-image-width="1600" data-image-height="821">
+        <img class="u-image u-image-default u-image-1" src="images/logos/logo_m.png" alt="">
         <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
             <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 4px 0px; font-size: calc(1em + 8px);">
@@ -58,15 +58,15 @@
           </div>
         </nav>
         <h6 class="u-text u-text-default u-text-1">
-          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-hover-palette-1-base u-text-white u-btn-1" href="Login.html" data-page-id="818010508">Login</a>
+          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-hover-palette-1-base u-text-white u-btn-1" href="dashboard/login.php" data-page-id="818010508">Login</a>
         </h6>
         <h6 class="u-text u-text-default u-text-2">
-          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-hover-palette-1-base u-text-white u-btn-2" href="Login.html" data-page-id="818010508">Registar</a>
+          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-hover-palette-1-base u-text-white u-btn-2" href="dashboard/register.php" data-page-id="818010508">Registar</a>
         </h6>
       </div></header>
     <section class="u-clearfix u-image u-typography-custom-page-typography-8--Introduction u-section-1" id="carousel_288f" data-image-width="2048" data-image-height="1367">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <img class="u-image u-image-default u-image-1" src="images/logoNovo-10.png" alt="" data-image-width="1600" data-image-height="821">
+        <img class="u-image u-image-default u-image-1" src="images/logos/logo_g.png" alt="">
         <form action="#" method="get" class="u-border-1 u-border-grey-30 u-search u-search-left u-white u-search-1">
           <button class="u-search-button" type="submit">
             <span class="u-search-icon u-spacing-10">

@@ -336,6 +336,26 @@ section {
     height: 100vh;
 }
 
+.page-content--bg1 {
+    background: #000000;
+    height: 100vh;
+}
+
+.page-content--bg2 {
+    background: #404040;
+    height: 100vh;
+}
+
+.page-content--bg3 {
+    background: #808080;
+    height: 100vh;
+}
+
+.page-content--bg4 {
+    background: #c0c0c0;
+    height: 100vh;
+}
+
 .login-wrap {
     max-width: 540px;
     padding-top: 8vh;
