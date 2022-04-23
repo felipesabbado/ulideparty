@@ -23,11 +23,11 @@ $(document).ready(function() {
         $("#btnSubmit").prop("disabled", true);
 
         $.ajax({
-            url: "http://localhost:5000/api/users",
+            url: "http://localhost:5000/api/users/creat",
             type: "POST",
             data: {
-                email: jQuery('[name=us_email]').val(),
-                password: jQuery('[name=us_password]').val()
+                us_email: jQuery('[name=us_email]').val(),
+                us_password: jQuery('[name=us_password]').val()
             },
             dataType: 'json',
             success: function(result) {
@@ -40,3 +40,21 @@ $(document).ready(function() {
     });
 
 });
+
+function userRegister() {
+    $.ajax({
+        url: "http://localhost:5000/api/users/creat",
+        type: "POST",
+        data: {
+            us_name: jQuery('[name=us_name]'),
+            us_email: jQuery('[name=us_email]').val(),
+            us_password: jQuery('[name=us_password]').val()
+        },
+        dataType: 'json',
+        success: function(result) {
+            console.log("SUCCESS : ", result);
+            $("#output").text(JSON.stringify(result.user[0]));
+            $("#btnSubmit").prop("disabled", false);
+        }
+    });
+}
