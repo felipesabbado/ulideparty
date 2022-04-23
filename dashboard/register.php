@@ -43,7 +43,7 @@
                             </a>
                         </div>
                         <div class="login-form">
-                            <form id="loginForm" onclick="userRegister()">
+                            <form id="loginForm" onsubmit="userRegister()">
                                 <div class="form-group">
                                     <label>Name</label>
                                     <input class="au-input au-input--full" type="text" id="us_name" name="us_name" placeholder="Name" required>
