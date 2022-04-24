@@ -43,7 +43,7 @@
                             </a>
                         </div>
                         <div class="login-form">
-                            <form id="loginForm" onsubmit="userRegister()">
+                            <form id="loginForm">
                                 <div class="form-group">
                                     <label>Name</label>
                                     <input class="au-input au-input--full" type="text" id="us_name" name="us_name" placeholder="Name" required>
@@ -57,7 +57,7 @@
                                     <input class="au-input au-input--full" type="password" name="us_password" placeholder="Password">
                                 </div>
 
-                                <input class="au-btn au-btn--block au-btn--green m-b-20" type="submit" value="Register" id="btnSubmit">
+                                <input class="au-btn au-btn--block au-btn--green m-b-20" type="submit" value="Register" id="btnSubmit" onclick="userRegister()">
                             </form>
                             <div class="register-link">
                                 <p>

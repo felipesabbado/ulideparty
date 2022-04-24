@@ -43,7 +43,7 @@
 
 function userRegister() {
     $.ajax({
-        url: "http://localhost:5000/api/users/creat",
+        url: "https://ulide-party-api.herokuapp.com/api/users/creat",
         type: "POST",
         data: {
             us_name: jQuery('[name=us_name]').val(),
@@ -52,7 +52,6 @@ function userRegister() {
         },
         dataType: 'json',
         success: function(result) {
-            console.log("batata")
             console.log("SUCCESS : ", result);
             $("#output").text(JSON.stringify(result.user[0]));
             $("#btnSubmit").prop("disabled", false);
