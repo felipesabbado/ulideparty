@@ -57,7 +57,7 @@
                                     <input class="au-input au-input--full" type="password" name="us_password" placeholder="Password">
                                 </div>
 
-                                <input class="au-btn au-btn--block au-btn--green m-b-20" type="submit" value="Register" id="btnSubmit" onclick="userRegister()">
+                                <input class="au-btn au-btn--block au-btn--green m-b-20" type="submit" value="Register" id="btnSubmit">
                             </form>
                             <div class="register-link">
                                 <p>
