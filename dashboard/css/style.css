@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/*
+---------------------- COLORS CODE ----------------------
+Medium Blue - #1E26BF
+Hot Pink - #FF6DAF
+Honey Yellow - #FFB500
+Russian Violet - #2C064B
+Midnight Blue - #181168
+Violet Crayola - #963A7D
+
+Background
+Onix - #404040
+Gray Web - #808080
+Silver - #C0C0C0
+
+*/
+
+/* ----- Typography ----- */
+
+body {
+    font: 20px "Source Sans Pro", sans-serif normal;
+}
+
+.shadow2 {
+    /* Shadow 6dp elevation */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.14), 0 1px 18px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+    border-radius: 15px;
+    color: #1E26BF;
+    font-family: "Source Sans Pro", sans-serif;
+}

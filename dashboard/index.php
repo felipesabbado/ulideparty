@@ -11,6 +11,7 @@
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="fonts/fontawesome-6.1.1/css/all.css" rel="stylesheet" media="all">
     <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -30,6 +31,7 @@
     <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
     <link rel="stylesheet" type="text/css" href="css/maps.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <script type="module" src="js/maps.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
@@ -358,20 +360,20 @@
                             </div>
                         </div>
                         <div class="row m-t-25">
-                            <div class="col-sm-6 col-lg-6">
-                                <div class="card">
+                            <div class="col-lg-6">
+                                <div class="card shadow2">
                                     <div class="card-header">
-                                        <h4>Meus grupos</h4>
+                                        <h4><i class="fa fa-spinner fa-pulse"></i> Meus grupos</h4>
                                     </div>
                                     <div class="card-body">
 
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-lg-6">
-                                <div class="card">
+                            <div class="col-lg-6">
+                                <div class="card shadow2">
                                     <div class="card-header">
-                                        <h4>Meus amigos</h4>
+                                        <h4><i class="fa fa-users"></i> Meus amigos</h4>
                                     </div>
                                     <div class="card-body">
 
@@ -380,19 +382,15 @@
                             </div>
                         </div>
                         <div class="row">
-                            <h2>Teste Mapa</h2>
-                            <div class="col-12">
-                                <div id ="map">
-
+                            <div class="col">
+                                <div class="card shadow2">
+                                    <div class="card-header">
+                                        <h4><i class="fa fa-map"></i> Mapa</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id ="map"></div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-
-                            </div>
-                            <div class="col-lg-6">
-
                             </div>
                         </div>
                     </div>

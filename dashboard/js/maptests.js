@@ -9,13 +9,16 @@ const citymap = {
     },
 };
 
+
 async function initMap() {
     const json = await getData()
-    // console.log(json)
-    const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 12.5,
-        center: citymap.lisboa.center,
-        mapTypeId: "terrain",
+    console.log(json[0].st_x)
+    console.log(typeof json[0].st_x)
+    var myLatlng = new google.maps.LatLng(parseFloat(json[0].st_x), parseFloat(json[0].st_y));
+
+    var mapOptions = {
+        zoom: 13,
+        center: myLatlng,
         styles: [
             { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
             { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
@@ -96,57 +99,43 @@ async function initMap() {
                 stylers: [{ color: "#17263c" }],
             },
         ],
-
-    });
-
-    // Construct the circle for each value in citymap.
-    // Note: We scale the area of the circle based on the population.
-    // for (const spot in json) {
-    //     // Add the circle for this city to the map.
-    //     const cityCircle = new google.maps.Circle({
-    //         strokeColor: "#FF0000",
-    //         strokeOpacity: 0.8,
-    //         strokeWeight: 2,
-    //         fillColor: "#FF0000",
-    //         fillOpacity: 0.35,
-    //         map,
-    //         center: { lat: spot.st_x, lng: spot.st_y },
-    //         radius: Math.sqrt(spot.sp_view) * 100,
-    //     });
-    // }
-
+        color:"#0000FF"
+    }
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
     for (let i = 0; i < json.length; i++) {
-        const cityCircle = new google.maps.Circle({
-            strokeColor: "#ffb500",
-            strokeOpacity: 0.8,
-            strokeWeight: 2,
-            fillColor: "#ffb500",
-            fillOpacity: 0.35,
-            map,
-            center: { lat: json[i].st_x, lng: json[i].st_y },
-            // center: citymap.lisboa.center,
-            radius: Math.sqrt(json[i].sp_views) * 10,
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(parseFloat(json[i].st_x), parseFloat(json[i].st_y)),
+            title:"Hello World!"
         });
+
+        marker.setMap(map);
     }
+
 }
+
+window.initMap = initMap;
+
 
 async function getData(){
     /*var targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
+
 
     const response = await fetch(targetUrl)
     const data = await response.json()
     console.log(data)
     return data*/
 
+
     var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
         targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
+
 
     const response = await fetch(
         proxyUrl + targetUrl)
     const data = await response.json()
+    console.log(data)
     return data
 
 }
 
-window.initMap = initMap;
