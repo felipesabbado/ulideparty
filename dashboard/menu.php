@@ -52,11 +52,14 @@
     <script src="vendor/chartjs/Chart.bundle.min.js"></script>
     <script src="vendor/select2/select2.min.js"></script>
 
-    <!-- Main JS-->
+    <!-- Main and DB JS-->
     <script src="js/main.js"></script>
+    <script src="js/db_connection/user.js"></script>
 
     <!-- Map JS-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXQThSN5DeyrRiRCgSsenuJCXycmKb-WE&callback=initMap&v=weekly" defer></script>
+    <script type="module" src="dashboard/js/db_connection/maps.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </head>
 <body>
 <?php
@@ -160,7 +163,6 @@ if ($user == 2 || $user == 3) {
         </aside>";
 }
 ?>
-<script src="js/db_connection/user.js"></script>
 </body>
 </html>
 
