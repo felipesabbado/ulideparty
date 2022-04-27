@@ -63,7 +63,7 @@
 </head>
 <body>
 <?php
-$user = 3;
+$user = 2;
 // Menu side bar
 echo "<aside class='menu-sidebar d-none d-lg-block'>
             <div class='logo'>
