@@ -423,7 +423,7 @@
     <script src="js/main.js"></script>
 
     <!-- Map JS-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpfeEECXInqi01pb1nXbGIfWv9hIbASUA&callback=initMap&v=weekly" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXQThSN5DeyrRiRCgSsenuJCXycmKb-WE&callback=initMap&v=weekly" defer></script>
 </body>
 
 </html>

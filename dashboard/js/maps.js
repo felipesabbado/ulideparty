@@ -9,6 +9,106 @@ const citymap = {
     },
 };
 
+const styles_map = [
+    { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+    { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
+    { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+    {
+        featureType: "administrative.locality",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#d59563" }],
+    },
+    {
+        featureType: "poi",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#d59563" }],
+    },
+    {
+        featureType: "poi.park",
+        elementType: "geometry",
+        stylers: [{ color: "#263c3f" }],
+    },
+    {
+        featureType: "poi.park",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#6b9a76" }],
+    },
+    {
+        featureType: "road",
+        elementType: "geometry",
+        stylers: [{ color: "#38414e" }],
+    },
+    {
+        featureType: "road",
+        elementType: "geometry.stroke",
+        stylers: [{ color: "#212a37" }],
+    },
+    {
+        featureType: "road",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#9ca5b3" }],
+    },
+    {
+        featureType: "road.highway",
+        elementType: "geometry",
+        stylers: [{ color: "#746855" }],
+    },
+    {
+        featureType: "road.highway",
+        elementType: "geometry.stroke",
+        stylers: [{ color: "#1f2835" }],
+    },
+    {
+        featureType: "road.highway",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#f3d19c" }],
+    },
+    {
+        featureType: "transit",
+        elementType: "geometry",
+        stylers: [{ color: "#2f3948" }],
+    },
+    {
+        featureType: "transit.station",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#d59563" }],
+    },
+    {
+        featureType: "water",
+        elementType: "geometry",
+        stylers: [{ color: "#17263c" }],
+    },
+    {
+        featureType: "water",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#515c6d" }],
+    },
+    {
+        featureType: "water",
+        elementType: "labels.text.stroke",
+        stylers: [{ color: "#17263c" }],
+    },
+    {
+        "featureType": "poi",
+        "stylers": [
+            { "visibility": "off" }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "stylers": [
+            { "visibility": "off" }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "stylers": [
+            { "visibility": "true" }
+        ]
+    }
+
+]
+
 async function initMap() {
     const json = await getData()
     // console.log(json)
@@ -16,86 +116,7 @@ async function initMap() {
         zoom: 12.5,
         center: citymap.lisboa.center,
         mapTypeId: "terrain",
-        styles: [
-            { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
-            { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
-            { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
-            {
-                featureType: "administrative.locality",
-                elementType: "labels.text.fill",
-                stylers: [{ color: "#d59563" }],
-            },
-            {
-                featureType: "poi",
-                elementType: "labels.text.fill",
-                stylers: [{ color: "#d59563" }],
-            },
-            {
-                featureType: "poi.park",
-                elementType: "geometry",
-                stylers: [{ color: "#263c3f" }],
-            },
-            {
-                featureType: "poi.park",
-                elementType: "labels.text.fill",
-                stylers: [{ color: "#6b9a76" }],
-            },
-            {
-                featureType: "road",
-                elementType: "geometry",
-                stylers: [{ color: "#38414e" }],
-            },
-            {
-                featureType: "road",
-                elementType: "geometry.stroke",
-                stylers: [{ color: "#212a37" }],
-            },
-            {
-                featureType: "road",
-                elementType: "labels.text.fill",
-                stylers: [{ color: "#9ca5b3" }],
-            },
-            {
-                featureType: "road.highway",
-                elementType: "geometry",
-                stylers: [{ color: "#746855" }],
-            },
-            {
-                featureType: "road.highway",
-                elementType: "geometry.stroke",
-                stylers: [{ color: "#1f2835" }],
-            },
-            {
-                featureType: "road.highway",
-                elementType: "labels.text.fill",
-                stylers: [{ color: "#f3d19c" }],
-            },
-            {
-                featureType: "transit",
-                elementType: "geometry",
-                stylers: [{ color: "#2f3948" }],
-            },
-            {
-                featureType: "transit.station",
-                elementType: "labels.text.fill",
-                stylers: [{ color: "#d59563" }],
-            },
-            {
-                featureType: "water",
-                elementType: "geometry",
-                stylers: [{ color: "#17263c" }],
-            },
-            {
-                featureType: "water",
-                elementType: "labels.text.fill",
-                stylers: [{ color: "#515c6d" }],
-            },
-            {
-                featureType: "water",
-                elementType: "labels.text.stroke",
-                stylers: [{ color: "#17263c" }],
-            },
-        ],
+        styles: styles_map ,
 
     });
 
@@ -124,7 +145,7 @@ async function initMap() {
             fillColor: "#ffb500",
             fillOpacity: 0.35,
             map,
-            center: { lat: json[i].st_x, lng: json[i].st_y },
+            center: { lat: json[i].sp_lat, lng: json[i].sp_long },
             // center: citymap.lisboa.center,
             radius: Math.sqrt(json[i].sp_views) * 10,
         });
@@ -132,12 +153,25 @@ async function initMap() {
 }
 
 async function getData(){
+    /**
+     *  online version
+     *
+     * */
+
     /*var targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
+
 
     const response = await fetch(targetUrl)
     const data = await response.json()
     console.log(data)
     return data*/
+
+
+
+    /**
+     *  offline version
+     *
+     * */
 
     var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
         targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
