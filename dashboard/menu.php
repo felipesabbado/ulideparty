@@ -58,7 +58,7 @@
 
     <!-- Map JS-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXQThSN5DeyrRiRCgSsenuJCXycmKb-WE&callback=initMap&v=weekly" defer></script>
-    <script type="module" src="dashboard/js/db_connection/maps.js"></script>
+    <script type="module" src="js/db_connection/maps.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </head>
 <body>
