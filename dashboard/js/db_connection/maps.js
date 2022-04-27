@@ -166,8 +166,6 @@ async function getData(){
     console.log(data)
     return data*/
 
-
-
     /**
      *  offline version
      *

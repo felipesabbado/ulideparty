@@ -31,7 +31,6 @@
 
 </head>
 <body class="animsition">
-
     <div class="page-wrapper">
         <div class="page-content--bg2">
             <div class="container">

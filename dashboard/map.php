@@ -6,7 +6,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
     <link rel="stylesheet" type="text/css" href="css/maps.css" />
-    <script type="module" src="js/maps.js"></script>
+    <script type="module" src="dashboard/js/db_connection/maps.js"></script>
 </head>
 <body>
 <div id="map"></div>

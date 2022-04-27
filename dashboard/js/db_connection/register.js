@@ -13,32 +13,6 @@
 //     }
 //
 //     getUsersList();
-//
-//     $('#btnSubmit').on('click', function(event) {
-//
-//         // prevent form default behaviour
-//         event.preventDefault();
-//
-//         // disabled the submit button
-//         $("#btnSubmit").prop("disabled", true);
-//
-//         $.ajax({
-//             url: "http://localhost:5000/api/users/creat",
-//             type: "POST",
-//             data: {
-//                 us_email: jQuery('[name=us_email]').val(),
-//                 us_password: jQuery('[name=us_password]').val()
-//             },
-//             dataType: 'json',
-//             success: function(result) {
-//                 console.log("SUCCESS : ", result);
-//                 $("#output").text(JSON.stringify(result.user[0]));
-//                 $("#btnSubmit").prop("disabled", false);
-//             }
-//         });
-//
-//     });
-//
 // });
 
 function userRegister() {
