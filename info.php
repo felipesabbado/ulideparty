@@ -28,7 +28,7 @@
     <meta property="og:type" content="website">
   </head>
   <body class="u-body u-xl-mode"><header class="u-clearfix u-grey-80 u-header u-sticky u-sticky-c6e0 u-header" id="sec-fbb9"><div class="u-clearfix u-sheet u-valign-middle-lg u-sheet-1">
-        <img class="u-image u-image-default u-image-1" src="images/logoNovo.png" alt="" data-image-width="1600" data-image-height="821">
+        <img class="u-image u-image-default u-image-1" src="images/logos/logo_m.png" alt="" data-image-width="1600" data-image-height="821">
         <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
             <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 4px 0px; font-size: calc(1em + 8px);">

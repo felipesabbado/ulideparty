@@ -26,7 +26,7 @@
     <meta property="og:type" content="website">
   </head>
   <body class="u-body u-xl-mode"><header class="u-clearfix u-grey-80 u-header u-sticky u-sticky-c6e0 u-header" id="sec-fbb9"><div class="u-clearfix u-sheet u-valign-middle-lg u-sheet-1">
-        <img class="u-image u-image-default u-image-1" src="images/logoNovo.png" alt="" data-image-width="1600" data-image-height="821">
+        <img class="u-image u-image-default u-image-1" src="images/logos/logo_m.png" alt="">
         <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
             <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 4px 0px; font-size: calc(1em + 8px);">
@@ -77,7 +77,7 @@
               <div class="u-container-layout u-similar-container u-valign-bottom-lg u-container-layout-1">
                 <h3 class="u-text u-text-default-xl u-text-1"> Amélia Lisboa</h3>
                 <div class="u-border-4 u-border-palette-3-base u-expanded-width u-line u-line-horizontal u-line-1"></div>
-                <img alt="" class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-1" data-image-width="675" data-image-height="450" src="images/1b36dd2a3d5922bc10755bf2f985361b_featured_v2.webp">
+                <img alt="" class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-1" data-image-width="675" data-image-height="450" src="images/rest01.webp">
                 <h6 class="u-text u-text-2"> 4.4&nbsp;<span class="u-file-icon u-icon"><img src="images/1828884.png" alt=""></span>
                 </h6>
                 <p class="u-text u-text-3">Sobremesas, sumos, ...</p>
@@ -89,7 +89,7 @@
               <div class="u-container-layout u-similar-container u-valign-bottom-lg u-container-layout-2">
                 <h3 class="u-text u-text-default-xl u-text-6">Memoria</h3>
                 <div class="u-border-4 u-border-palette-3-base u-expanded-width u-line u-line-horizontal u-line-2"></div>
-                <img alt="" class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-2" data-image-width="675" data-image-height="900" src="images/ff7d5504cdc46563e7e5ebceb63484f6_featured_v2.webp">
+                <img alt="" class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-2" data-image-width="675" data-image-height="900" src="images/rest02.webp">
                 <h6 class="u-text u-text-7"> 4.4&nbsp;&nbsp;<span class="u-file-icon u-icon"><img src="images/18288841.png" alt=""></span> &nbsp;
                 </h6>
                 <p class="u-text u-text-8"> Sobremesas, sumos, ...</p>
@@ -101,7 +101,7 @@
               <div class="u-container-layout u-similar-container u-valign-bottom-lg u-container-layout-3">
                 <h3 class="u-text u-text-default-xl u-text-11">A minha cozinha</h3>
                 <div class="u-border-4 u-border-palette-3-base u-expanded-width u-line u-line-horizontal u-line-3"></div>
-                <img alt="" class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" data-image-width="675" data-image-height="898" src="images/7765a547a553ba933a7499e2d15c56f4_featured_v2.webp">
+                <img alt="" class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" data-image-width="675" data-image-height="898" src="images/rest03.webp">
                 <h6 class="u-text u-text-12">4.4&nbsp;<span class="u-file-icon u-icon"><img src="images/18288842.png" alt=""></span>
                 </h6>
                 <p class="u-text u-text-13"> Sobremesas, sumos, ...</p>
@@ -113,7 +113,7 @@
               <div class="u-container-layout u-similar-container u-valign-bottom-lg u-container-layout-4">
                 <h3 class="u-text u-text-default-xl u-text-16">Pigmeu</h3>
                 <div class="u-border-4 u-border-palette-3-base u-expanded-width u-line u-line-horizontal u-line-4"></div>
-                <img alt="" class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-4" data-image-width="675" data-image-height="506" src="images/9e81de65c033831ef3928916a902c7e6_featured_v2.webp">
+                <img alt="" class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-4" data-image-width="675" data-image-height="506" src="images/rest04.webp">
                 <h6 class="u-text u-text-17">4.4&nbsp;<span class="u-file-icon u-icon"><img src="images/18288843.png" alt=""></span>
                 </h6>
                 <p class="u-text u-text-18">kjxcn, idjfsjd, ..</p>
@@ -125,7 +125,7 @@
               <div class="u-container-layout u-similar-container u-valign-bottom-lg u-container-layout-5">
                 <h3 class="u-text u-text-default-xl u-text-21">Fiammetta</h3>
                 <div class="u-border-4 u-border-palette-3-base u-expanded-width u-line u-line-horizontal u-line-5"></div>
-                <img alt="" class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-5" data-image-width="675" data-image-height="506" src="images/a473172fa7c84acd90cf611af9270199_featured_v21.webp">
+                <img alt="" class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-5" data-image-width="675" data-image-height="506" src="images/rest05.webp">
                 <h6 class="u-text u-text-22">4.4&nbsp;<span class="u-file-icon u-icon"><img src="images/18288844.png" alt=""></span>
                 </h6>
                 <p class="u-text u-text-23">hfkjahfjasfkjh</p>
@@ -137,7 +137,7 @@
               <div class="u-container-layout u-similar-container u-valign-bottom-lg u-container-layout-6">
                 <h3 class="u-text u-text-default-xl u-text-26">Atalho do mercado</h3>
                 <div class="u-border-4 u-border-palette-3-base u-expanded-width u-line u-line-horizontal u-line-6"></div>
-                <img alt="" class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-6" data-image-width="675" data-image-height="261" src="images/d804b308043c6c5720d5125c18d6c43d_featured_v2.webp">
+                <img alt="" class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-6" data-image-width="675" data-image-height="261" src="images/rest06.webp">
                 <h6 class="u-text u-text-27"><span class="u-icon u-icon-7"></span>&nbsp;4.4<span class="u-file-icon u-icon"><img src="images/18288847.png" alt=""></span>&nbsp; 
                 </h6>
                 <p class="u-text u-text-28">jjdshfkjhsdjhf</p>

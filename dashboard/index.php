@@ -42,7 +42,7 @@
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
                         <a class="logo" href="index.php">
-                            <img src="images/icon/logo.png" alt="CoolAdmin" />
+                            <img src="images/icon/BrancoPreto.png" height="50" width="58" alt="CoolAdmin" />
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
               <span class="hamburger-box">
