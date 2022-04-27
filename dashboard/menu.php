@@ -32,9 +32,6 @@
     <link rel="stylesheet" type="text/css" href="css/maps.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <script type="module" src="dashboard/js/db_connection/maps.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-
     <!-- Jquery JS-->
     <script src="vendor/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap JS-->
@@ -57,7 +54,7 @@
     <script src="js/db_connection/user.js"></script>
 
     <!-- Map JS-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXQThSN5DeyrRiRCgSsenuJCXycmKb-WE&callback=initMap&v=weekly" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWAaYbbg4yfxd4e-hOxMO-pPAYn0D4asM&callback=initMap&v=weekly" defer></script>
     <script type="module" src="js/db_connection/maps.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </head>
