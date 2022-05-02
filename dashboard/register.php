@@ -42,8 +42,8 @@
                                 <img src="images/logos/logo_m.png" alt="CoolAdmin">
                             </a>
                         </div>
-                        <div class="login-form">
-                            <form id="loginForm" method="get" onsubmit="return userRegister1()">
+                        <div class="register-form">
+                            <form id="registerForm" method="post" onsubmit="return userRegister1()">
                                 <div class="form-group">
                                     <label>Name</label>
                                     <input class="au-input au-input--full" type="text" id="us_name" name="us_name" placeholder="Name" required>

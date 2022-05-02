@@ -42,14 +42,14 @@
                             </a>
                         </div>
                         <div class="login-form">
-                            <form action="" method="post">
+                            <form>
                                 <div class="form-group">
                                     <label>Email Address</label>
-                                    <input class="au-input au-input--full" type="email" name="email" placeholder="Email">
+                                    <input class="au-input au-input--full" type="email" name="us_name" placeholder="Email">
                                 </div>
                                 <div class="form-group">
                                     <label>Password</label>
-                                    <input class="au-input au-input--full" type="password" name="password" placeholder="Password">
+                                    <input class="au-input au-input--full" type="password" name="us_password" placeholder="Password">
                                 </div>
                                 <div class="login-checkbox">
                                     <label>
@@ -59,7 +59,7 @@
                                         <a href="#">Forgotten Password?</a>
                                     </label>
                                 </div>
-                                <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">sign in</button>
+                                <input class="au-btn au-btn--block au-btn--green m-b-20" type="submit" value="Register" onclick="validateLogin()">
                             </form>
                             <div class="register-link">
                                 <p>
@@ -97,7 +97,7 @@
 
     <!-- DB Connection -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/db_connection/register.js"></script>
+    <script type="text/javascript" src="js/db_connection/login.js"></script>
 
 </body>
 </html>
