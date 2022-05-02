@@ -1,44 +1,40 @@
-/*$(document).ready(function() {
+$(document).ready(function() {
 
-    function getUsersList() {
+    $('#btnSubmit').on('click', function(event) {
+
+        // prevent form default behaviour
+        event.preventDefault();
+
+        // disabled the submit button
+        $("#btnSubmit").prop("disabled", true);
+
+        let name = document.getElementById('us_name').value
+        let password = document.getElementById('us_password').value
+
+        alert(name)
 
         $.ajax({
-            url: "https://ulide-party-api.herokuapp.com/api/users",
+            url: `https://ulide-party-api.herokuapp.com/api/users/login?us_name=${name}&us_password=${password}`,
             type: "GET",
             dataType: 'json',
             success: function(response) {
                 console.log(response);
+                alert("Login")
+                document.location.replace('index.php')
+            },
+            error: function (response) {
+                alert("ERROU!!!")
+                $("#btnSubmit").prop("disabled", false)
             }
         });
-    }
 
-    getUsersList();
-});*/
-
-/*function userRegister() {
-    var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
-        targetUrl = "https://ulide-party-api.herokuapp.com/api/users"
-    $.ajax({
-        url: "https://ulide-party-api.herokuapp.com/api/users",
-        type: "POST",
-        data: {
-            us_name: jQuery('[name=us_name]').val(),
-            us_email: jQuery('[name=us_email]').val(),
-            us_password: jQuery('[name=us_password]').val()
-        },
-        dataType: 'json',
-        success: function(result) {
-            console.log("SUCCESS : ", result);
-            $("#output").text(JSON.stringify(result.user[0]));
-            $("#btnSubmit").prop("disabled", false);
-        }
     });
-}*/
 
-async function getData(){
-    
+});
+
+/*async function getData(){
+
     // var targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
-    //
     //
     // const response = await fetch(targetUrl)
     // const data = await response.json()
@@ -63,4 +59,4 @@ async function validateLogin() {
     } else {
         alert(json.us_id)
     }
-}
+}*/
