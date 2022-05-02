@@ -2,7 +2,7 @@
 <head>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" type="text/css" href="css/maps.css" />
-    <script type="module" src="dashboard/js/db_connection/mapCircle.js"></script>
+    <script type="module" src="js/db_connection/mapCircle.js"></script>
 </head>
 <body>
 <div id="map"></div>
