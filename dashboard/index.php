@@ -306,17 +306,6 @@
                                     </div>
                                     <div class="card-body">
                                         <div id="map"></div>
-
-                                        <!--
-                                         The defer attribute causes the callback to execute after the full HTML
-                                         document has been parsed. For non-blocking uses, avoiding race conditions,
-                                         and consistent behavior across browsers, consider loading using Promises
-                                         with https://www.npmjs.com/package/@googlemaps/js-api-loader.
-                                        -->
-                                        <script
-                                                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWAaYbbg4yfxd4e-hOxMO-pPAYn0D4asM&callback=initMap&v=weekly"
-                                                defer
-                                        ></script>
                                     </div>
                                 </div>
                             </div>
@@ -352,7 +341,7 @@
 
     <!-- Map JS-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWAaYbbg4yfxd4e-hOxMO-pPAYn0D4asM&callback=initMap&v=weekly" defer></script>
-    <script type="module" src="js/db_connection/maps.js"></script>
+    <script type="module" src="js/db_connection/maptests.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </body>
 
