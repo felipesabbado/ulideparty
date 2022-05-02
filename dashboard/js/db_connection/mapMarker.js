@@ -1,3 +1,4 @@
+
 const citymap = {
     lisboa: {
         center: { lat: 38.736946, lng: -9.142685 },
@@ -109,48 +110,64 @@ const styles_map = [
 
 ]
 
+const icons = {
+    bar: {
+        url: "/imagens/map-markers/bar.png",
+    },
+    rest: {
+        url: "/imagens/map-markers/rest.png",
+    },
+    disco: {
+        url: "/imagens/map-markers/disco.png",
+    },
+
+
+};
+
 async function initMap() {
     const json = await getData()
-    // console.log(json)
-    const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 14,
-        center: citymap.lisboa.center,
-        mapTypeId: "terrain",
-        styles: styles_map ,
+    var myLatlng = new google.maps.LatLng(parseFloat(json[0].sp_lat), parseFloat(json[0].sp_long));
 
-    });
-
-    // Construct the circle for each value in citymap.
-    // Note: We scale the area of the circle based on the population.
-    // for (const spot in json) {
-    //     // Add the circle for this city to the map.
-    //     const cityCircle = new google.maps.Circle({
-    //         strokeColor: "#FF0000",
-    //         strokeOpacity: 0.8,
-    //         strokeWeight: 2,
-    //         fillColor: "#FF0000",
-    //         fillOpacity: 0.35,
-    //         map,
-    //         center: { lat: spot.st_x, lng: spot.st_y },
-    //         radius: Math.sqrt(spot.sp_view) * 100,
-    //     });
-    // }
-
-
-    for (let i = 0; i < json.length; i++) {
-        const cityCircle = new google.maps.Circle({
-            strokeColor: "#ffb500",
-            strokeOpacity: 0.8,
-            strokeWeight: 2,
-            fillColor: "#ffb500",
-            fillOpacity: 0.35,
-            map,
-            center: { lat: json[i].sp_lat, lng: json[i].sp_long },
-            // center: citymap.lisboa.center,
-            radius: Math.sqrt(json[i].sp_views) * 10,
-        });
+    var mapOptions = {
+        zoom: 13,
+        center: myLatlng,
+        styles: styles_map,
+        // hide: [
+        //     {
+        //         featureType: "all",
+        //         stylers: [{ visibility: "off" }],
+        //     },
+        // ],
     }
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+
+    let url_icon = "";
+    for (let i = 0; i < json.length; i++) {
+
+        console.log(json[i].sp_st_id)
+        if(json[i].sp_st_id === 1){
+            url_icon = icons.bar.url
+        } else if (json[i].sp_st_id === 2) {
+            url_icon = icons.rest.url
+        } else{
+            url_icon = icons.disco.url
+        }
+        var marker = new google.maps.Marker({
+            icon: url_icon,
+            position: new google.maps.LatLng(parseFloat(json[i].sp_lat), parseFloat(json[i].sp_long)),
+            title:json[i].sp_name,
+            animation: google.maps.Animation.DROP,
+
+        });
+
+        marker.setMap(map);
+    }
+
 }
+
+window.initMap = initMap;
+
 
 async function getData(){
     /**
@@ -158,29 +175,27 @@ async function getData(){
      *
      * */
 
-    var targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
+    /*var targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
 
 
     const response = await fetch(targetUrl)
     const data = await response.json()
     console.log(data)
-    return data
-
-
+    return data*/
 
     /**
      *  offline version
      *
      * */
 
-    // var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
-    //     targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
-    //
-    // const response = await fetch(
-    //     proxyUrl + targetUrl)
-    // const data = await response.json()
-    // return data
+    var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
+        targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
+
+
+    const response = await fetch(
+        proxyUrl + targetUrl)
+    const data = await response.json()
+    console.log(data)
+    return data
 
 }
-
-window.initMap = initMap;

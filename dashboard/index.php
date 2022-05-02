@@ -283,7 +283,6 @@
                                         <h4><i class="fa fa-spinner fa-pulse"></i> Meus grupos</h4>
                                     </div>
                                     <div class="card-body">
-
                                     </div>
                                 </div>
                             </div>
@@ -305,7 +304,7 @@
                                         <h4><i class="fa fa-map"></i> Mapa</h4>
                                     </div>
                                     <div class="card-body">
-                                        <div id="map"></div>
+                                        <?php include 'map.php' ?>
                                     </div>
                                 </div>
                             </div>
@@ -338,11 +337,6 @@
 
     <!-- Main JS-->
     <script src="js/main.js"></script>
-
-    <!-- Map JS-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWAaYbbg4yfxd4e-hOxMO-pPAYn0D4asM&callback=initMap&v=weekly" defer></script>
-    <script type="module" src="js/db_connection/maptests.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </body>
 
 </html>
