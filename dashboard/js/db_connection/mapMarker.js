@@ -112,13 +112,13 @@ const styles_map = [
 
 const icons = {
     bar: {
-        url: "/imagens/map-markers/bar.png",
+        url: "images/map-markers/bar.png",
     },
     rest: {
-        url: "/imagens/map-markers/rest.png",
+        url: "images/map-markers/rest.png",
     },
     disco: {
-        url: "/imagens/map-markers/disco.png",
+        url: "images/map-markers/disco.png",
     },
 
 
@@ -129,7 +129,7 @@ async function initMap() {
     var myLatlng = new google.maps.LatLng(parseFloat(json[0].sp_lat), parseFloat(json[0].sp_long));
 
     var mapOptions = {
-        zoom: 13,
+        zoom: 12.5,
         center: myLatlng,
         styles: styles_map,
         // hide: [
