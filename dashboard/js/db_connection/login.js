@@ -11,15 +11,13 @@ $(document).ready(function() {
         let name = document.getElementById('us_name').value
         let password = document.getElementById('us_password').value
 
-        alert(name)
-
         $.ajax({
             url: `https://ulide-party-api.herokuapp.com/api/users/login?us_name=${name}&us_password=${password}`,
             type: "GET",
             dataType: 'json',
             success: function(response) {
                 console.log(response);
-                alert("Login")
+                alert("Login Efetuado com Sucesso!")
                 document.location.replace('index.php')
             },
             error: function (response) {
