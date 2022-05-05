@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/*
+---------------------- COLORS CODE ----------------------
+Medium Blue - #1E26BF
+Hot Pink - #FF6DAF
+Honey Yellow - #FFB500
+Russian Violet - #2C064B
+Midnight Blue - #181168
+Violet Crayola - #963A7D
+
+Background
+Onix - #404040
+Gray Web - #808080
+Silver - #C0C0C0
+
+*/
+
+nav {
+    background-color: #404040;
+}
+
+body {
+    background-color: #2c064b;
+}
+
+footer {
+    background-color: #404040;
+    border-radius: 15px;
+}
