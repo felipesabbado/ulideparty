@@ -7,23 +7,18 @@
 
     <!-- Title Page-->
     <title>Ulide Party</title>
-
-    <!-- Fonts CSS-->
-    <link href="fonts/fontawesome-6.1.1/css/all.css" rel="stylesheet">
-
-    <!-- Bootstrap CSS-->
-    <link href="modules/bootstrap-4.1/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Main CSS-->
-    <link href="css/style.css" rel="stylesheet">
 </head>
 <header>
-    <nav>
-        <h1>Header</h1>
+    <nav class="row">
+        <?php include 'menu.php' ?>
     </nav>
 </header>
 <body>
-
+<div class="row">
+    <div class="col-3" id="bares">bares</div>
+    <div class="col-3" id="restaurantes">rest</div>
+    <div class="col-3" id="discotecas">disco</div>
+</div>
 </body>
 <footer>
     <footer></footer>

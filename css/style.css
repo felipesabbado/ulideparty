@@ -17,7 +17,12 @@ Silver - #C0C0C0
 */
 
 nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
     background-color: #404040;
+    padding: 5px;
 }
 
 body {
