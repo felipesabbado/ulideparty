@@ -1,32 +1,35 @@
 @charset "UTF-8";
 
-/*
----------------------- COLORS CODE ----------------------
-Medium Blue - #1E26BF
-Hot Pink - #FF6DAF
-Honey Yellow - #FFB500
-Russian Violet - #2C064B
-Midnight Blue - #181168
-Violet Crayola - #963A7D
+/*---------------------- COLORS CODE ----------------------*/
 
-Background
-Onix - #404040
-Gray Web - #808080
-Silver - #C0C0C0
+:root {
+    --MediumBlue: #1E26BF;
+    --HotPink: #FF6DAF;
+    --HoneyYellow: #FFB500;
+    --RussianViolet: #2C064B;
+    --MidnightBlue: #181168;
+    --VioletCrayola: #963A7D;
 
-*/
+    --BGOnix: #404040;
+    --BGGrayWeb: #808080;
+    --BGSilver: #C0C0C0;
+}
 
 nav {
     position: fixed;
     width: 100%;
     top: 0;
-    display: flex;
     background-color: #404040;
-    padding: 5px;
 }
 
 body {
     background-color: #2c064b;
+}
+
+.cardtype {
+    color: #c0c0c0;
+    width: 325px;
+    height: 500px;
 }
 
 footer {
