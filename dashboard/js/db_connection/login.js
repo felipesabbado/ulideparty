@@ -16,9 +16,10 @@ $(document).ready(function() {
             type: "GET",
             dataType: 'json',
             success: function(response) {
-                console.log(response);
                 alert("Login Efetuado com Sucesso!")
-                document.location.replace('index.php')
+                localStorage.setItem("user", response.us_id)
+                window.location = "index.php"
+                //document.location.replace('index.php')
             },
             error: function (response) {
                 alert("ERROU!!!")
