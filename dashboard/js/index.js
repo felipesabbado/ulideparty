@@ -27,7 +27,23 @@ $(document).ready(function() {
             for (let i = 0; i < response.length; i++) {
                 html += response[i].gr_name + "<br>"
             }
-            document.querySelector("#teste").innerHTML = html
+            document.querySelector("#groups").innerHTML = html
+        },
+        error: function (response) {
+            $("#btnSubmit").prop("disabled", false)
+        }
+    });
+
+    $.ajax({
+        url: `https://ulide-party-api.herokuapp.com/api/groups/friends/users/${us_id}`,
+        type: "GET",
+        dataType: 'json',
+        success: function(response) {
+            let html = ""
+            for (let i = 0; i < response.length; i++) {
+                html += `<a href="perfil_utilizador.php">${response[i].us_name}</a><br>`
+            }
+            document.querySelector("#friends").innerHTML = html
         },
         error: function (response) {
             $("#btnSubmit").prop("disabled", false)
