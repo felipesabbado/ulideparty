@@ -10,6 +10,7 @@ $(document).ready(function() {
 
         let name = document.getElementById('us_name').value
         let password = document.getElementById('us_password').value
+        let sound = new Audio('../sounds/faustao-errou.mp3')
 
         $.ajax({
             url: `https://ulide-party-api.herokuapp.com/api/users/login?us_name=${name}&us_password=${password}`,
@@ -22,6 +23,7 @@ $(document).ready(function() {
                 //document.location.replace('index.php')
             },
             error: function (response) {
+                sound.play()
                 alert("ERROU!!!")
                 $("#btnSubmit").prop("disabled", false)
             }
