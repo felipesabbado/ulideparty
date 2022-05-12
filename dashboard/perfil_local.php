@@ -133,7 +133,7 @@
     <!-- PAGE CONTAINER-->
     <div class="page-container">
         <!-- HEADER DESKTOP-->
-        <?php include 'header-desktop.html'?>
+        <?php include 'header-desktop.php' ?>
         <!-- HEADER DESKTOP-->
 
         <!-- MAIN CONTENT-->

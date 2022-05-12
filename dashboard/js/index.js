@@ -1,12 +1,11 @@
 $(document).ready(function() {
-    let us_id = localStorage.getItem("user")
+    let user = JSON.parse(localStorage.getItem("user"))
 
     $.ajax({
-        url: `https://ulide-party-api.herokuapp.com/api/users/${us_id}`,
+        url: `https://ulide-party-api.herokuapp.com/api/users/${user.us_id}`,
         type: "GET",
         dataType: 'json',
         success: function(response) {
-            //alert(response.us_name)
             const userName = document.querySelectorAll(".us_name")
             for (let i = 0; i < userName.length; i++) {
                 userName[i].innerHTML = response.us_name
@@ -19,7 +18,7 @@ $(document).ready(function() {
     });
 
     $.ajax({
-        url: `https://ulide-party-api.herokuapp.com/api/groups/user/${us_id}`,
+        url: `https://ulide-party-api.herokuapp.com/api/groups/user/${user.us_id}`,
         type: "GET",
         dataType: 'json',
         success: function(response) {
@@ -35,7 +34,7 @@ $(document).ready(function() {
     });
 
     $.ajax({
-        url: `https://ulide-party-api.herokuapp.com/api/groups/friends/user/${us_id}`,
+        url: `https://ulide-party-api.herokuapp.com/api/groups/friends/user/${user.us_id}`,
         type: "GET",
         dataType: 'json',
         success: function(response) {

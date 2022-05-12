@@ -178,7 +178,6 @@ async function getData(){
         proxyUrl + targetUrl)
     const data = await response.json()
     return data
-
 }
 
 window.initMap = initMap;

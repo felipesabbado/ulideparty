@@ -18,7 +18,7 @@ $(document).ready(function() {
             dataType: 'json',
             success: function(response) {
                 alert("Login Efetuado com Sucesso!")
-                localStorage.setItem("user", response.us_id)
+                localStorage.setItem("user", JSON.stringify(response))
                 window.location = "index.php"
                 //document.location.replace('index.php')
             },
@@ -33,31 +33,3 @@ $(document).ready(function() {
 
 });
 
-/*async function getData(){
-
-    // var targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
-    //
-    // const response = await fetch(targetUrl)
-    // const data = await response.json()
-    // console.log(data)
-    // return data
-
-
-    var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
-        targetUrl = 'https://ulide-party-api.herokuapp.com/api/users/login?us_name=Leonardo&us_password=123456'
-
-    const response = await fetch(
-        proxyUrl + targetUrl)
-    const data = await response.json()
-    return data
-}
-
-async function validateLogin() {
-    alert("qqcoisa")
-    let json = await getData()
-    if (typeof json.us_id == 'number') {
-        alert("deu")
-    } else {
-        alert(json.us_id)
-    }
-}*/

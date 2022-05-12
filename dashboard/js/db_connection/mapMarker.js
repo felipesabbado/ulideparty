@@ -1,4 +1,4 @@
-
+let url = window.location.href
 const citymap = {
     lisboa: {
         center: { lat: 38.736946, lng: -9.142685 },
@@ -125,7 +125,13 @@ const icons = {
 };
 
 async function initMap() {
-    const json = await getData()
+    console.log(url)
+    let json
+    if (url.search("localhost")) {
+        json = await getDataOFF()
+    } else {
+        json = await getDataON()
+    }
     var myLatlng = new google.maps.LatLng(parseFloat(json[0].sp_lat), parseFloat(json[0].sp_long));
 
     var mapOptions = {
@@ -169,24 +175,20 @@ async function initMap() {
 window.initMap = initMap;
 
 
-async function getData(){
-    /**
-     *  online version
-     *
-     * */
+async function getDataON(){
+    /** online version **/
 
-    /*var targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
+    var targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
 
 
     const response = await fetch(targetUrl)
     const data = await response.json()
     console.log(data)
-    return data*/
+    return data
+}
 
-    /**
-     *  offline version
-     *
-     * */
+async function getDataOFF(){
+    /** offline version **/
 
     var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
         targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
@@ -197,5 +199,4 @@ async function getData(){
     const data = await response.json()
     console.log(data)
     return data
-
 }
