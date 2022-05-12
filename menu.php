@@ -16,12 +16,19 @@
 
     <!-- Main CSS-->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Jquery JS-->
+    <script src="./modules/jQuery/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap JS-->
+    <script src="./modules/bootstrap-4.1/popper.min.js"></script>
+    <script src="./modules/bootstrap-4.1/bootstrap.min.js"></script>
 </head>
 <body>
-<a class="col-6" href="#"><img src="images/logos/logo-icon-75x75.png" alt="Logo"></a>
-<div class="col-6" id="menu">
-    <button>INICIAR SESSÃO</button>
-    <button>CRIAR CONTA</button>
+<a class="navbar-brand" href="#"><img src="images/logos/logo-icon-75x75.png" alt="Logo"></a>
+<div id="menu">
+    <a>INICIAR SESSÃO</a>
+    <a>CRIAR CONTA</a>
 </div>
 </body>
 </html>
