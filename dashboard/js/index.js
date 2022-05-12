@@ -35,7 +35,7 @@ $(document).ready(function() {
     });
 
     $.ajax({
-        url: `https://ulide-party-api.herokuapp.com/api/groups/friends/users/${us_id}`,
+        url: `https://ulide-party-api.herokuapp.com/api/groups/friends/user/${us_id}`,
         type: "GET",
         dataType: 'json',
         success: function(response) {
