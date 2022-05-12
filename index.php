@@ -84,17 +84,17 @@
         <div class="u-clearfix u-disable-padding u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
             <div class="u-layout-row">
-              <div class="u-align-left u-container-style u-hover-feature u-image u-image-default u-layout-cell u-left-cell u-opacity u-opacity-90 u-size-20 u-size-20-md u-image-1" data-image-width="3264" data-image-height="4928" data-href="listas.php" data-page-id="152516469">
+              <div onclick="lista(2)" class="u-align-left u-container-style u-hover-feature u-image u-image-default u-layout-cell u-left-cell u-opacity u-opacity-90 u-size-20 u-size-20-md u-image-1" data-image-width="3264" data-image-height="4928" data-href="listas.php">
                 <div class="u-container-layout u-container-layout-1">
                   <h6 class="u-text u-text-default u-text-white u-text-1">Restaurantes</h6>
                 </div>
               </div>
-              <div class="u-align-left u-container-style u-hover-feature u-image u-layout-cell u-opacity u-opacity-90 u-size-20 u-size-20-md u-image-2" data-image-width="1067" data-image-height="1600" data-href="listas.php">
+              <div onclick="lista(1)" id="bares" class="u-align-left u-container-style u-hover-feature u-image u-layout-cell u-opacity u-opacity-90 u-size-20 u-size-20-md u-image-2" data-image-width="1067" data-image-height="1600" data-href="listas.php">
                 <div class="u-container-layout u-container-layout-2">
                   <h6 class="u-text u-text-default u-text-white u-text-2">Bares</h6>
                 </div>
               </div>
-              <div class="u-align-left u-container-style u-hover-feature u-image u-layout-cell u-opacity u-opacity-90 u-right-cell u-size-20 u-size-20-md u-image-3" data-image-width="1600" data-image-height="1067" data-href="listas.php">
+              <div onclick="lista(3)" class="u-align-left u-container-style u-hover-feature u-image u-layout-cell u-opacity u-opacity-90 u-right-cell u-size-20 u-size-20-md u-image-3" data-image-width="1600" data-image-height="1067" data-href="listas.php">
                 <div class="u-container-layout u-container-layout-3">
                   <h6 class="u-text u-text-default u-text-white u-text-3">Discotecas</h6>
                 </div>
@@ -103,9 +103,6 @@
           </div>
         </div>
       </div>
-      
-      
-      
     </section>
     <section class="u-clearfix u-gradient u-section-3" id="carousel_f187">
       <div class="u-clearfix u-sheet u-sheet-1">
@@ -183,5 +180,8 @@
         <span>Website Builder Software</span>
       </a>. 
     </section>
+
+  <!-- JS -->
+  <script type="application/javascript" src="javascripts/main.js"></script>
   </body>
 </html>

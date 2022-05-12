@@ -60,7 +60,7 @@
           <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-hover-palette-1-base u-text-white u-btn-2" href="Login.html" data-page-id="818010508">Registar</a>
         </h6>
       </div></header>
-    <section class="u-align-center u-clearfix u-image u-shading u-section-1" src="" data-image-width="3883" data-image-height="2912" id="sec-ce9e">
+    <section class="u-align-center u-clearfix u-image u-shading u-section-1" data-image-width="3883" data-image-height="2912" id="sec-ce9e">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-text u-text-default u-title u-text-1">Restaurantes</h1>
         <p class="u-large-text u-text u-text-variant u-text-2">Descobre os melhores restaurantes de Lisboa.&nbsp;</p>

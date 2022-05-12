@@ -1,3 +1,4 @@
+let categoria = localStorage.getItem("categoria")
 async function getData(){
 
     const targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots/listUse';
