@@ -11,11 +11,10 @@
 <link rel="stylesheet" href="stylesheets/listas.css" media="screen">
     <script class="u-script" type="text/javascript" src="javascripts/jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="javascripts/nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 4.7.1, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    
-    
-    
+    <script src="javascripts/SpotsList.js"></script>
+
+
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -72,81 +71,11 @@
         <a href="https://nicepage.com/html-website-builder" class="u-btn u-button-style u-btn-1"><span class="u-file-icon u-icon"><img src="images/57164.png" alt=""></span>&nbsp;Filtros
         </a>
         <div class="u-expanded-width u-list u-list-1">
-          <div class="u-repeater u-repeater-1">
-            <div class="u-container-style u-hover-feature u-list-item u-repeater-item u-video-cover u-white u-list-item-1" data-href="info.php" data-page-id="170745537">
-              <div class="u-container-layout u-similar-container u-valign-bottom-lg u-container-layout-1">
-                <h3 class="u-text u-text-default-xl u-text-1"> Amélia Lisboa</h3>
-                <div class="u-border-4 u-border-palette-3-base u-expanded-width u-line u-line-horizontal u-line-1"></div>
-                <img alt="" class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-1" data-image-width="675" data-image-height="450" src="images/rest01.webp">
-                <h6 class="u-text u-text-2"> 4.4&nbsp;<span class="u-file-icon u-icon"><img src="images/1828884.png" alt=""></span>
-                </h6>
-                <p class="u-text u-text-3">Sobremesas, sumos, ...</p>
-                <h6 class="u-text u-text-4">Campo de ourique, lisboa</h6>
-                <h6 class="u-custom-item u-text u-text-custom-color-2 u-text-5">Abre em 20 minutos</h6>
-              </div>
-            </div>
-            <div class="u-container-style u-hover-feature u-list-item u-repeater-item u-video-cover u-white u-list-item-2">
-              <div class="u-container-layout u-similar-container u-valign-bottom-lg u-container-layout-2">
-                <h3 class="u-text u-text-default-xl u-text-6">Memoria</h3>
-                <div class="u-border-4 u-border-palette-3-base u-expanded-width u-line u-line-horizontal u-line-2"></div>
-                <img alt="" class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-2" data-image-width="675" data-image-height="900" src="images/rest02.webp">
-                <h6 class="u-text u-text-7"> 4.4&nbsp;&nbsp;<span class="u-file-icon u-icon"><img src="images/18288841.png" alt=""></span> &nbsp;
-                </h6>
-                <p class="u-text u-text-8"> Sobremesas, sumos, ...</p>
-                <h6 class="u-text u-text-9"> Campo de ourique, lisboa</h6>
-                <h6 class="u-custom-item u-text u-text-10">Tirar </h6>
-              </div>
-            </div>
-            <div class="u-container-style u-hover-feature u-list-item u-repeater-item u-video-cover u-white u-list-item-3">
-              <div class="u-container-layout u-similar-container u-valign-bottom-lg u-container-layout-3">
-                <h3 class="u-text u-text-default-xl u-text-11">A minha cozinha</h3>
-                <div class="u-border-4 u-border-palette-3-base u-expanded-width u-line u-line-horizontal u-line-3"></div>
-                <img alt="" class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-3" data-image-width="675" data-image-height="898" src="images/rest03.webp">
-                <h6 class="u-text u-text-12">4.4&nbsp;<span class="u-file-icon u-icon"><img src="images/18288842.png" alt=""></span>
-                </h6>
-                <p class="u-text u-text-13"> Sobremesas, sumos, ...</p>
-                <h6 class="u-text u-text-14"> Campo de ourique, lisboa</h6>
-                <h6 class="u-custom-item u-text u-text-palette-2-base u-text-15">Fecha em 30 minutos</h6>
-              </div>
-            </div>
-            <div class="u-container-style u-hover-feature u-list-item u-repeater-item u-video-cover u-white u-list-item-4">
-              <div class="u-container-layout u-similar-container u-valign-bottom-lg u-container-layout-4">
-                <h3 class="u-text u-text-default-xl u-text-16">Pigmeu</h3>
-                <div class="u-border-4 u-border-palette-3-base u-expanded-width u-line u-line-horizontal u-line-4"></div>
-                <img alt="" class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-4" data-image-width="675" data-image-height="506" src="images/rest04.webp">
-                <h6 class="u-text u-text-17">4.4&nbsp;<span class="u-file-icon u-icon"><img src="images/18288843.png" alt=""></span>
-                </h6>
-                <p class="u-text u-text-18">kjxcn, idjfsjd, ..</p>
-                <h6 class="u-text u-text-19"> Campo de ourique, lisboa</h6>
-                <h6 class="u-custom-item u-text u-text-custom-color-2 u-text-20">Tempo</h6>
-              </div>
-            </div>
-            <div class="u-container-style u-hover-feature u-list-item u-repeater-item u-video-cover u-white u-list-item-5">
-              <div class="u-container-layout u-similar-container u-valign-bottom-lg u-container-layout-5">
-                <h3 class="u-text u-text-default-xl u-text-21">Fiammetta</h3>
-                <div class="u-border-4 u-border-palette-3-base u-expanded-width u-line u-line-horizontal u-line-5"></div>
-                <img alt="" class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-5" data-image-width="675" data-image-height="506" src="images/rest05.webp">
-                <h6 class="u-text u-text-22">4.4&nbsp;<span class="u-file-icon u-icon"><img src="images/18288844.png" alt=""></span>
-                </h6>
-                <p class="u-text u-text-23">hfkjahfjasfkjh</p>
-                <h6 class="u-text u-text-24"> Campo de ourique, lisboa</h6>
-                <h6 class="u-custom-item u-text u-text-custom-color-2 u-text-25">Tempo</h6>
-              </div>
-            </div>
-            <div class="u-container-style u-hover-feature u-list-item u-repeater-item u-video-cover u-white u-list-item-6">
-              <div class="u-container-layout u-similar-container u-valign-bottom-lg u-container-layout-6">
-                <h3 class="u-text u-text-default-xl u-text-26">Atalho do mercado</h3>
-                <div class="u-border-4 u-border-palette-3-base u-expanded-width u-line u-line-horizontal u-line-6"></div>
-                <img alt="" class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-image-6" data-image-width="675" data-image-height="261" src="images/rest06.webp">
-                <h6 class="u-text u-text-27"><span class="u-icon u-icon-7"></span>&nbsp;4.4<span class="u-file-icon u-icon"><img src="images/18288847.png" alt=""></span>&nbsp; 
-                </h6>
-                <p class="u-text u-text-28">jjdshfkjhsdjhf</p>
-                <h6 class="u-text u-text-29"> Campo de ourique, lisboa</h6>
-                <h6 class="u-custom-item u-text u-text-custom-color-2 u-text-30">Tempo</h6>
-              </div>
-            </div>
+          <div class="u-repeater u-repeater-1" id="lista_spots">
+
+
+
           </div>
-        </div>
         <a href="https://nicepage.me" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-2">Mostrar mais</a>
       </div>
       
