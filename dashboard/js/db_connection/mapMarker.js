@@ -125,7 +125,6 @@ const icons = {
 };
 
 async function initMap() {
-    console.log(url)
     let json
     if (url.search("localhost")) {
         json = await getDataOFF()
@@ -172,9 +171,6 @@ async function initMap() {
 
 }
 
-window.initMap = initMap;
-
-
 async function getDataON(){
     /** online version **/
 
@@ -200,3 +196,5 @@ async function getDataOFF(){
     console.log(data)
     return data
 }
+
+window.initMap = initMap;

@@ -1,20 +1,23 @@
 $(document).ready(function() {
     let user = JSON.parse(localStorage.getItem("user"))
+    console.log(user.us_tu_id)
 
-    /*$.ajax({
-        url: `https://ulide-party-api.herokuapp.com/api/users/${us_id}`,
-        type: "GET",
-        dataType: 'json',
-        success: function(response) {
-            alert(response.us_name)
-            const userName = document.querySelectorAll(".us_name")
-            for (let i = 0; i < userName.length; i++) {
-                userName[i].innerHTML = response.us_name
-            }
-            document.querySelector(".email").innerHTML = response.us_email
-        },
-        error: function (response) {
-            $("#btnSubmit").prop("disabled", false)
+    const tu = document.querySelectorAll('.admin, .user, .manager') //.admin .user .manager
+    for (let i = 0; i < tu.length; i++) {
+        tu[i].style.display = 'none'
+    }
+
+    if(Number(user.us_tu_id) === 1) {
+        document.querySelector(".admin").style.display = 'inline'
+    } else if (Number(user.us_tu_id) === 2) {
+        let tu_user = document.querySelectorAll(".user")
+        for(let i = 0; i < tu_user.length; i++) {
+            tu_user[i].style.display = 'inline'
         }
-    });*/
+    } else if (Number(user.us_tu_id) === 3) {
+        let tu_manager = document.querySelectorAll(".manager")
+        for(let i = 0; i < tu_manager.length; i++) {
+            tu_manager[i].style.display = 'inline'
+        }
+    }
 });
