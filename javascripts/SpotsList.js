@@ -1,7 +1,10 @@
 let categoria = localStorage.getItem("categoria")
+
+console.log(categoria)
+
 async function getData(){
 
-    const targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots/listUse';
+    const targetUrl = `https://ulide-party-api.herokuapp.com/api/spots/type/${categoria}/listUse`;
 
 
     const response = await fetch(targetUrl)
@@ -9,6 +12,7 @@ async function getData(){
 }
 
 async function loadSpots() {
+
 
     let element = document.getElementById("lista_spots")
 
@@ -46,5 +50,17 @@ async function loadSpots() {
 
     }
 }
+
+window.addEventListener("beforeunload", function () {
+    if (categoria == 1){
+        document.querySelector("#title_category").innerText = "Bares"
+    }else if (categoria == 2){
+        document.querySelector("#title_category").innerText = "Restaurantes"
+    }else if (categoria == 3){
+        document.querySelector("#title_category").innerText = "Discotecas"
+    }
+
+}, true)
+
 
 window.onload = loadSpots

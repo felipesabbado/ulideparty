@@ -62,8 +62,8 @@
       </div></header>
     <section class="u-align-center u-clearfix u-image u-shading u-section-1" data-image-width="3883" data-image-height="2912" id="sec-ce9e">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-text u-text-default u-title u-text-1">Restaurantes</h1>
-        <p class="u-large-text u-text u-text-variant u-text-2">Descobre os melhores restaurantes de Lisboa.&nbsp;</p>
+        <h1 class="u-text u-text-default u-title u-text-1" id="title_category"></h1>
+        <p class="u-large-text u-text u-text-variant u-text-2" id="subtitle_category">Descobre os melhores restaurantes de Lisboa.&nbsp;</p>
       </div>
     </section>
     <section class="u-clearfix u-gradient u-section-2" id="sec-d998">
@@ -76,7 +76,7 @@
 
 
           </div>
-        <a href="https://nicepage.me" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-2">Mostrar mais</a>
+        <a  class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-2" onclick="loadSpots()">Mostrar mais</a>
       </div>
       
       
