@@ -15755,7 +15755,9 @@ p {
   text-align: left;
 }
 .u-text {
-  word-wrap: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   position: relative;
 }
 .u-word-break {
@@ -36839,3 +36841,31 @@ a.u-link.u-text-hover-grey-90:hover {
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
  /*end-variables base-font-size*/
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.bloco {
+    /* indiferente: */
+    background-color: #FFFFFF;
+    max-width: 100%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 15px;
+    padding: 15px;
+    width: 260px;
+    height: 280px;
+}
+
+.texto {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

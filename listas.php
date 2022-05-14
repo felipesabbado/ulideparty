@@ -74,11 +74,7 @@
         <a href="https://nicepage.com/html-website-builder" class="u-btn u-button-style u-btn-1"><span class="u-file-icon u-icon"><img src="images/57164.png" alt=""></span>&nbsp;Filtros
         </a>
         <div class="u-expanded-width u-list u-list-1">
-          <div class="u-repeater u-repeater-1" id="lista_spots">
-
-
-
-          </div>
+          <div class="container" id="lista_spots"></div>
         <a  class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-2" onclick="loadSpots()">Mostrar mais</a>
       </div>
       
