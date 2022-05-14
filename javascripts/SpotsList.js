@@ -51,7 +51,7 @@ async function loadSpots() {
     }
 }
 
-window.addEventListener("beforeunload", function () {
+window.addEventListener("load", function () {
     if (categoria == 1){
         document.querySelector("#title_category").innerText = "Bares"
     }else if (categoria == 2){
