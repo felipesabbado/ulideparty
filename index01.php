@@ -16,7 +16,7 @@
 <body>
 <div class="container">
     <div class="row">
-        <div class="col-md"">
+        <div class="col-md">
             <div class="card" id="bares">
                 <div class="card-body cardtype">
                     <h1>Bares</h1>
@@ -41,6 +41,6 @@
 </div>
 </body>
 <footer>
-    <footer></footer>
+
 </footer>
 </html>
