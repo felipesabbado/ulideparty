@@ -38,58 +38,212 @@
 
 </head>
 <body>
-<aside class='menu-sidebar d-none d-lg-block'>
-    <div class='logo'>
-        <a href='#'>
-            <img src='images/icon/BrancoPreto.png' alt='Logo Mono' height='179' width='52'/>
-        </a>
-    </div>
-    <div class='menu-sidebar__content js-scrollbar1'>
-        <nav class='navbar-sidebar'>
-            <ul class='list-unstyled navbar__list'>
-                <li>
-                    <a href='index.php'><i class='fas fa-tachometer-alt'></i>Dashboard</a>
-                </li>
-                <li class='has-sub admin'>
-                    <a class='js-arrow' href='#'>
-                        <i class='fas fa-desktop'></i>Comunidade</a>
-                    <ul class='list-unstyled navbar__sub-list js-sub-list'>
-                        <li>
-                            <a href='empresario.php'>Empresários</a>
-                        </li>
-                        <li>
-                            <a href='utilizador.php'>Utilizadores</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class='user manager'>
-                    <a href='local01.php'><i class='fas fa-check'></i>Meus Locais</a>
-                </li>
-                <li class='has-sub user'>
-                    <a class='js-arrow' href='#'>
-                        <i class='fas fa-user'></i>Grupos</a>
-                    <ul class='list-unstyled navbar__sub-list js-sub-list'>
-                        <li>
-                            <a href='grupo01.php'>Grupo 1</a>
-                        </li>
-                        <li>
-                            <a href='grupo02.html'>Grupo 2</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="user">
-                    <a href='favorito.php'><i class='fas fa-user'></i>Favoritos</a>
-                </li>
-                <li class="user">
-                    <a href='avaliacao.php'><i class='fas fa-user'></i>Avaliações</a>
-                </li>
-                <li class='user manager'>
-                    <a href='perfil_utilizador.php'><i class='fas fa-check'></i>Perfil</a>
-                </li>
-            </ul>
+    <!-- HEADER MOBILE-->
+    <header class="header-mobile d-block d-lg-none">
+        <div class="header-mobile__bar">
+            <div class="container-fluid">
+                <div class="header-mobile-inner">
+                    <a class="logo" href="index.php">
+                        <img src="images/icon/BrancoPreto.png" height="50" width="58" alt="CoolAdmin" />
+                    </a>
+                    <button class="hamburger hamburger--slider" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar-mobile">
+            <div class="container-fluid">
+                <ul class="navbar-mobile__list list-unstyled">
+                    <li>
+                        <a href="index.php">
+                            <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                    </li>
+                    <li class="has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="fas fa-desktop"></i>Comunidade</a>
+                        <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                            <li>
+                                <a href="empresario.php">Empresários</a>
+                            </li>
+                            <li>
+                                <a href="utilizador.php">Utilizadores</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="fas fa-check"></i>Meus Locais</a>
+                        <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                            <li>
+                                <a href="local01.php">Local 1</a>
+                            </li>
+                            <li>
+                                <a href="local02.html">Local 2</a>
+                            </li>
+                            <li>
+                                <a href="local03.html">Local 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="fas fa-user"></i>Grupos</a>
+                        <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                            <li>
+                                <a href="grupo01.php">Grupo 1</a>
+                            </li>
+                            <li>
+                                <a href="grupo02.html">Grupo 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="favorito.php">
+                            <i class="fas fa-user"></i>Favoritos</a>
+                    </li>
+                    <li>
+                        <a href="mensagem.php">
+                            <i class="fas fa-check"></i>Mensagem</a>
+                    </li>
+                    <li>
+                        <a href="avaliacao.php">
+                            <i class="fas fa-user"></i>Avaliações</a>
+                    </li>
+                    <li class="has-sub">
+                        <a class="js-arrow" href="#">
+                            <i class="fas fa-check"></i>Perfil</a>
+                        <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                            <li>
+                                <a href="perfil_utilizador.php">Utilizador</a>
+                            </li>
+                            <li>
+                                <a href="perfil_local.php">Local</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
-    </div>
-</aside>
+    </header>
+    <!-- END HEADER MOBILE-->
+
+    <!-- MENU SIDEBAR-->
+    <aside class='menu-sidebar d-none d-lg-block'>
+        <div class='logo'>
+            <a href='#'>
+                <img src='images/icon/BrancoPreto.png' alt='Logo Mono' height='179' width='52'/>
+            </a>
+        </div>
+        <div class='menu-sidebar__content js-scrollbar1'>
+            <nav class='navbar-sidebar'>
+                <ul class='list-unstyled navbar__list'>
+                    <li>
+                        <a href='index.php'><i class='fas fa-tachometer-alt'></i>Dashboard</a>
+                    </li>
+                    <li class='has-sub admin'>
+                        <a class='js-arrow' href='#'>
+                            <i class='fas fa-desktop'></i>Comunidade</a>
+                        <ul class='list-unstyled navbar__sub-list js-sub-list'>
+                            <li>
+                                <a href='empresario.php'>Empresários</a>
+                            </li>
+                            <li>
+                                <a href='utilizador.php'>Utilizadores</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class='user manager'>
+                        <a href='local01.php'><i class='fas fa-check'></i>Meus Locais</a>
+                    </li>
+                    <li class='has-sub user'>
+                        <a class='js-arrow' href='#'>
+                            <i class='fas fa-user'></i>Grupos</a>
+                        <ul class='list-unstyled navbar__sub-list js-sub-list'>
+                            <li>
+                                <a href='grupo01.php'>Grupo 1</a>
+                            </li>
+                            <li>
+                                <a href='grupo02.html'>Grupo 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="user">
+                        <a href='favorito.php'><i class='fas fa-user'></i>Favoritos</a>
+                    </li>
+                    <li class="user">
+                        <a href='avaliacao.php'><i class='fas fa-user'></i>Avaliações</a>
+                    </li>
+                    <li class='user manager'>
+                        <a href='perfil_utilizador.php'><i class='fas fa-check'></i>Perfil</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <!-- END MENU SIDEBAR-->
+
+    <!-- HEADER DESKTOP-->
+    <header class="header-desktop">
+        <div class="section__content section__content--p30">
+            <div class="container-fluid">
+                <div class="header-wrap">
+                    <form class="form-header" action="" method="POST">
+                        <label>
+                            <input class="au-input au-input--xl au-input-border" type="text" name="search" placeholder="Procure por locais" />
+                        </label>
+                        <button class="au-btn--submit au-btn-radius" type="submit">
+                            <i class="zmdi zmdi-search"></i>
+                        </button>
+                    </form>
+                    <div class="header-button justify-content-end">
+                        <div class="account-wrap">
+                            <div class="account-item clearfix js-item-menu">
+                                <div class="image">
+                                    <img src="images/icon/avatar-01.jpg" alt="John Doe"/>
+                                </div>
+                                <div class="content">
+                                    <a class="js-acc-btn us_name" href="#">john doe</a>
+                                </div>
+                                <div class="account-dropdown js-dropdown">
+                                    <div class="info clearfix">
+                                        <div class="image">
+                                            <a href="#">
+                                                <img src="images/icon/avatar-01.jpg" alt="John Doe"/>
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <h5 class="name">
+                                                <a class="us_name" href="#">john doe</a>
+                                            </h5>
+                                            <span class="email">johndoe@example.com</span>
+                                        </div>
+                                    </div>
+                                    <div class="account-dropdown__body">
+                                        <div class="account-dropdown__item">
+                                            <a href="#">
+                                                <i class="zmdi zmdi-account"></i>Account</a>
+                                        </div>
+                                        <div class="account-dropdown__item">
+                                            <a href="#">
+                                                <i class="zmdi zmdi-settings"></i>Setting</a>
+                                        </div>
+                                    </div>
+                                    <div class="account-dropdown__footer">
+                                        <a href="#">
+                                            <i class="zmdi zmdi-power"></i>Logout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER DESKTOP-->
 
     <!-- Jquery JS-->
     <script src="vendor/jquery-3.2.1.min.js"></script>

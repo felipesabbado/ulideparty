@@ -34,97 +34,6 @@
 
 <body class="animsition">
     <div class="page-wrapper">
-        <!-- HEADER MOBILE-->
-        <header class="header-mobile d-block d-lg-none">
-            <div class="header-mobile__bar">
-                <div class="container-fluid">
-                    <div class="header-mobile-inner">
-                        <a class="logo" href="index.php">
-                            <img src="images/icon/logo.png" alt="CoolAdmin" />
-                        </a>
-                        <button class="hamburger hamburger--slider" type="button">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <nav class="navbar-mobile">
-                <div class="container-fluid">
-                    <ul class="navbar-mobile__list list-unstyled">
-                        <li>
-                            <a href="index.php">
-                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
-                        </li>
-                        <li class="has-sub">
-                            <a class="js-arrow" href="#">
-                                <i class="fas fa-desktop"></i>Comunidade</a>
-                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
-                                <li>
-                                    <a href="empresario.php">Empresários</a>
-                                </li>
-                                <li>
-                                    <a href="utilizador.php">Utilizadores</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="has-sub">
-                            <a class="js-arrow" href="#">
-                                <i class="fas fa-check"></i>Meus Locais</a>
-                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
-                                <li>
-                                    <a href="local01.php">Local 1</a>
-                                </li>
-                                <li>
-                                    <a href="local02.html">Local 2</a>
-                                </li>
-                                <li>
-                                    <a href="local03.html">Local 3</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="has-sub">
-                            <a class="js-arrow" href="#">
-                                <i class="fas fa-user"></i>Grupos</a>
-                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
-                                <li>
-                                    <a href="grupo01.php">Grupo 1</a>
-                                </li>
-                                <li>
-                                    <a href="grupo02.html">Grupo 2</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="favorito.php">
-                                <i class="fas fa-user"></i>Favoritos</a>
-                        </li>
-                        <li>
-                            <a href="mensagem.php">
-                                <i class="fas fa-check"></i>Mensagem</a>
-                        </li>
-                        <li>
-                            <a href="avaliacao.php">
-                                <i class="fas fa-user"></i>Avaliações</a>
-                        </li>
-                        <li class="has-sub">
-                            <a class="js-arrow" href="#">
-                                <i class="fas fa-check"></i>Perfil</a>
-                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
-                                <li>
-                                    <a href="perfil_utilizador.php">Utilizador</a>
-                                </li>
-                                <li>
-                                    <a href="perfil_local.php">Local</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <!-- END HEADER MOBILE-->
 
         <!-- MENU SIDEBAR-->
         <?php include 'menu.php'?>
@@ -132,9 +41,6 @@
 
         <!-- PAGE CONTAINER-->
         <div class="page-container">
-            <!-- HEADER DESKTOP-->
-            <?php include 'header-desktop.php' ?>
-            <!-- HEADER DESKTOP-->
 
             <!-- MAIN CONTENT-->
             <div class="main-content">
