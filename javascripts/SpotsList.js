@@ -30,7 +30,7 @@ async function loadSpots() {
         avg = parseFloat(spots[i].avg).toFixed(2)
 
         console.log(avg)
-        html += `<div class="u-container-style u-hover-feature u-list-item u-repeater-item u-video-cover u-white u-list-item-1" data-href="info.php" data-page-id="170745537">
+        html += `<div class="u-container-style u-hover-feature u-list-item u-repeater-item u-video-cover u-white u-list-item-1" onclick="goToInfo(${spots[i].sp_id})" data-page-id="170745537">
               <div class="u-container-layout u-similar-container u-valign-bottom-lg u-container-layout-1">
                 <h3 class="u-text u-text-default-xl u-text-1"> ${spots[i].sp_name} </h3>
                 <div class="u-border-4 u-border-palette-3-base u-expanded-width u-line u-line-horizontal u-line-1"></div>
@@ -49,6 +49,12 @@ async function loadSpots() {
     for (let i = 0; i < Object.keys(spots).length; i++) {
 
     }
+}
+
+function goToInfo(id) {
+    console.log(id)
+    localStorage.setItem("sp_id", id)
+    document.location.replace("info.php")
 }
 
 window.addEventListener("load", function () {
