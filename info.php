@@ -70,23 +70,19 @@
         <li data-u-target="#carousel_f174" class="u-grey-30" data-u-slide-to="2"></li>
         <li data-u-target="#carousel_f174" class="u-grey-30" data-u-slide-to="3"></li>
       </ol>
-      <div class="u-carousel-inner" role="listbox">
-        <div class="u-active u-align-left u-carousel-item u-clearfix u-image u-shading u-section-1-1" src="" data-image-width="1280" data-image-height="960">
-          <div class="u-clearfix u-sheet u-sheet-1">
-            <h1 class="u-text u-text-default u-title u-text-1">Nome Lugar</h1>
-          </div>
-        </div>
-        <div class="u-align-left u-carousel-item u-clearfix u-image u-shading u-section-1-2" src="" data-image-width="1280" data-image-height="848">
-          <div class="u-clearfix u-sheet u-sheet-1">
-            <h1 class="u-text u-text-default u-title u-text-1">Sample Headline</h1>
-          </div>
-        </div>
-        <div class="u-align-left u-carousel-item u-clearfix u-image u-shading u-section-1-3" src="" data-image-width="1280" data-image-height="853">
-          <div class="u-clearfix u-sheet u-sheet-1">
-            <h1 class="u-text u-text-default u-title u-text-1">Sample Headline</h1>
-          </div>
-        </div>
-      </div>
+      <div class="u-carousel-inner" id="sp_photo" role="listbox">
+
+<!--        <div class="u-align-left u-carousel-item u-clearfix u-image u-shading u-section-1-2" src="" data-image-width="1280" data-image-height="848">-->
+<!--          <div class="u-clearfix u-sheet u-sheet-1">-->
+<!--            <h1 class="u-text u-text-default u-title u-text-1">Sample Headline</h1>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="u-align-left u-carousel-item u-clearfix u-image u-shading u-section-1-3" src="" data-image-width="1280" data-image-height="853">-->
+<!--          <div class="u-clearfix u-sheet u-sheet-1">-->
+<!--            <h1 class="u-text u-text-default u-title u-text-1">Sample Headline</h1>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
       <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-text-grey-30 u-block-462b-3" href="#carousel_f174" role="button" data-u-slide="prev">
         <span aria-hidden="true">
           <svg viewBox="0 0 477.175 477.175"><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
@@ -110,9 +106,10 @@
               <div class="u-align-left u-container-style u-layout-cell u-size-60 u-layout-cell-1">
                 <div class="u-container-layout u-container-layout-1">
                   <h4 class="u-text u-text-default u-text-1">
-                    <span class="u-text-black"> Oriental,&nbsp;Tailandesa,&nbsp;Malaia,&nbsp;Filipina,&nbsp;Vietnamita,&nbsp;Coreana,&nbsp;Japonesa,&nbsp;Chinesa<br>
-                      <br>Chiado, Lisboa
-                    </span>
+                    <span class="u-text-black" id="sp_tags"> Oriental,&nbsp;Tailandesa,&nbsp;Malaia,&nbsp;Filipina,&nbsp;Vietnamita,&nbsp;Coreana,&nbsp;Japonesa,&nbsp;Chinesa</span>
+                      <br>
+                      <br>
+                      <span class="u-text-black" id="sp_location"> Chiado lisboa</span>
                     <br>
                     <br>
                     <span class="u-text-custom-color-2">Abre daqui a 26 minutos</span>
@@ -188,15 +185,17 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
                   <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-30 u-white u-layout-cell-1">
                     <div class="u-container-layout u-valign-middle u-container-layout-1">
                       <h2 class="u-text u-text-1"> Localização e contato</h2>
-                      <p class="u-text u-text-2"> Rua Santa Marinha, 26, Lisboa 1100-491 Portugal</p>
-                      <p class="u-text u-text-3">+351 xxx xxx xxx</p>
-                      <p class="u-text u-text-4">contacts@esbnyc.com</p>
+                      <p class="u-text u-text-2" id="spot_street"> Rua Santa Marinha, 26, Lisboa 1100-491 Portugal</p>
+                      <p class="u-text u-text-3" id="spot_phone">+351 xxx xxx xxx</p>
+                      <p class="u-text u-text-4" id="spot_email">contacts@esbnyc.com</p>
                     </div>
                   </div>
                   <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-30 u-white u-layout-cell-2">
                     <div class="u-container-layout u-valign-middle u-container-layout-2">
                       <h2 class="u-text u-text-5"> Pontuações e avaliações</h2>
-                      <p class="u-text u-text-6">5,0&nbsp;&nbsp;<span class="u-file-icon u-icon"><img src="images/18288845.png" alt=""></span>&nbsp;1.688 avaliações
+                      <p class="u-text u-text-6" >
+                          <div id="sp_rate">5,0</div>&nbsp;<span class="u-file-icon u-icon"><img src="images/18288845.png" alt=""></span>&nbsp<div id="sp_countRate"> 1.688 avaliações </div>
+
                       </p>
                     </div>
                   </div>
@@ -224,19 +223,8 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
     
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-fa49"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-small-text u-text u-text-variant u-text-1">Copyright - Ulide Party 2022</p>
-      </div></footer>
-    <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/landing-page" target="_blank">
-        <span>Landing Page</span>
-      </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="https://nicepage.online" target="_blank">
-        <span>Website Builder</span>
-      </a>. 
-    </section>
-
+      </div>
+    </footer>
   <script src="javascripts/info.js"></script>
   </body>
 </html>
