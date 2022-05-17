@@ -98,6 +98,8 @@
             </a>
         </div>
     </div>
+    <!-- End Slider (Carousel) -->
+
 </main>
 <div class="footer-curve-divider"><div></div></div>
 <footer>
