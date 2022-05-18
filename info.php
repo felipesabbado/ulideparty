@@ -194,7 +194,8 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
                     <div class="u-container-layout u-valign-middle u-container-layout-2">
                       <h2 class="u-text u-text-5"> Pontuações e avaliações</h2>
                       <p class="u-text u-text-6" >
-                          <div id="sp_rate">5,0</div>&nbsp;<span class="u-file-icon u-icon"><img src="images/18288845.png" alt=""></span>&nbsp<div id="sp_countRate"> 1.688 avaliações </div>
+<!--                          <div id="sp_rate">5,0&nbsp;</div><span class="u-file-icon u-icon"><img src="images/18288845.png" alt=""></span>&nbsp<div id="sp_countRate"> 1.688 avaliações </div>-->
+                        <div id="sp_rate">5,0&nbsp;</div><span class="u-file-icon u-icon"><img src="images/18288845.png" alt=""></span>&nbsp<div id="sp_countRate"> 1.688 avaliações </div>
 
                       </p>
                     </div>

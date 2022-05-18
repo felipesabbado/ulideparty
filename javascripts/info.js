@@ -19,7 +19,7 @@ async function getTags(id) {
 }
 
 async function getPhotos(id) {
-    const targetUrl = `https://ulide-party-api.herokuapp.com/api/spots/type/${id}/listUse`;
+    const targetUrl = `https://ulide-party-api.herokuapp.com/api/spots/${id}/photo/avg`;
 
 
     const response = await fetch(targetUrl)
@@ -60,8 +60,8 @@ async function updateOnload() {
     let elementPhotos = document.getElementById("sp_photo")
     let elementLocation = document.getElementById("sp_location")
     let elementStreet = document.getElementById("spot_street")
-    let elementRate = document.getElementById("spot_rate")
-
+    let elementRate = document.getElementById("sp_rate")
+    let elementCountRate = document.getElementById("sp_countRate")
 
 
     elementTags.innerText = getTagsFormatted(tags)
@@ -78,7 +78,12 @@ async function updateOnload() {
     elementLocation.innerText = geocoding.results[0].formatted_address
     elementStreet.innerText = geocoding.results[0].formatted_address
 
-
+    console.log(photos)
+    let avg = parseFloat(photos[0].avg).toFixed(2)
+    console.log(avg)
+    console.log(photos[0].count)
+    elementRate.innerText = avg + " estrelas"
+    elementCountRate.innerText = photos[0].count + " avaliaçoes"
 }
 
 window.onload = updateOnload
