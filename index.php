@@ -7,10 +7,12 @@
 
     <!-- Title Page -->
     <title>Ulide Party</title>
+
+    <!-- JS -->
+    <script type="application/javascript" src="javascripts/main.js"></script>
 </head>
 <body>
-<header>
-    <?php include 'menu.php' ?>
+<header id="menu">
 </header>
 <main>
     <section>
@@ -29,7 +31,7 @@
                     <div class="card cardtype" id="bares">
                         <img src="img/home_bares.jpg" alt="Bares">
                         <div class="card-img-overlay">
-                            <h1>Bares</h1>
+                            <h2 class="card-title">Bares</h2>
                         </div>
                     </div>
                 </a>
@@ -39,7 +41,7 @@
                     <div class="card cardtype" id="restaurantes">
                         <img src="img/home_restaurantes.jpg" alt="Restaurantes" style="border-radius: 14px">
                         <div class="card-img-overlay">
-                            <h1>Restaurantes</h1>
+                            <h2>Restaurantes</h2>
                         </div>
                     </div>
                 </a>
@@ -49,7 +51,7 @@
                     <div class="card cardtype" id="discotecas">
                         <img src="img/home_discotecas.jpg" alt="Discotecas" style="border-radius: 14px">
                         <div class="card-img-overlay">
-                            <h1>Discotecas</h1>
+                            <h2>Discotecas</h2>
                         </div>
                     </div>
                 </a>
@@ -109,7 +111,7 @@
                 <img src="img/logos/logo-icon-75x75.png" alt="Ulide Party Logo">
             </div>
             <div class="col-12 text-center">
-                <h2>Ulide Party</br>O seu portal de diversão noturna.</h2>
+                <h2>Ulide Party<br>O seu portal de diversão noturna.</h2>
             </div>
             <div class="col-12 text-center">
                 <p><i class="fi-br-envelope"></i> <strong>support@ulideparty.pt</strong>

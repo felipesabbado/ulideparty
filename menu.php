@@ -24,7 +24,7 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Main JS -->
-    <script src="js/scripts.js"></script>
+    <script type="application/javascript" src="javascripts/main.js"></script>
 
     <!-- Jquery JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -34,7 +34,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <!-- Progressbar JS -->
-    <script src="js/progressbar.min.js"></script>
+    <script src="javascripts/progressbar.min.js"></script>
 
     <!-- Paralax JS -->
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
