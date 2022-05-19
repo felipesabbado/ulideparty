@@ -27,7 +27,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <a onclick="lista(1)" href="listas.php">
+                <a onclick="lista(1)" href="lista.php">
                     <div class="card cardtype" id="bares">
                         <img src="img/home_bares.jpg" alt="Bares">
                         <div class="card-img-overlay">
@@ -37,7 +37,7 @@
                 </a>
             </div>
             <div class="col">
-                <a onclick="lista(2)" href="listas.php">
+                <a onclick="lista(2)" href="lista.php">
                     <div class="card cardtype" id="restaurantes">
                         <img src="img/home_restaurantes.jpg" alt="Restaurantes" style="border-radius: 14px">
                         <div class="card-img-overlay">
@@ -47,7 +47,7 @@
                 </a>
             </div>
             <div class="col">
-                <a onclick="lista(3)" href="listas.php">
+                <a onclick="lista(3)" href="lista.php">
                     <div class="card cardtype" id="discotecas">
                         <img src="img/home_discotecas.jpg" alt="Discotecas" style="border-radius: 14px">
                         <div class="card-img-overlay">
@@ -60,7 +60,7 @@
     </div>
 
     <!-- Slider (Carousel) -->
-    <div class="container-fluid slider">
+    <!--<div class="container-fluid slider">
         <div id="mainSlider" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
@@ -99,7 +99,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </div>
+    </div>-->
     <!-- End Slider (Carousel) -->
 
 </main>
