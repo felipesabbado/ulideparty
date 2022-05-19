@@ -19,8 +19,8 @@
     <section class="overlay">
         <div id="rest" class="container-fluid header bg-cover">
             <div class="row">
-                <div class="col-12 text-center"><h1>Restaurantes</h1></div>
-                <div class="col-12 text-center"><h2>Descobre os melhores restaurantes de Lisboa</h2></div>
+                <div class="col-12 text-center"><h1 id="title_category">Restaurantes</h1></div>
+                <div class="col-12 text-center"><h2 id="subtitle_category">Descobre os melhores restaurantes de Lisboa</h2></div>
             </div>
         </div>
         <div class="curve-divider inverted"></div>

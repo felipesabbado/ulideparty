@@ -63,10 +63,13 @@ function goToInfo(id) {
 window.addEventListener("load", function () {
     if (categoria == 1){
         document.querySelector("#title_category").innerText = "Bares"
+        document.querySelector("#subtitle_category").innerText = "Descobre os melhores bares de Lisboa"
     }else if (categoria == 2){
         document.querySelector("#title_category").innerText = "Restaurantes"
+        document.querySelector("#subtitle_category").innerText = "Descobre os melhores restaurantes de Lisboa"
     }else if (categoria == 3){
         document.querySelector("#title_category").innerText = "Discotecas"
+        document.querySelector("#subtitle_category").innerText = "Descobre as melhores discotecas de Lisboa"
     }
 
 }, true)
