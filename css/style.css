@@ -82,6 +82,10 @@ header, .navbar {
     min-height: 600px;
 }
 
+.header#rest {
+    background-image: url("../img/restaurante_banner.jpg");
+}
+
 .header img {
     padding-top: 125px;
 }
@@ -92,10 +96,18 @@ header, .navbar {
     background-repeat: no-repeat;
 }
 
-.slogan > h1{
+.slogan > h1 {
     font-size: 60px;
     color: var(--HoneyYellow);
     font-family: 'Dancing Script', cursive;
+}
+
+#rest h1, h2 {
+    color: var(--HoneyYellow);
+}
+
+#rest h1 {
+    font-size: 5em;
 }
 
 .curve-divider.inverted {
@@ -136,7 +148,7 @@ header, .navbar {
 footer {
     background-color: #404040;
     height: 360px;
-    //border-radius: 100px 100px 0 0;
+    border-radius: 100px 100px 0 0;
 }
 
 footer img {
