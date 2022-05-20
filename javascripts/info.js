@@ -3,7 +3,7 @@ let spot_id = localStorage.getItem("sp_id")
 alert(spot_id)
 
 async function getSpot(id) {
-    const targetUrl = `https://ulide-party-api.herokuapp.com/api/spots/${id}`;
+    const targetUrl = `https://ulide-party-api.herokuapp.com/api/spots/update/${id}`;
 
 
     const response = await fetch(targetUrl)
@@ -49,6 +49,8 @@ async function getGeocoding(search) {
 
 async function updateOnload() {
     let spot = await getSpot(spot_id)
+    console.log("aaaaaaaaaaaaaaaaa")
+    console.log(spot)
     let tags = await getTags(spot_id)
     let photos = await getPhotos(spot_id)
 
