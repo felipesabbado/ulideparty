@@ -231,6 +231,7 @@ footer p {
 
 #list-area .card-img {
     height: 200px;
+    width: auto;
 }
 
 #list-area img {

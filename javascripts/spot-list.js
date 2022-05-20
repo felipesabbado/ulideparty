@@ -30,14 +30,14 @@ async function loadSpots() {
         avg = parseFloat(spots[i].avg).toFixed(2)
 
         console.log(avg)
-        html += `<div class="col-12 col-lg-4" onclick="goToInfo(${spots[i].sp_id})" data-href="info.php">
+        html += `<div class="col-12 col-md-6 col-lg-4" onclick="goToInfo(${spots[i].sp_id})" data-href="info.php">
                 <div class="card">
                     <div class="card-body">
                         <div class="card-title">
                             <h3>${spots[i].sp_name}</h3>
                         </div>
                         <div class="card-img">
-                            <img src="img/rest01.webp">
+                            <img src=${url} alt="Spot Image">
                         </div>
                         <div class="spot-info">
                             <h4>Tags do local</h4> <h4>${avg} <i class="fi-sr-star"></i></h4>

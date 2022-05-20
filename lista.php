@@ -48,10 +48,8 @@
         </div>
     </div>
     <div id="mostrar-mais" class="container">
-        <div class="row justify-content-center text-center">
-            <div class="col-4">
-                <button onclick="loadSpots()">Mostrar mais</button>
-            </div>
+        <div class="row justify-content-center">
+            <button onclick="loadSpots()">Mostrar mais</button>
         </div>
     </div>
     <!-- End of List Area -->
