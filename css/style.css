@@ -132,16 +132,17 @@ section {
 }
 
 .cardtype {
-    width: 325px;
-    height: 500px;
+    max-height: 500px;
     border: none;
     background: transparent;
     margin-top: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .cardtype > img {
+    max-height: 500px;
     border-radius: 15px;
+    object-fit: cover;
 }
 
 .cardtype > div {
@@ -229,24 +230,22 @@ footer p {
     margin-top: 25px;
 }
 
-
-
 #list-area img {
     max-height: 100%;
     max-width: 100%;
     height: 198px;
-    width: 430px;
+    width: 500px;
     object-fit: cover;
     border-radius: 15px;
 }
-
-/*white-space: nowrap;
-text-overflow: ellipsis;*/
 
 #list-area h3 {
     color: var(--RussianViolet);
     font-size: 36px;
     margin: 0 0 30px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #list-area h3::after {
@@ -267,11 +266,17 @@ text-overflow: ellipsis;*/
 #list-area h4 {
     color: var(--RussianViolet);
     margin: 20px 0 15px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #list-area p {
     font-size: 16px;
     margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #list-area i {
