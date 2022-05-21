@@ -424,3 +424,32 @@ footer p {
 #info-spots .col, .col-2, .col-3, .col-6, .col-7, .col-10 {
     padding-left: 0;
 }
+
+#pills-eval .card {
+    background-color: var(--BGSilver);
+    margin-bottom: 5px;
+}
+
+#pills-eval img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#pills-eval h5, #pills-eval p {
+    color: var(--BGOnix);
+}
+
+#pills-eval h5 {
+    font-size: 20px;
+    margin: 0;
+    padding: 5px;
+}
+
+#pills-eval p {
+    margin: 0;
+}
+
+#ementasCarousel img {
+    object-fit: cover;
+}

@@ -102,10 +102,20 @@
                                 <h4>Todas as opiniões</h4>
                                 <div class="card">
                                     <div class="card-header">
-                                        imagem e nome e avalição individual
+                                        <img src="img/logos/logo-icon-75x75.png">
+                                        <h5 class="d-inline"> nome e avalição individual</h5>
                                     </div>
                                     <div class="card-body">
-                                        comentário
+                                        <p>Comentário</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="img/logos/logo-icon-75x75.png">
+                                        <h5 class="d-inline"> nome e avalição individual</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Comentário</p>
                                     </div>
                                 </div>
                             </div>
