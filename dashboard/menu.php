@@ -33,7 +33,6 @@
 
     <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
-    <link rel="stylesheet" type="text/css" href="css/maps.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
@@ -266,11 +265,6 @@
     <script src="js/main.js"></script>
     <script src="js/index.js"></script>
     <script type="application/javascript" src="js/menu.js"></script>
-
-    <!-- Map JS-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWAaYbbg4yfxd4e-hOxMO-pPAYn0D4asM&callback=initMap&v=weekly" defer></script>
-    <script type="module" src="js/db_connection/mapCircle.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </body>
 </html>
 

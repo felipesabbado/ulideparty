@@ -1,8 +1,8 @@
 <html lang="en">
 <head>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link rel="stylesheet" type="text/css" href="css/maps.css" />
-    <script type="module" src="js/db_connection/mapMarker.js"></script>
+    <link rel="stylesheet" type="text/css" href="dashboard/css/maps.css" />
+    <script type="module" src="javascripts/mapMarker.js"></script>
 </head>
 <body>
 <div id="map"></div>

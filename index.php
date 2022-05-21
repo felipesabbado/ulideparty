@@ -7,12 +7,10 @@
 
     <!-- Title Page -->
     <title>Ulide Party</title>
-
-    <!-- JS -->
-    <script type="application/javascript" src="javascripts/main.js"></script>
 </head>
 <body>
-<header id="menu">
+<header>
+    <?php include "menu.php" ?>
 </header>
 <main>
     <section>

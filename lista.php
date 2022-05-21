@@ -1,4 +1,4 @@
-<!<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <!-- Required meta tags-->
@@ -9,14 +9,14 @@
     <title>Ulide Party</title>
 
     <!-- JS -->
-    <script type="application/javascript" src="javascripts/main.js"></script>
     <script src="javascripts/spot-list.js"></script>
 </head>
 <body>
-<header id="menu">
+<header>
+    <?php include "menu.php" ?>
 </header>
 <main>
-    <section class="overlay">
+    <section>
         <div id="rest" class="container-fluid header bg-cover">
             <div class="row">
                 <div class="col-12 text-center"><h1 id="title_category">Restaurantes</h1></div>
@@ -29,22 +29,6 @@
     <!-- List Area -->
     <div id="list-area" class="container align-items-center">
         <div id="lista_spots" class="row">
-            <!--<div class="col-12 col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title">
-                            <h3>Nome do local</h3>
-                        </div>
-                        <div class="card-img">
-                            <img src="img/rest01.webp">
-                        </div>
-                        <div class="spot-info">
-                            <h4>Tags do local</h4> <h4>Nota <i class="fi-sr-star"></i></h4>
-                        </div>
-                        <p>Localização e outras infos</p>
-                    </div>
-                </div>
-            </div>-->
         </div>
     </div>
     <div id="mostrar-mais" class="container">

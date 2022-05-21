@@ -43,6 +43,10 @@ p, li {
     margin: 70px 0;
 }
 
+.overlay img {
+    filter: brightness(40%);
+}
+
 /* Barra de Navegação */
 header, .navbar {
     background-color: #404040;
@@ -197,29 +201,41 @@ footer p {
 /* Slider */
 .slider {
     padding: 0;
+    margin-bottom: 15px;
 }
 
 #mainSlider .carousel-inner, #mainSlider .carousel-item {
-    height: 500px;
+    max-height: 500px;
 }
 
 #mainSlider .carousel-caption {
-    top: 30%;
+    top: 35%;
+}
+
+#mainSlider img {
+    object-fit: cover;
+    object-position: center;
+}
+
+#mainSlider i {
+    color: var(--HoneyYellow);
+    font-size: 2.5em;
 }
 
 #mainSlider .carousel-caption h2 {
-    font-size: 50px;
+    font-size: 80px;
     margin-bottom: 30px;
 }
 
 #mainSlider .carousel-caption p {
+    color: var(--BGSilver);
     font-size: 22px;
     font-weight: 300;
     margin-bottom: 100px;
 }
 
 .carousel-indicators .active {
-    background-color: var(--RussianViolet);
+    background-color: var(--HoneyYellow);
 }
 
 /* List Area */
@@ -284,6 +300,11 @@ footer p {
     font-size: 18px;
 }
 
+#lista_spots a {
+    text-decoration: none;
+}
+
+/* Botão mostrar mais */
 #mostrar-mais {
     padding: 80px 0 0 0;
 }
@@ -305,4 +326,101 @@ footer p {
     background-color: transparent;
     color: var(--RussianViolet);
     border: 2px solid var(--RussianViolet);
+}
+
+/* Info Spots */
+#info-spots .nav-tabs .nav-link {
+    border: 2px solid transparent;
+}
+
+#info-spots .nav-tabs .nav-link.active {
+    color: var(--RussianViolet);
+    background-color: transparent;
+    border-color: transparent transparent var(--RussianViolet);
+}
+
+#info-spots .nav-tabs li {
+    font-size: 20px;
+}
+
+#info-spots .nav-tabs {
+    border-bottom: 1px solid var(--BGGrayWeb);
+}
+
+#info-spots .nav-item a {
+    color: var(--BGGrayWeb);
+}
+
+#info-spots .nav-item a:hover {
+    color: var(--BGSilver);
+}
+
+#info-buttons {
+    margin-bottom: 20px;
+}
+
+#info-spots .card {
+    background: var(--BGOnix);
+    border-radius: 1rem;
+}
+
+#info-spots button {
+    cursor: pointer;
+}
+
+#info-spots .b-style {
+    color: var(--HoneyYellow);
+    font-size: 20px;
+    background: var(--RussianViolet);
+    border: 2px solid var(--RussianViolet);
+    border-radius: 0.5rem;
+    padding: 5px 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.14), 0 1px 18px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#info-spots .b-style i {
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+#info-spots .b-style-off {
+    color: var(--BGSilver);
+    font-size: 20px;
+    background: transparent;
+    border: 2px solid var(--RussianViolet);
+    border-radius: 0.5rem;
+    padding: 5px 10px;
+}
+
+#info-spots .b-style-off i {
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+#info-spots .b-style-off:hover {
+    color: var(--HoneyYellow);
+    background: var(--RussianViolet);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.14), 0 1px 18px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#info-spots h2, h3, h4, h6, p {
+    color: var(--BGSilver);
+}
+
+#info-spots h4 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+#info-spots p {
+    font-size: 18px;
+}
+
+#info-spots h6 {
+    position: relative;
+    top: 20px;
+}
+
+#info-spots .col, .col-2, .col-3, .col-6, .col-7, .col-10 {
+    padding-left: 0;
 }

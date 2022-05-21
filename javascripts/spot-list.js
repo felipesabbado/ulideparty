@@ -30,7 +30,7 @@ async function loadSpots() {
         avg = parseFloat(spots[i].avg).toFixed(2)
 
         console.log(avg)
-        html += `<div class="col-12 col-md-6 col-lg-4" onclick="goToInfo(${spots[i].sp_id})" data-href="info.php">
+        html += `<div class="col-12 col-md-6 col-lg-4"><a href="info.php" onclick="goToInfo(${spots[i].sp_id})">
                 <div class="card">
                     <div class="card-body">
                         <div class="card-title">
@@ -44,7 +44,7 @@ async function loadSpots() {
                         </div>
                         <p>Localização e outras infos</p>
                     </div>
-                </div>
+                </div></a>
             </div>`
     }
 
@@ -57,7 +57,7 @@ async function loadSpots() {
 function goToInfo(id) {
     console.log(id)
     localStorage.setItem("sp_id", id)
-    //document.location.replace("info.php")
+    // document.location.assign("info.php")
 }
 
 window.addEventListener("load", function () {
