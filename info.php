@@ -1,231 +1,189 @@
-<!DOCTYPE html>
-<html style="font-size: 16px;">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="Our Food, organic, Our Food">
-    <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Info</title>
-    <link rel="stylesheet" href="stylesheets/nicepage.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/info.css" media="screen">
-    <script class="u-script" type="text/javascript" src="javascripts/jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="javascripts/nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 4.7.1, nicepage.com">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": ""
-}</script>
-    <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Info">
-    <meta property="og:type" content="website">
-  </head>
-  <body class="u-body u-xl-mode">
-  <header class="u-clearfix u-grey-80 u-header u-sticky u-sticky-c6e0 u-header" id="sec-fbb9"><div class="u-clearfix u-sheet u-valign-middle-lg u-sheet-1">
-          <img class="u-image u-image-default u-image-1" src="images/logos/logo_m.png" alt="">
-          <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
-              <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0;">
-                  <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 4px 0; font-size: calc(1em + 8px);">
-                      <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
-                      <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-                          <g>
-                              <rect y="1" width="16" height="2"></rect>
-                              <rect y="7" width="16" height="2"></rect>
-                              <rect y="13" width="16" height="2"></rect>
-                          </g>
-                      </svg>
-                  </a>
-              </div>
-              <div class="u-custom-menu u-nav-container">
-                  <ul class="u-nav u-unstyled u-nav-1">
-                      <li class="u-nav-item">
-                          <a class="u-button-style u-nav-link u-text-active-white u-text-hover-palette-1-base u-text-white" href="dashboard/login.php" style="padding: 10px 20px;">Login</a>
-                      </li>
-                      <li class="u-nav-item">
-                          <a class="u-button-style u-nav-link u-text-active-white u-text-hover-palette-1-base u-text-white" href="dashboard/register.php" style="padding: 10px 20px;">Registar</a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="u-custom-menu u-nav-container-collapse">
-                  <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-                      <div class="u-inner-container-layout u-sidenav-overflow">
-                          <div class="u-menu-close"></div>
-                          <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
-                              <li class="u-nav-item"><a class="u-button-style u-nav-link" href="dashboard/login.php">Login</a></li>
-                              <li class="u-nav-item"><a class="u-button-style u-nav-link" href="dashboard/register.php">Registar</a></li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-              </div>
-          </nav>
-      </div>
-  </header>
-    <section class="u-carousel u-slide u-block-462b-1" id="carousel_f174" data-interval="5000" data-u-ride="carousel">
-      <ol class="u-absolute-hcenter u-carousel-indicators u-block-462b-2">
-        <li data-u-target="#carousel_f174" data-u-slide-to="0" class="u-active u-grey-30"></li>
-        <li data-u-target="#carousel_f174" class="u-grey-30" data-u-slide-to="1"></li>
-        <li data-u-target="#carousel_f174" class="u-grey-30" data-u-slide-to="2"></li>
-        <li data-u-target="#carousel_f174" class="u-grey-30" data-u-slide-to="3"></li>
-      </ol>
-      <div class="u-carousel-inner" id="sp_photo" role="listbox">
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!--        <div class="u-align-left u-carousel-item u-clearfix u-image u-shading u-section-1-2" src="" data-image-width="1280" data-image-height="848">-->
-<!--          <div class="u-clearfix u-sheet u-sheet-1">-->
-<!--            <h1 class="u-text u-text-default u-title u-text-1">Sample Headline</h1>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="u-align-left u-carousel-item u-clearfix u-image u-shading u-section-1-3" src="" data-image-width="1280" data-image-height="853">-->
-<!--          <div class="u-clearfix u-sheet u-sheet-1">-->
-<!--            <h1 class="u-text u-text-default u-title u-text-1">Sample Headline</h1>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-      <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-text-grey-30 u-block-462b-3" href="#carousel_f174" role="button" data-u-slide="prev">
-        <span aria-hidden="true">
-          <svg viewBox="0 0 477.175 477.175"><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
-                    c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path></svg>
-        </span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-text-grey-30 u-block-462b-4" href="#carousel_f174" role="button" data-u-slide="next">
-        <span aria-hidden="true">
-          <svg viewBox="0 0 477.175 477.175"><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
-                    c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"></path></svg>
-        </span>
-        <span class="sr-only">Next</span>
-      </a>
-    </section>
-    <section class="skrollable u-clearfix u-grey-25 u-section-2" id="sec-5273">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
-          <div class="u-layout">
-            <div class="u-layout-col">
-              <div class="u-align-left u-container-style u-layout-cell u-size-60 u-layout-cell-1">
-                <div class="u-container-layout u-container-layout-1">
-                  <h4 class="u-text u-text-default u-text-1">
-                    <span class="u-text-black" id="sp_tags"> Oriental,&nbsp;Tailandesa,&nbsp;Malaia,&nbsp;Filipina,&nbsp;Vietnamita,&nbsp;Coreana,&nbsp;Japonesa,&nbsp;Chinesa</span>
-                      <br>
-                      <br>
-                      <span class="u-text-black" id="sp_location"> Chiado lisboa</span>
-                    <br>
-                    <br>
-                    <span class="u-text-custom-color-2">Abre daqui a 26 minutos</span>
-                  </h4>
-                  <a href="https://nicepage.online" class="u-btn u-button-style u-btn-1"> Direçoes</a>
-                  <a href="https://nicepage.online" class="u-btn u-button-style u-btn-2">Favoritos</a>
-                  <a href="https://nicepage.online" class="u-btn u-button-style u-btn-3">Partilhar</a>
-                  <a href="https://nicepage.online" class="u-btn u-button-style u-btn-4"> Ligar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="u-align-center u-clearfix u-grey-25 u-section-3" id="sec-69d5">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h3 class="u-text u-text-default u-text-1">Menus</h3>
-        <div class="u-expanded-width u-gallery u-layout-horizontal u-lightbox u-no-transition u-show-text-on-hover u-width-fixed u-gallery-1">
-          <div class="u-gallery-inner"><div class="u-effect-fade u-gallery-item u-gallery-item-1"><div class="u-back-slide" data-image-width="1280" data-image-height="960"><img class="u-back-image u-back-image-1" src="images/d94201e8d9d501d06a8d94f85c053adb1729c8bdd5cd6b2d4f4e32b4e07dd7c568ec442dcdeb40ad82a88922b232f1eaa5f7ee8e448288601b9b36_1280.jpg">
-</div><div class="u-over-slide u-shading u-over-slide-1"><h3 class="u-gallery-heading"></h3><p class="u-gallery-text"></p>
-</div>
-</div><div class="u-effect-fade u-gallery-item u-gallery-item-2"><div class="u-back-slide" data-image-width="1280" data-image-height="853"><img class="u-back-image u-back-image-2" src="images/5c72311772c6e9b5a6d932009732da8d4e1db0d8dca963259eeb17716f30bf332a8bf8cf6ef90aa5434e7557484045f53380eb6261e0a6e42ed49b_1280.jpg">
-</div><div class="u-over-slide u-shading u-over-slide-2"><h3 class="u-gallery-heading"></h3><p class="u-gallery-text"></p>
-</div>
-</div><div class="u-effect-fade u-gallery-item u-gallery-item-3"><div class="u-back-slide"><img class="u-back-image u-back-image-3" src="images/26.svg">
-</div><div class="u-over-slide u-shading u-over-slide-3"><h3 class="u-gallery-heading"></h3><p class="u-gallery-text"></p>
-</div>
-</div><div class="u-effect-fade u-gallery-item u-gallery-item-4"><div class="u-back-slide"><img class="u-back-image u-back-image-4" src="images/26.svg">
-</div><div class="u-over-slide u-shading u-over-slide-4"><h3 class="u-gallery-heading"></h3><p class="u-gallery-text"></p>
-</div>
-</div><div class="u-effect-fade u-gallery-item u-gallery-item-5"><div class="u-back-slide"><img class="u-back-image u-back-image-5" src="images/26.svg">
-</div><div class="u-over-slide u-shading u-over-slide-5"><h3 class="u-gallery-heading"></h3><p class="u-gallery-text"></p>
-</div>
-</div><div class="u-effect-fade u-gallery-item u-gallery-item-6"><div class="u-back-slide"><img class="u-back-image u-back-image-6" src="images/26.svg">
-</div><div class="u-over-slide u-shading u-over-slide-6"><h3 class="u-gallery-heading"></h3><p class="u-gallery-text"></p>
-</div>
-</div></div>
-          <a class="u-absolute-vcenter u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-1" href="#" role="button">
-            <span aria-hidden="true">
-              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
-c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
-c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
-            </span>
-            <span class="sr-only">
-              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
-c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
-c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
-            </span>
-          </a>
-          <a class="u-absolute-vcenter u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-2" href="#" role="button">
-            <span aria-hidden="true">
-              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
-L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
-c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
-            </span>
-            <span class="sr-only">
-              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
-L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
-c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
-            </span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="u-clearfix u-section-4" id="sec-572a">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-spacing-vertical u-layout-wrap u-layout-wrap-1">
-          <div class="u-gutter-0 u-layout">
-            <div class="u-layout-row">
-              <div class="u-size-30">
-                <div class="u-layout-col">
-                  <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-30 u-white u-layout-cell-1">
-                    <div class="u-container-layout u-valign-middle u-container-layout-1">
-                      <h2 class="u-text u-text-1"> Localização e contato</h2>
-                      <p class="u-text u-text-2" id="spot_street"> Rua Santa Marinha, 26, Lisboa 1100-491 Portugal</p>
-                      <p class="u-text u-text-3" id="spot_phone">+351 xxx xxx xxx</p>
-                      <p class="u-text u-text-4" id="spot_email">contacts@esbnyc.com</p>
-                    </div>
-                  </div>
-                  <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-30 u-white u-layout-cell-2">
-                    <div class="u-container-layout u-valign-middle u-container-layout-2">
-                      <h2 class="u-text u-text-5"> Pontuações e avaliações</h2>
-                      <p class="u-text u-text-6" >
-<!--                          <div id="sp_rate">5,0&nbsp;</div><span class="u-file-icon u-icon"><img src="images/18288845.png" alt=""></span>&nbsp<div id="sp_countRate"> 1.688 avaliações </div>-->
-                        <div id="sp_rate">5,0&nbsp;</div><span class="u-file-icon u-icon"><img src="images/18288845.png" alt=""></span>&nbsp<div id="sp_countRate"> 1.688 avaliações </div>
-
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="u-size-30">
-                <div class="u-layout-row">
-                  <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-3">
-                    <div class="u-container-layout u-container-layout-3">
-                      <div class="u-align-left u-expanded u-grey-10 u-map">
-                        <div class="embed-responsive">
-                          <iframe class="embed-responsive-item" src="//maps.google.com/maps?output=embed&amp;q=Manhattan%2C%20New%20York&amp;z=10&amp;t=m" data-map="JTdCJTIyYWRkcmVzcyUyMiUzQSUyMk1hbmhhdHRhbiUyQyUyME5ldyUyMFlvcmslMjIlMkMlMjJ6b29tJTIyJTNBMTAlMkMlMjJ0eXBlSWQlMjIlM0ElMjJyb2FkJTIyJTJDJTIybGFuZyUyMiUzQSUyMiUyMiU3RA=="></iframe>
+    <!-- Title Page -->
+    <title>Ulide Party</title>
+    <script src="javascripts/info.js"></script>
+</head>
+<body>
+<header>
+    <?php include "menu.php"?>
+</header>
+<main>
+    <section>
+        <!-- Slider (Carousel) -->
+        <div class="container-fluid slider">
+            <div id="mainSlider" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                    <li data-target="#mainSlider" data-slide-to="1"></li>
+                    <li data-target="#mainSlider" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner overlay">
+                    <div class="carousel-item active">
+                        <img src="img/rest01.webp" class="d-block w-100" alt="Descrição 01">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Local 01</h2>
                         </div>
-                      </div>
                     </div>
-                  </div>
+                    <div class="carousel-item">
+                        <img src="img/rest02.webp" class="d-block w-100" alt="Descrição 02">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Local 02</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/rest03.webp" class="d-block w-100" alt="Descrição 03">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Local 03</h2>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <a href="#mainSlider" class="carousel-control-prev" role="button" data-slide="prev">
+                    <i class="fi-br-angle-left" aria-hidden="true"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a href="#mainSlider" class="carousel-control-next" role="button" data-slide="next">
+                    <i class="fi-br-angle-right" aria-hidden="true"></i>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-          </div>
         </div>
-      </div>
+        <!-- End Slider (Carousel) -->
     </section>
-    
-    
-    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-fa49"><div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1">Copyright - Ulide Party 2022</p>
-      </div>
-    </footer>
-  <script src="javascripts/info.js"></script>
-  </body>
+    <div id="info-spots" class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-10 p-0">
+                        <h2 id="sp_location">Endereço</h2>
+                        <h3 id="sp_tags"> Tags </h3>
+                    </div>
+                    <div class="col-2 p-0 align-self-center text-center">
+                        <span class="b-style" id="sp_rate">Nota <i class="fi-sr-star"></i></span> <h6 id="sp_countRate">2,548 Avaliações</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="info-buttons" class="col"><button class="b-style"><i class="fi fi-sr-heart"></i> Favorito</button> <button class="b-style-off"><i class="fi fi-sr-comment"></i> Avaliar</button> <button class="b-style-off"><i class="fi fi-br-link"></i> Compartilhar</button> <button class="b-style-off"><i class="fi fi-br-edit"></i> Editar local</button></div>
+                </div>
+                <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-eval-tab" data-toggle="pill" href="#pills-eval" role="tab" aria-controls="pills-eval" aria-selected="false">Avaliações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-menu-tab" data-toggle="pill" href="#pills-menu" role="tab" aria-controls="pills-menu" aria-selected="false">Ementa</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="row">
+                            <div class="col-6">
+                                <h4>Sobre</h4>
+                                <p>Informações sobre o local</p>
+                                <h4>Localização e Contacto</h4>
+                                <p>Endereço</p>
+                                <p>Telefone</p>
+                                <p>Email</p>
+                            </div>
+                            <div class="col-6 p-0 card-body">
+                                <?php include "map.php" ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-eval" role="tabpanel" aria-labelledby="pills-eval-tab">
+                        <div class="row">
+                            <div class="col-7">
+                                <h4>Todas as opiniões</h4>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="img/logos/logo-icon-75x75.png">
+                                        <h5 class="d-inline"> nome e avalição individual</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Comentário</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <img src="img/logos/logo-icon-75x75.png">
+                                        <h5 class="d-inline"> nome e avalição individual</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Comentário</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <h4>Todas as avaliações</h4>
+                                <div class="card">
+                                    <div class="card-header">
+                                        avaliação total
+                                    </div>
+                                    <div class="card-body">
+                                        tabela com as classificações das estrelas e quantidade
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-menu" role="tabpanel" aria-labelledby="pills-menu-tab">
+                        <div class="row justify-content-center">
+                            <!-- Ementas Carousel -->
+                            <div id="ementasCarousel" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="img/rest04.webp" alt="Primeiro Slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/rest05.webp" alt="Segundo Slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="img/rest06.webp" alt="Terceiro Slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#ementasCarousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Anterior</span>
+                                </a>
+                                <a class="carousel-control-next" href="#ementasCarousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Próximo</span>
+                                </a>
+                            </div>
+                            <!-- End Ementas Carousel-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<div class="footer-curve-divider"><div></div></div>
+<footer>
+    <div class="container">
+        <div class="row ">
+            <div class="col-12 text-center">
+                <img src="img/logos/logo-icon-75x75.png" alt="Ulide Party Logo">
+            </div>
+            <div class="col-12 text-center">
+                <h2>Ulide Party</br>O seu portal de diversão noturna.</h2>
+            </div>
+            <div class="col-12 text-center">
+                <p><i class="fi-br-envelope"></i> <strong>support@ulideparty.pt</strong>
+                    <br>&#169 2022 Ulide Party. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+</body>
 </html>

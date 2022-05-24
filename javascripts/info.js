@@ -49,7 +49,6 @@ async function getGeocoding(search) {
 
 async function updateOnload() {
     let spot = await getSpot(spot_id)
-    console.log("aaaaaaaaaaaaaaaaa")
     console.log(spot)
     let tags = await getTags(spot_id)
     let photos = await getPhotos(spot_id)
@@ -61,31 +60,17 @@ async function updateOnload() {
     let elementTags = document.getElementById("sp_tags")
     let elementPhotos = document.getElementById("sp_photo")
     let elementLocation = document.getElementById("sp_location")
-    let elementStreet = document.getElementById("spot_street")
     let elementRate = document.getElementById("sp_rate")
     let elementCountRate = document.getElementById("sp_countRate")
 
-
-    elementTags.innerText = getTagsFormatted(tags)
-    let url = "https://res.cloudinary.com/ulide-party/image/upload/v1652352355/spots/" + photos[0].ph_photo_path
-
-    elementPhotos.innerHTML = `<div class="u-active u-align-left u-carousel-item u-clearfix u-image u-shading u-section-1-1" src="" data-image-width="1280" data-image-height="960" style="background-image: url(${url})">
-          <div class="u-clearfix u-sheet u-sheet-1">
-            <h1 class="u-text u-text-default u-title u-text-1">${spot.sp_name}</h1>
-          </div>
-        </div>`
-
-
-    console.log(geocoding.results[0].formatted_address)
     elementLocation.innerText = geocoding.results[0].formatted_address
-    elementStreet.innerText = geocoding.results[0].formatted_address
 
-    console.log(photos)
-    let avg = parseFloat(photos[0].avg).toFixed(2)
+    let avg = parseFloat(photos[0].avg).toFixed(1)
     console.log(avg)
-    console.log(photos[0].count)
-    elementRate.innerText = avg + " estrelas"
-    elementCountRate.innerText = photos[0].count + " avaliaçoes"
+    elementRate.innerHTML = avg + ' <i class="fi-sr-star"></i>'
+    elementCountRate.innerText = photos[0].count + " Avaliaçoes"
+    elementTags.innerText = getTagsFormatted(tags)
+
 }
 
 window.onload = updateOnload
@@ -93,3 +78,27 @@ window.onload = updateOnload
 // document.addEventListener("load", async function () {
 //     await updateOnload()
 // })
+
+
+/**
+ * elementTags.innerText = getTagsFormatted(tags)
+ *     let url = "https://res.cloudinary.com/ulide-party/image/upload/v1652352355/spots/" + photos[0].ph_photo_path
+ *
+ *     elementPhotos.innerHTML = `<div class="u-active u-align-left u-carousel-item u-clearfix u-image u-shading u-section-1-1" src="" data-image-width="1280" data-image-height="960" style="background-image: url(${url})">
+ *           <div class="u-clearfix u-sheet u-sheet-1">
+ *             <h1 class="u-text u-text-default u-title u-text-1">${spot.sp_name}</h1>
+ *           </div>
+ *         </div>`
+ *
+ *
+ *     console.log(geocoding.results[0].formatted_address)
+ *     elementLocation.innerText = geocoding.results[0].formatted_address
+ *     elementStreet.innerText = geocoding.results[0].formatted_address
+ *
+ *     console.log(photos)
+ *     let avg = parseFloat(photos[0].avg).toFixed(2)
+ *     console.log(avg)
+ *     console.log(photos[0].count)
+ *     elementRate.innerText = avg + " estrelas"
+ *     elementCountRate.innerText = photos[0].count + " Avaliaçoes"
+ */

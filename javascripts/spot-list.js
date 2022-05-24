@@ -57,7 +57,7 @@ async function loadSpots() {
 function goToInfo(id) {
     console.log(id)
     localStorage.setItem("sp_id", id)
-    // document.location.assign("info.php")
+    // document.location.assign("info-2-MandarComOBeleleu.php")
 }
 
 window.addEventListener("load", function () {
