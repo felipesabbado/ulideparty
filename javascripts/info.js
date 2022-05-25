@@ -62,6 +62,9 @@ async function updateOnload() {
     let elementLocation = document.getElementById("sp_location")
     let elementRate = document.getElementById("sp_rate")
     let elementCountRate = document.getElementById("sp_countRate")
+    let elementTel = document.getElementById("sp_tel")
+    let elementEmail = document.getElementById("sp_email")
+    let elementDescription = document.getElementById("sp_description")
 
     elementLocation.innerText = geocoding.results[0].formatted_address
 
@@ -69,7 +72,18 @@ async function updateOnload() {
     console.log(avg)
     elementRate.innerHTML = avg + ' <i class="fi-sr-star"></i>'
     elementCountRate.innerText = photos[0].count + " Avaliaçoes"
-    elementTags.innerText = getTagsFormatted(tags)
+
+    let tagsStr = getTagsFormatted(tags);
+
+    if (tagsStr.length > null){
+        elementTags.innerText = tagsStr
+    } else {
+        elementTags.innerText = "Não há tags"
+    }
+
+    elementEmail.innerText = spot.sp_email
+    elementTel.innerText = spot.sp_tel
+    elementDescription.innerText = spot.sp_description
 
 }
 

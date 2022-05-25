@@ -86,11 +86,13 @@
                         <div class="row">
                             <div class="col-6">
                                 <h4>Sobre</h4>
-                                <p>Informações sobre o local</p>
+                                <p id="sp_description"></p>
                                 <h4>Localização e Contacto</h4>
                                 <p>Endereço</p>
-                                <p>Telefone</p>
+                                <p>Contacto telefonico</p>
+                                <p id="sp_tel"></p>
                                 <p>Email</p>
+                                <p id="sp_email"></p>
                             </div>
                             <div class="col-6 p-0 card-body">
                                 <?php include "map.php" ?>
