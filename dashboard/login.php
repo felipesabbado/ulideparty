@@ -38,7 +38,7 @@
                     <div class="login-content">
                         <div class="login-logo">
                             <a href="#">
-                                <img src="images/logos/logo_m.png" alt="CoolAdmin">
+                                <img src="images/logos/logo_m.png" alt="Ulide Party Logo">
                             </a>
                         </div>
                         <div class="login-form">
@@ -59,7 +59,7 @@
                                         <a href="#">Forgotten Password?</a>
                                     </label>
                                 </div>
-                                <input class="au-btn au-btn--block au-btn--green m-b-20" type="submit" value="Register" id="btnSubmit">
+                                <input class="au-btn au-btn--block au-btn--green m-b-20" type="submit" value="Register" id="btnLogin">
                             </form>
                             <div class="register-link">
                                 <p>

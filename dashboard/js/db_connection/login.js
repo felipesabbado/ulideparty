@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('#btnSubmit').on('click', function(event) {
+    $('#btnLogin').on('click', function(event) {
 
         // prevent form default behaviour
         event.preventDefault();

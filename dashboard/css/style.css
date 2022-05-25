@@ -1,25 +1,31 @@
 @charset "UTF-8";
 
-/*
----------------------- COLORS CODE ----------------------
-Medium Blue - #1E26BF
-Hot Pink - #FF6DAF
-Honey Yellow - #FFB500
-Russian Violet - #2C064B
-Midnight Blue - #181168
-Violet Crayola - #963A7D
+/* ---------------------- COLORS CODE ---------------------- */
 
-Background
-Onix - #404040
-Gray Web - #808080
-Silver - #C0C0C0
+:root {
+    --MediumBlue: #1E26BF;
+    --HotPink: #FF6DAF;
+    --HoneyYellow: #FFB500;
+    --RussianViolet: #2C064B;
+    --MidnightBlue: #181168;
+    --VioletCrayola: #963A7D;
 
-*/
+    --BGOnix: #404040;
+    --BGGrayWeb: #808080;
+    --BGSilver: #C0C0C0;
+}
+
+/* Gerais */
+::-webkit-scrollbar {
+    display: none;
+}
 
 /* ----- Typography ----- */
 
 body {
-    font: 20px "Source Sans Pro", sans-serif normal;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    background-color: var(--BGOnix);
+    color: var(--RussianViolet);
 }
 
 .shadow2 {
@@ -35,4 +41,56 @@ body {
 
 .minHeight {
     min-height: 200px;
+}
+
+/* Access Area */
+body .access {
+    background-color: var(--BGOnix);
+}
+
+.access .card {
+    max-width: 500px;
+    margin: auto;
+    border-radius: 1rem;
+    background-color: var(--BGSilver);
+}
+
+.logo-header {
+    padding: 15px;
+}
+
+#btnLogin {
+    border-radius: 1rem;
+    padding: 10px 30px;
+    border: none;
+    background-color: var(--RussianViolet);
+    color: var(--BGSilver);
+}
+
+.access h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.form-group {
+    font-size: 30px;
+}
+
+.form-group i {
+    vertical-align: bottom;
+}
+
+.login-link {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    padding: 30px 0;
+    border: 2px solid var(--BGSilver);
+    border-radius: 1rem;
+}
+
+.login-link p {
+    margin: 0;
+    text-align: center;
 }
