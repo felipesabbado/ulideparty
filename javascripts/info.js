@@ -1,7 +1,5 @@
 let spot_id = localStorage.getItem("sp_id")
 
-alert(spot_id)
-
 async function getSpot(id) {
     const targetUrl = `https://ulide-party-api.herokuapp.com/api/spots/update/${id}`;
 
@@ -46,6 +44,15 @@ function getTagsFormatted(tagsJson) {
     }
     return strTags
 }
+
+/* Modal */
+function eval() {
+    let modalbody = document.querySelectorAll("#bodyModalEval")
+
+    modalbody.innerHTML = `<h6>Classifique a sua experiência</h6>
+                <span><i class="fi fi-br-star"></span>`
+}
+
 
 async function getGeocoding(search) {
     const targetUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${search}&key=AIzaSyDk31YFxoBBRi15FKVX3-9rF-Vr8vpGfSQ`;
@@ -98,14 +105,11 @@ async function updateOnload() {
 
     let elementEvaluations = document.getElementById("sp_evaluations")
     let evaluationJson = await getEvaluations(spot_id)
-    console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
-    console.log(Object.keys(evaluationJson).length)
+
     for (let i = 0; i < Object.keys(evaluationJson).length; i++) {
-        console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
-        console.log(Object.keys(evaluationJson).length)
         elementEvaluations.innerHTML += `<div class="card">
                                     <div class="card-header">
-                                        <img src="img/logos/logo-icon-75x75.png">
+                                        <img src="img/logos/logo-icon-75x75.png" alt="User Image">
                                         <h5 class="d-inline"> ${evaluationJson[i].us_name}, ${evaluationJson[i].se_rate} <i class="fi-sr-star">, ${evaluationJson[i].to_char}</i> </h5>
                                     </div>
                                     <div class="card-body">
@@ -144,3 +148,5 @@ window.onload = updateOnload
  *     elementRate.innerText = avg + " estrelas"
  *     elementCountRate.innerText = photos[0].count + " Avaliaçoes"
  */
+
+/* Modal */

@@ -457,3 +457,28 @@ footer p {
 #local-map {
     border-radius: 50%;
 }
+
+/* Modal */
+#modal-eval .modal-content {
+    background-color: var(--BGOnix);
+}
+
+#modal-eval .modal-header {
+    background-color: var(--RussianViolet);
+    color: var(--BGSilver);
+    border: none;
+}
+
+#modal-eval .close {
+    color: var(--BGSilver);
+}
+
+#modal-eval .b-style {
+    color: var(--BGSilver);
+    font-size: 20px;
+    background: var(--RussianViolet);
+    border: 2px solid var(--RussianViolet);
+    border-radius: 0.5rem;
+    padding: 5px 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.14), 0 1px 18px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.2);
+}

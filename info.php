@@ -8,6 +8,9 @@
     <!-- Title Page -->
     <title>Ulide Party</title>
     <script src="javascripts/info.js"></script>
+
+    <!-- Jquery JS-->
+    <script src="dashboard/vendor/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 <header>
@@ -55,6 +58,7 @@
         </div>
         <!-- End Slider (Carousel) -->
     </section>
+
     <div id="info-spots" class="container">
         <div class="card">
             <div class="card-body">
@@ -68,7 +72,36 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div id="info-buttons" class="col"><button class="b-style"><i class="fi fi-sr-heart"></i> Favorito</button> <button class="b-style-off"><i class="fi fi-sr-comment"></i> Avaliar</button> <button class="b-style-off"><i class="fi fi-br-link"></i> Compartilhar</button> <button class="b-style-off"><i class="fi fi-br-edit"></i> Editar local</button></div>
+                    <div id="info-buttons" class="col">
+                        <button class="b-style"><i class="fi fi-sr-heart"></i> Favorito</button>
+                        <button class="b-style-off" data-toggle="modal" data-target="#modal-eval">
+                            <i class="fi fi-sr-comment"></i> Avaliar
+                        </button>
+                        <button class="b-style-off"><i class="fi fi-br-link"></i> Compartilhar</button>
+                        <button class="b-style-off"><i class="fi fi-br-edit"></i> Editar local</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="modal-eval" tabindex="-1" role="dialog" aria-labelledby="evalModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="evalModalLabel">Avaliar local</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div id="bodyModalEval" class="modal-body">
+                                        <h6>Teste</h6>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <!--<button type="button" class="b-style" data-dismiss="modal">Fechar</button>-->
+                                        <button type="button" class="btn b-style">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Modal -->
+                    </div>
                 </div>
                 <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
                     <li class="nav-item">
