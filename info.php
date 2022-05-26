@@ -101,26 +101,9 @@
                     </div>
                     <div class="tab-pane fade" id="pills-eval" role="tabpanel" aria-labelledby="pills-eval-tab">
                         <div class="row">
-                            <div class="col-7">
+                            <div class="col-7" id="sp_evaluations">
                                 <h4>Todas as opiniões</h4>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <img src="img/logos/logo-icon-75x75.png">
-                                        <h5 class="d-inline"> nome e avalição individual</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <p>Comentário</p>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <img src="img/logos/logo-icon-75x75.png">
-                                        <h5 class="d-inline"> nome e avalição individual</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <p>Comentário</p>
-                                    </div>
-                                </div>
+
                             </div>
                             <div class="col-5">
                                 <h4>Todas as avaliações</h4>

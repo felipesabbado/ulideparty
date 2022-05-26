@@ -1,30 +1,29 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Directions Service</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-
-    <link rel="stylesheet" type="text/css" href="dashboard/css/maps.css" />
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
-<div id="floating-panel">
-    <b>Mode of Travel: </b>
-    <select id="mode">
-        <option value="DRIVING">Driving</option>
-        <option value="WALKING">Walking</option>
-        <option value="BICYCLING">Bicycling</option>
-        <option value="TRANSIT">Transit</option>
-    </select>
-</div>
 <div id="map"></div>
-
-<!--
- The `defer` attribute causes the callback to execute after the full HTML
- document has been parsed. For non-blocking uses, avoiding race conditions,
- and consistent behavior across browsers, consider loading using Promises
- with https://www.npmjs.com/package/@googlemaps/js-api-loader.
--->
+<script src="javascripts/mapMarker.js" charset="utf-8"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk31YFxoBBRi15FKVX3-9rF-Vr8vpGfSQ&callback=initMap"
+        async defer></script>
 <script>
-    console.log("aaaaaaaaaaaaaaaaaaaa")
     async function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(await senPosition);
@@ -41,27 +40,5 @@
 
     getLocation()
 </script>
-<script type="module" src="javascripts/mapMarker.js"></script>
-<script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk31YFxoBBRi15FKVX3-9rF-Vr8vpGfSQ&callback=initMap&v=weekly"
-        defer
-></script>
 </body>
 </html>
-
-
-
-
-
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>-->
-<!--    <link rel="stylesheet" type="text/css" href="dashboard/css/maps.css" />-->
-<!--    <script type="module" src="javascripts/mapMarker.js"></script>-->
-<!--</head>-->
-<!--<body>-->
-<!--<div id="map"></div>-->
-<!---->
-<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWAaYbbg4yfxd4e-hOxMO-pPAYn0D4asM&callback=initMap&v=weekly" defer></script>-->
-<!--</body>-->
-<!--</html>-->

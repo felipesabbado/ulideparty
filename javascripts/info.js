@@ -10,6 +10,14 @@ async function getSpot(id) {
     return await response.json()
 }
 
+async function getEvaluations(id) {
+    const targetUrl = `https://ulide-party-api.herokuapp.com/api/spotEvaluations/${id}`;
+
+
+    const response = await fetch(targetUrl)
+    return await response.json()
+}
+
 async function getTags(id) {
     const targetUrl = `https://ulide-party-api.herokuapp.com/api/tags/spot/${id}`;
 
@@ -85,6 +93,26 @@ async function updateOnload() {
     elementTel.innerText = spot.sp_tel
     elementDescription.innerText = spot.sp_description
 
+
+    /********************** AVALIAÇOES ********************/
+
+    let elementEvaluations = document.getElementById("sp_evaluations")
+    let evaluationJson = await getEvaluations(spot_id)
+    console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+    console.log(Object.keys(evaluationJson).length)
+    for (let i = 0; i < Object.keys(evaluationJson).length; i++) {
+        console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+        console.log(Object.keys(evaluationJson).length)
+        elementEvaluations.innerHTML += `<div class="card">
+                                    <div class="card-header">
+                                        <img src="img/logos/logo-icon-75x75.png">
+                                        <h5 class="d-inline"> ${evaluationJson[i].us_name}, ${evaluationJson[i].se_rate} <i class="fi-sr-star">, ${evaluationJson[i].to_char}</i> </h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>${evaluationJson[i].se_comment}</p>
+                                    </div>
+                                </div>`
+    }
 }
 
 window.onload = updateOnload
