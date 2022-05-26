@@ -453,3 +453,7 @@ footer p {
 #ementasCarousel img {
     object-fit: cover;
 }
+
+#local-map {
+    border-radius: 50%;
+}

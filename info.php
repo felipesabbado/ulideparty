@@ -94,7 +94,7 @@
                                 <p>Email</p>
                                 <p id="sp_email"></p>
                             </div>
-                            <div class="col-6 p-0 card-body">
+                            <div id="local-map" class="col-6 p-0 card-body">
                                 <?php include "map.php" ?>
                             </div>
                         </div>
