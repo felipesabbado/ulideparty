@@ -1,9 +1,24 @@
 let spot_id = localStorage.getItem("sp_id")
+let user = JSON.parse(localStorage.getItem("user"))
 
 async function getSpot(id) {
     const targetUrl = `https://ulide-party-api.herokuapp.com/api/spots/update/${id}`;
 
 
+    const response = await fetch(targetUrl)
+    return await response.json()
+
+}
+
+async function deleteFavSpot(us_id, sp_id) {
+     const targetUrl = `https://ulide-party-api.herokuapp.com/api/favSpots/us_id/${us_id}/sp_id/${sp_id}/delete`;
+    //
+    //
+    // const response = await fetch(targetUrl, {
+    //     method: 'DELETE'
+    // })
+    // alert(response)
+    // return await response.json()
     const response = await fetch(targetUrl)
     return await response.json()
 }
@@ -21,6 +36,14 @@ async function getTags(id) {
 
 
     const response = await fetch(targetUrl)
+    return await response.json()
+}
+
+async function getFavSpotsByUsIdAndSpId(us_id, sp_id) {
+    const targetUrl = `https://ulide-party-api.herokuapp.com/api/favSpots/us_id/${us_id}/sp_id/${sp_id}`;
+
+    const response = await fetch(targetUrl)
+    console.log(response)
     return await response.json()
 }
 
@@ -62,6 +85,25 @@ async function getGeocoding(search) {
     return await response.json()
 }
 
+async function postData(url = '', data = {}) {
+    // Default options are marked with *
+    const response = await fetch(url, {
+        method: 'POST', // *GET, POST, PUT, DELETE, etc.
+        mode: 'cors', // no-cors, *cors, same-origin
+        cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+        credentials: 'same-origin', // include, *same-origin, omit
+        headers: {
+            'Content-Type': 'application/json'
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        redirect: 'follow', // manual, *follow, error
+        referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+        body: JSON.stringify(data) // body data type must match "Content-Type" header
+    });
+    return response.json(); // parses JSON response into native JavaScript objects
+}
+
+
 async function updateOnload() {
     let spot = await getSpot(spot_id)
     console.log(spot)
@@ -80,6 +122,8 @@ async function updateOnload() {
     let elementTel = document.getElementById("sp_tel")
     let elementEmail = document.getElementById("sp_email")
     let elementDescription = document.getElementById("sp_description")
+    let elementBodyModalEval = document.getElementById("bodyModalEval")
+
 
     elementLocation.innerText = geocoding.results[0].formatted_address
 
@@ -99,6 +143,7 @@ async function updateOnload() {
     elementEmail.innerText = spot.sp_email
     elementTel.innerText = spot.sp_tel
     elementDescription.innerText = spot.sp_description
+    elementBodyModalEval.innerHTML += `<h1>Hola</h1>`
 
 
     /********************** AVALIAÇOES ********************/
@@ -117,36 +162,44 @@ async function updateOnload() {
                                     </div>
                                 </div>`
     }
+
+    /************************** Favoritar *******************************/
+
+    let elementBtnFavorite = document.getElementById("btnFav") // Botão de favoritar
+    elementBtnFavorite.addEventListener("click", async function () {
+        console.log(user)
+        if (user === null) {
+            let elementTopPage = document.getElementById("topPage")
+
+            elementTopPage.innerHTML += `<div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <strong>Danger!</strong> Tens de fazer o login ou resgistar para poder favoritar.
+                                            </div>`
+            window.scroll({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
+        } else {
+            alert(user.us_id+ " " + spot_id)
+            let favSpots = await getFavSpotsByUsIdAndSpId(user.us_id, spot_id)
+            console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+            console.log(favSpots)
+            if (favSpots[0] !== undefined) {
+                alert("Desfavoritado")
+                elementBtnFavorite.innerHTML = `<i class="fi fi-heart"></i> Favoritar`
+                await deleteFavSpot(user.us_id, spot_id)
+            } else {
+                alert("Favoritado")
+                let data = {
+                    us_id: user.us_id,
+                    sp_id: spot_id
+                }
+                await postData("https://ulide-party-api.herokuapp.com/api/favSpots", data)
+                elementBtnFavorite.innerHTML = `<i class="fi fi-heart"></i> Desfavoritar`
+            }
+        }
+    })
 }
 
 window.onload = updateOnload
-
-// document.addEventListener("load", async function () {
-//     await updateOnload()
-// })
-
-
-/**
- * elementTags.innerText = getTagsFormatted(tags)
- *     let url = "https://res.cloudinary.com/ulide-party/image/upload/v1652352355/spots/" + photos[0].ph_photo_path
- *
- *     elementPhotos.innerHTML = `<div class="u-active u-align-left u-carousel-item u-clearfix u-image u-shading u-section-1-1" src="" data-image-width="1280" data-image-height="960" style="background-image: url(${url})">
- *           <div class="u-clearfix u-sheet u-sheet-1">
- *             <h1 class="u-text u-text-default u-title u-text-1">${spot.sp_name}</h1>
- *           </div>
- *         </div>`
- *
- *
- *     console.log(geocoding.results[0].formatted_address)
- *     elementLocation.innerText = geocoding.results[0].formatted_address
- *     elementStreet.innerText = geocoding.results[0].formatted_address
- *
- *     console.log(photos)
- *     let avg = parseFloat(photos[0].avg).toFixed(2)
- *     console.log(avg)
- *     console.log(photos[0].count)
- *     elementRate.innerText = avg + " estrelas"
- *     elementCountRate.innerText = photos[0].count + " Avaliaçoes"
- */
-
-/* Modal */

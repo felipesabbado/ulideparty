@@ -1,32 +1,142 @@
-let latUser
+var routePath
 
-let longUser
+const styles_map = [
+  { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+  { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
+  { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+  {
+    featureType: "administrative.locality",
+    elementType: "labels.text.fill",
+    stylers: [{ color: "#d59563" }],
+  },
+  {
+    featureType: "poi",
+    elementType: "labels.text.fill",
+    stylers: [{ color: "#d59563" }],
+  },
+  {
+    featureType: "poi.park",
+    elementType: "geometry",
+    stylers: [{ color: "#263c3f" }],
+  },
+  {
+    featureType: "poi.park",
+    elementType: "labels.text.fill",
+    stylers: [{ color: "#6b9a76" }],
+  },
+  {
+    featureType: "road",
+    elementType: "geometry",
+    stylers: [{ color: "#38414e" }],
+  },
+  {
+    featureType: "road",
+    elementType: "geometry.stroke",
+    stylers: [{ color: "#212a37" }],
+  },
+  {
+    featureType: "road",
+    elementType: "labels.text.fill",
+    stylers: [{ color: "#9ca5b3" }],
+  },
+  {
+    featureType: "road.highway",
+    elementType: "geometry",
+    stylers: [{ color: "#746855" }],
+  },
+  {
+    featureType: "road.highway",
+    elementType: "geometry.stroke",
+    stylers: [{ color: "#1f2835" }],
+  },
+  {
+    featureType: "road.highway",
+    elementType: "labels.text.fill",
+    stylers: [{ color: "#f3d19c" }],
+  },
+  {
+    featureType: "transit",
+    elementType: "geometry",
+    stylers: [{ color: "#2f3948" }],
+  },
+  {
+    featureType: "transit.station",
+    elementType: "labels.text.fill",
+    stylers: [{ color: "#d59563" }],
+  },
+  {
+    featureType: "water",
+    elementType: "geometry",
+    stylers: [{ color: "#17263c" }],
+  },
+  {
+    featureType: "water",
+    elementType: "labels.text.fill",
+    stylers: [{ color: "#515c6d" }],
+  },
+  {
+    featureType: "water",
+    elementType: "labels.text.stroke",
+    stylers: [{ color: "#17263c" }],
+  },
+  {
+    "featureType": "poi",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },
+  {
+    "featureType": "landscape",
+    "stylers": [
+      { "visibility": "true" }
+    ]
+  }
 
-function initMap() {
-  latUser = localStorage.getItem("user_latitude")
-  longUser = localStorage.getItem("user_longitude")
+]
+
+async function initMap() {
+  let latUser = localStorage.getItem("user_latitude")
+  let longUser = localStorage.getItem("user_longitude")
+  let spot_id = localStorage.getItem("sp_id")
   var myOptions = {
     zoom: 12,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     center: {
       lat: parseFloat(latUser),
       lng: parseFloat(longUser)
-    }
+    },
+    styles: styles_map
   };
+  let spotJson = await getSpot(spot_id)
+  console.log({ lat: spotJson.sp_lat, lng: spotJson.sp_long})
+
   map = new google.maps.Map(document.getElementById("map"), myOptions);
   var start =  { lat: parseFloat(latUser), lng: parseFloat(longUser)}
-  var end =  { lat: 38.7160369, lng: -9.1370057}
+  var end =  { lat: spotJson.sp_lat, lng: spotJson.sp_long}
   var method = 'DRIVING';
-  drawRoute(start, end, method,animate = true ,color = '#2196F3') // if color variable not passed, defaults to preset color
+  drawRoute(start, end, method,animate = true ,color = '#C0C0C0')
+
+  document.getElementById("mode").addEventListener("change", () => {
+    routePath.setMap(null)
+    drawRoute(start, end, method,animate = true ,color = '#C0C0C0')
+  });
 }
 
 
 function drawRoute(start, end, method, animate = true,color = '#e53935') {
   var directionsService = new google.maps.DirectionsService();
+
+  const selectedMode = document.getElementById("mode").value;
   var request = {
     origin: start,
     destination: end,
-    travelMode: google.maps.DirectionsTravelMode[method]
+    travelMode: google.maps.TravelMode[selectedMode],
   };
 
   directionsService.route(request, function(response, status) {
@@ -39,7 +149,7 @@ function drawRoute(start, end, method, animate = true,color = '#e53935') {
         scale: 3
       };
 
-      var routePath = new google.maps.Polyline({
+      routePath = new google.maps.Polyline({
         path: response.routes[0].overview_path,
         geodesic: true,
         strokeColor: color,
@@ -89,10 +199,8 @@ function animateLine(line) {
 
 
     var getZoom0 = line.get('map');
-    var getZoom1 = getZoom0.getZoom();
-
-    zoomLevel = getZoom1;
-
+    zoomLevel = getZoom0.getZoom();
+    console.log(zoomLevel)
     if (zoomLevel >= 21)
     {
       // markSpeed = 120;
@@ -116,10 +224,18 @@ function animateLine(line) {
 
     }
 
-    console.log("Zoom Level :" + zoomLevel);
-    console.log("Mark Speed :" + markSpeed);
+    // console.log("Zoom Level :" + zoomLevel);
+    // console.log("Mark Speed :" + markSpeed);
 
 
 }, 100);
 
+}
+
+async function getSpot(id) {
+  const targetUrl = `https://ulide-party-api.herokuapp.com/api/spots/${id}`;
+
+
+  const response = await fetch(targetUrl)
+  return await response.json()
 }

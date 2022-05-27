@@ -14,6 +14,15 @@
     </style>
 </head>
 <body>
+<div id="floating-panel">
+    <b>Mode of Travel: </b>
+    <select id="mode">
+        <option value="DRIVING">Driving</option>
+        <option value="WALKING">Walking</option>
+        <option value="BICYCLING">Bicycling</option>
+        <option value="TRANSIT">Transit</option>
+    </select>
+</div>
 <div id="map"></div>
 <script src="javascripts/mapMarker.js" charset="utf-8"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk31YFxoBBRi15FKVX3-9rF-Vr8vpGfSQ&callback=initMap"
