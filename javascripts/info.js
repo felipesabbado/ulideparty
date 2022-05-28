@@ -173,7 +173,7 @@ async function updateOnload() {
 
             elementTopPage.innerHTML += `<div class="alert">
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-            <strong>Danger!</strong> Tens de fazer o login ou resgistar para poder favoritar.
+            <strong>Danger!</strong> Tens de fazer o login ou registar para poder favoritar.
                                             </div>`
             window.scroll({
                 top: 0,
@@ -183,11 +183,10 @@ async function updateOnload() {
         } else {
             alert(user.us_id+ " " + spot_id)
             let favSpots = await getFavSpotsByUsIdAndSpId(user.us_id, spot_id)
-            console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
             console.log(favSpots)
             if (favSpots[0] !== undefined) {
                 alert("Desfavoritado")
-                elementBtnFavorite.innerHTML = `<i class="fi fi-heart"></i> Favoritar`
+                elementBtnFavorite.innerHTML = `<i class="fi fi-br-heart"></i> Favoritar`
                 await deleteFavSpot(user.us_id, spot_id)
             } else {
                 alert("Favoritado")
@@ -196,7 +195,7 @@ async function updateOnload() {
                     sp_id: spot_id
                 }
                 await postData("https://ulide-party-api.herokuapp.com/api/favSpots", data)
-                elementBtnFavorite.innerHTML = `<i class="fi fi-heart"></i> Desfavoritar`
+                elementBtnFavorite.innerHTML = `<i class="fi fi-sr-heart"></i> Desfavoritar`
             }
         }
     })
