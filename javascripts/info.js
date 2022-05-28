@@ -1,7 +1,7 @@
 let spot_id = localStorage.getItem("sp_id")
-
 let user
-if (localStorage.getItem("user") !== 'undefined') {
+
+if (localStorage.getItem("user") !== null) {
     user = JSON.parse(localStorage.getItem("user"))
 } else {
     user = null
@@ -80,15 +80,6 @@ function getTagsFormatted(tagsJson) {
     return strTags
 }
 
-/* Modal */
-function eval() {
-    let modalbody = document.querySelectorAll("#bodyModalEval")
-
-    modalbody.innerHTML = `<h6>Classifique a sua experiência</h6>
-                <span><i class="fi fi-br-star"></span>`
-}
-
-
 async function getGeocoding(search) {
     const targetUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${search}&key=AIzaSyDk31YFxoBBRi15FKVX3-9rF-Vr8vpGfSQ`;
 
@@ -150,6 +141,8 @@ async function updateOnload() {
     let elementDescription = document.getElementById("sp_description")
     let elementBodyModalEval = document.getElementById("bodyModalEval")
 
+    let elementBtnEdit = document.querySelector("#btnEdit")
+
 
     elementLocation.innerText = geocoding.results[0].formatted_address
 
@@ -169,7 +162,9 @@ async function updateOnload() {
     elementEmail.innerText = spot.sp_email
     elementTel.innerText = spot.sp_tel
     elementDescription.innerText = spot.sp_description
-    elementBodyModalEval.innerHTML += `<h1>Hola</h1>`
+
+    /** MODAL **/
+    let modalbody = document.querySelector("#bodyModalEval")
 
 
     /********************** AVALIAÇOES ********************/
@@ -192,10 +187,11 @@ async function updateOnload() {
     /************************** Favoritar *******************************/
 
     let elementBtnFavorite = document.getElementById("btnFav") // Botão de favoritar
-    if (localStorage.getItem("user") !== 'undefined') {
+    if (user !== null) {
         await favFunction(elementBtnFavorite)
     }else {
         elementBtnFavorite.innerHTML = `<i class="fi fi-br-heart"></i> Favoritar`
+        elementBtnEdit.style.display = 'none'
     }
     elementBtnFavorite.addEventListener("click", async function () {
         if (user === null) {
@@ -234,3 +230,12 @@ async function favFunction(elementBtnFavorite) {
 }
 
 window.onload = updateOnload
+
+
+/****** ENVIAR AVALIAÇÃO ******/
+function eval() {
+    let rate = document.querySelector('input[name="rate"]:checked').value;
+    let comment = document.querySelector("#comment").value;
+
+    alert(rate + " " + comment)
+}

@@ -1,6 +1,10 @@
 $(document).ready(function() {
     let user = JSON.parse(localStorage.getItem("user"))
 
+    if(user === null) {
+        window.location.href = "./login.php"
+    }
+
     $.ajax({
         url: `https://ulide-party-api.herokuapp.com/api/users/${user.us_id}`,
         type: "GET",

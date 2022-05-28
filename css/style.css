@@ -461,11 +461,15 @@ footer p {
 /* Modal */
 #modal-eval .modal-content {
     background-color: var(--BGOnix);
+    color: var(--BGSilver);
 }
 
-#modal-eval .modal-header {
+.modal-header {
     background-color: var(--RussianViolet);
-    color: var(--BGSilver);
+    border: none;
+}
+
+.modal-footer {
     border: none;
 }
 
@@ -482,6 +486,12 @@ footer p {
     padding: 5px 10px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.14), 0 1px 18px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.2);
 }
+
+#limpar {
+    cursor: pointer;
+}
+
+/* Alerta de não logado */
 
 .alert {
     padding: 20px;
@@ -502,4 +512,44 @@ footer p {
 
 .closebtn:hover {
     color: black;
+}
+
+/* Star Widger */
+.star-widget input{
+    display: none;
+}
+
+.star-widget label {
+    font-size: 20px;
+    color: var(--BGSilver);
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+    color: var(--HoneyYellow);
+}
+
+input:checked ~ label {
+    color: var(--HoneyYellow);
+}
+
+form .textarea{
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: var(--BGSilver);
+    border: 1px solid var(--BGGrayWeb);
+    border-radius: 1rem;
+    background: var(--BGOnix);
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
 }

@@ -79,12 +79,15 @@
                             <i class="fi fi-sr-comment"></i> Avaliar
                         </button>
                         <button class="b-style-off"><i class="fi fi-br-link"></i> Compartilhar</button>
-                        <button class="b-style-off"><i class="fi fi-br-edit"></i> Editar local</button>
+                        <button id="btnEdit" class="b-style-off">
+                            <i class="fi fi-br-edit"></i> Editar local
+                        </button>
 
                         <!-- Modal -->
                         <div class="modal fade" id="modal-eval" tabindex="-1" role="dialog" aria-labelledby="evalModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
+                                    <form method="post">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="evalModalLabel">Avaliar local</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
@@ -92,12 +95,29 @@
                                         </button>
                                     </div>
                                     <div id="bodyModalEval" class="modal-body">
-                                        <h6>Teste</h6>
+                                        <h5>Avaliação</h5>
+                                        <div class="row flex-row-reverse justify-content-end star-widget">
+                                            <input type="radio" name="rate" id="rate-5" value="5">
+                                            <label for="rate-5"><i class="fi fi-sr-star"></i></label>
+                                            <input type="radio" name="rate" id="rate-4" value="4">
+                                            <label for="rate-4"><i class="fi fi-sr-star"></i></label>
+                                            <input type="radio" name="rate" id="rate-3" value="3">
+                                            <label for="rate-3"><i class="fi fi-sr-star"></i></label>
+                                            <input type="radio" name="rate" id="rate-2" value="2">
+                                            <label for="rate-2"><i class="fi fi-sr-star"></i></label>
+                                            <input type="radio" name="rate" id="rate-1" value="1">
+                                            <label for="rate-1"><i class="fi fi-sr-star"></i></label>
+                                        </div>
+                                        <h5>Comentário</h5>
+                                        <div class="textarea">
+                                            <textarea type="text" id="comment" cols="30" placeholder="Descreva sua experiência..."></textarea>
+                                        </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <!--<button type="button" class="b-style" data-dismiss="modal">Fechar</button>-->
-                                        <button type="button" class="btn b-style">Enviar</button>
+                                        <input id="limpar" type="reset" class="b-style" value="Limpar">
+                                        <button onclick="eval()" type="button" class="btn b-style">Enviar</button>
                                     </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
