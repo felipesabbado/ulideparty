@@ -74,7 +74,7 @@
                 </div>
                 <div class="row">
                     <div id="info-buttons" class="col">
-                        <button class="b-style" id="btnFav"><i class="fi fi-sr-heart"></i> Favorito</button>
+                        <button class="b-style" id="btnFav"></button>
                         <button class="b-style-off" data-toggle="modal" data-target="#modal-eval">
                             <i class="fi fi-sr-comment"></i> Avaliar
                         </button>

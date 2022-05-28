@@ -1,5 +1,13 @@
 let spot_id = localStorage.getItem("sp_id")
-let user = JSON.parse(localStorage.getItem("user"))
+
+let user
+if (localStorage.getItem("user") !== 'undefined') {
+    user = JSON.parse(localStorage.getItem("user"))
+} else {
+    user = null
+}
+
+let first = true
 
 async function getSpot(id) {
     const targetUrl = `https://ulide-party-api.herokuapp.com/api/spots/update/${id}`;
@@ -11,16 +19,20 @@ async function getSpot(id) {
 }
 
 async function deleteFavSpot(us_id, sp_id) {
-     const targetUrl = `https://ulide-party-api.herokuapp.com/api/favSpots/us_id/${us_id}/sp_id/${sp_id}/delete`;
+     const targetUrl = `https://ulide-party-api.herokuapp.com/api/favSpots/us_id/${us_id}/sp_id/${sp_id}`;
     //
     //
     // const response = await fetch(targetUrl, {
     //     method: 'DELETE'
     // })
-    // alert(response)
     // return await response.json()
-    const response = await fetch(targetUrl)
-    return await response.json()
+
+    let result = await fetch(targetUrl, {
+        method: "DELETE",
+        headers: {
+            'Content-type': 'application/json'
+        }
+    })
 }
 
 async function getEvaluations(id) {
@@ -104,6 +116,20 @@ async function postData(url = '', data = {}) {
 }
 
 
+function userDoentLogin(elementBtnFavorite) {
+    let elementTopPage = document.getElementById("topPage")
+    elementBtnFavorite.innerHTML = `<i class="fi fi-br-heart"></i> Favoritar`
+    elementTopPage.innerHTML += `<div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <strong>Danger!</strong> Tens de fazer o login ou resgistar para poder favoritar.
+                                            </div>`
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+}
+
 async function updateOnload() {
     let spot = await getSpot(spot_id)
     console.log(spot)
@@ -166,39 +192,45 @@ async function updateOnload() {
     /************************** Favoritar *******************************/
 
     let elementBtnFavorite = document.getElementById("btnFav") // Botão de favoritar
+    if (localStorage.getItem("user") !== 'undefined') {
+        await favFunction(elementBtnFavorite)
+    }else {
+        elementBtnFavorite.innerHTML = `<i class="fi fi-br-heart"></i> Favoritar`
+    }
     elementBtnFavorite.addEventListener("click", async function () {
-        console.log(user)
         if (user === null) {
-            let elementTopPage = document.getElementById("topPage")
-
-            elementTopPage.innerHTML += `<div class="alert">
-            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-            <strong>Danger!</strong> Tens de fazer o login ou registar para poder favoritar.
-                                            </div>`
-            window.scroll({
-                top: 0,
-                left: 0,
-                behavior: 'smooth'
-            });
+            userDoentLogin(elementBtnFavorite)
         } else {
-            alert(user.us_id+ " " + spot_id)
-            let favSpots = await getFavSpotsByUsIdAndSpId(user.us_id, spot_id)
-            console.log(favSpots)
-            if (favSpots[0] !== undefined) {
-                alert("Desfavoritado")
-                elementBtnFavorite.innerHTML = `<i class="fi fi-br-heart"></i> Favoritar`
-                await deleteFavSpot(user.us_id, spot_id)
-            } else {
-                alert("Favoritado")
-                let data = {
-                    us_id: user.us_id,
-                    sp_id: spot_id
-                }
-                await postData("https://ulide-party-api.herokuapp.com/api/favSpots", data)
-                elementBtnFavorite.innerHTML = `<i class="fi fi-sr-heart"></i> Desfavoritar`
-            }
+            await favFunction(elementBtnFavorite)
         }
     })
+}
+
+async function favFunction(elementBtnFavorite) {
+    let favSpots = await getFavSpotsByUsIdAndSpId(user.us_id, spot_id)
+    if (Object.keys(favSpots).length < 1) {
+        let data = {
+            us_id: user.us_id,
+            sp_id: spot_id
+        }
+        if (!first) {
+            elementBtnFavorite.innerHTML = `<i class="fi fi-sr-heart"></i> Desfavoritar`
+            await postData("https://ulide-party-api.herokuapp.com/api/favSpots", data)
+        } else {
+            elementBtnFavorite.innerHTML = `<i class="fi fi-br-heart"></i> Favoritar`
+            first = false
+        }
+    } else {
+
+        if (!first) {
+            elementBtnFavorite.innerHTML = `<i class="fi fi-br-heart"></i> Favoritar`
+            await deleteFavSpot(user.us_id, spot_id)
+        } else {
+            elementBtnFavorite.innerHTML = `<i class="fi fi-sr-heart"></i> Desfavoritar`
+            first = false
+        }
+    }
+
 }
 
 window.onload = updateOnload
