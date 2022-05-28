@@ -231,7 +231,7 @@
                                         </div>
                                     </div>
                                     <div class="account-dropdown__footer">
-                                        <a href="./index.php" onclick="logOut()">
+                                        <a href="../index.php" onclick="logOut()">
                                             <i class="zmdi zmdi-power"></i>Logout</a>
                                     </div>
                                 </div>

@@ -25,4 +25,5 @@ $(document).ready(function() {
 
 function logOut() {
     localStorage.setItem("user", undefined)
+    //window.location.href = "../index.html"
 }
