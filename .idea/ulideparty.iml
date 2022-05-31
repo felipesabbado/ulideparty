@@ -8,5 +8,11 @@
     <orderEntry type="library" name="uicons-regular-rounded" level="application" />
     <orderEntry type="library" name="uicons-solid-rounded" level="application" />
     <orderEntry type="library" name="uicons-bold-rounded" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="jquery-3.4.1" level="application" />
+    <orderEntry type="library" name="jquery-3.6.0" level="application" />
+    <orderEntry type="library" name="parallax" level="application" />
+    <orderEntry type="library" name="popper.js" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
   </component>
 </module>
