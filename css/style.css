@@ -217,7 +217,7 @@ footer p {
     object-position: center;
 }
 
-#mainSlider i {
+#mainSlider i, #ementasCarousel i {
     color: var(--HoneyYellow);
     font-size: 2.5em;
 }
@@ -552,4 +552,17 @@ form .textarea textarea{
     padding: 10px;
     font-size: 17px;
     resize: none;
+}
+
+/*** Map ***/
+#floating-panel {
+    position: absolute;
+    top: 10px;
+    left: 40%;
+    z-index: 1;
+    background-color: #fff;
+    padding: 5px;
+    text-align: center;
+    line-height: 30px;
+    padding-left: 10px;
 }

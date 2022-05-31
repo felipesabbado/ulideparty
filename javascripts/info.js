@@ -142,9 +142,11 @@ async function updateOnload() {
     let elementBodyModalEval = document.getElementById("bodyModalEval")
 
     let elementBtnEdit = document.querySelector("#btnEdit")
+    let elementAddress = document.querySelector("#sp_address")
 
 
     elementLocation.innerText = geocoding.results[0].formatted_address
+    elementAddress.innerText = geocoding.results[0].formatted_address
 
     let avg = parseFloat(photos[0].avg).toFixed(1)
     console.log(avg)
@@ -162,10 +164,6 @@ async function updateOnload() {
     elementEmail.innerText = spot.sp_email
     elementTel.innerText = spot.sp_tel
     elementDescription.innerText = spot.sp_description
-
-    /** MODAL **/
-
-
 
     /********************** AVALIAÇOES ********************/
 

@@ -139,14 +139,12 @@
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                         <div class="row">
                             <div class="col-6">
-                                <h4>Sobre</h4>
+                                <h4><strong>Sobre</strong></h4>
                                 <p id="sp_description"></p>
-                                <h4>Localização e Contacto</h4>
-                                <p>Endereço</p>
-                                <p>Contacto telefonico</p>
-                                <p id="sp_tel"></p>
-                                <p>Email</p>
-                                <p id="sp_email"></p>
+                                <h4><strong>Localização e Contacto</strong></h4>
+                                <p>Endereço:<br><span id="sp_address"></span></p>
+                                <p>Contacto telefonico: <span id="sp_tel"></span></p>
+                                <p>Email: <span id="sp_email"></span></p>
                             </div>
                             <div id="local-map" class="col-6 p-0 card-body">
                                 <?php include "map.php" ?>
@@ -188,11 +186,11 @@
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#ementasCarousel" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <i class="fi-br-angle-left" aria-hidden="true"></i>
                                     <span class="sr-only">Anterior</span>
                                 </a>
                                 <a class="carousel-control-next" href="#ementasCarousel" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <i class="fi-br-angle-right" aria-hidden="true"></i>
                                     <span class="sr-only">Próximo</span>
                                 </a>
                             </div>
