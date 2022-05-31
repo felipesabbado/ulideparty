@@ -200,6 +200,32 @@ async function updateOnload() {
             await favFunction(elementBtnFavorite)
         }
     })
+
+    /***************************  Cometar *************************************/
+    let elementBtnComment = document.getElementById("btnComment")
+    elementBtnComment.addEventListener("click", async function () {
+        console.log(user + "<-- user")
+        if (user === null) {
+            console.log("user null")
+            userDoentLoginavaliar(elementBtnFavorite)
+        } else {
+            console.log("user not null")
+            let elementSendBtnComment = document.getElementById("btnSendComent")
+            elementSendBtnComment.addEventListener("click", async function () {
+                let rate = document.querySelector('input[name="rate"]:checked').value;
+                let comment = document.querySelector("#comment").value;
+                let data = {
+                    us_id: user.us_id,
+                    sp_id: spot_id,
+                    se_comment: comment,
+                    se_rate: rate
+                }
+                await postData("https://ulide-party-api.herokuapp.com/api/spotEvaluations", data)
+                window.location.reload()
+            })
+        }
+    })
+
 }
 
 async function favFunction(elementBtnFavorite) {
@@ -226,16 +252,15 @@ async function favFunction(elementBtnFavorite) {
             first = false
         }
     }
-
 }
 
 window.onload = updateOnload
 
 
 /****** ENVIAR AVALIAÇÃO ******/
-function eval() {
-    let rate = document.querySelector('input[name="rate"]:checked').value;
-    let comment = document.querySelector("#comment").value;
-
-    alert(rate + " " + comment)
-}
+// function eval() {
+//     let rate = document.querySelector('input[name="rate"]:checked').value;
+//     let comment = document.querySelector("#comment").value;
+//
+//     alert(rate + " " + comment)
+// }
