@@ -75,7 +75,7 @@
                 <div class="row">
                     <div id="info-buttons" class="col">
                         <button class="b-style" id="btnFav"></button>
-                        <button class="b-style-off" data-toggle="modal" id="btnComment">
+                        <button class="b-style-off" id="btnComment">
                             <i class="fi fi-sr-comment"></i> Avaliar
                         </button>
                         <button class="b-style-off"><i class="fi fi-br-link"></i> Compartilhar</button>
@@ -115,7 +115,7 @@
                                     </div>
                                     <div class="modal-footer">
                                         <input id="limpar" type="reset" class="b-style" value="Limpar">
-                                        <button onclick="eval()" type="button" class="btn b-style" id="btnSendComent">Enviar</button>
+                                        <button type="button" class="btn b-style" data-dismiss="modal" id="btnSendComent">Enviar</button>
                                     </div>
                                     </form>
                                 </div>

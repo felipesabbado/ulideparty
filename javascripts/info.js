@@ -164,7 +164,7 @@ async function updateOnload() {
     elementDescription.innerText = spot.sp_description
 
     /** MODAL **/
-    let modalbody = document.querySelector("#bodyModalEval")
+
 
 
     /********************** AVALIAÇOES ********************/
@@ -201,15 +201,16 @@ async function updateOnload() {
         }
     })
 
-    /***************************  Cometar *************************************/
+    /*************************** Comentar *************************************/
     let elementBtnComment = document.getElementById("btnComment")
     elementBtnComment.addEventListener("click", async function () {
         console.log(user + "<-- user")
         if (user === null) {
             console.log("user null")
-            userDoentLoginavaliar(elementBtnFavorite)
+            userDoentLogin(elementBtnFavorite)
         } else {
             console.log("user not null")
+            $("#modal-eval").modal();
             let elementSendBtnComment = document.getElementById("btnSendComent")
             elementSendBtnComment.addEventListener("click", async function () {
                 let rate = document.querySelector('input[name="rate"]:checked').value;
@@ -222,6 +223,7 @@ async function updateOnload() {
                 }
                 await postData("https://ulide-party-api.herokuapp.com/api/spotEvaluations", data)
                 window.location.reload()
+                $("#modal-eval").modal("hide");
             })
         }
     })
