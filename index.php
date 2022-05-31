@@ -7,6 +7,9 @@
 
     <!-- Title Page -->
     <title>Ulide Party</title>
+
+    <!-- Jquery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
@@ -23,9 +26,9 @@
         <div class="curve-divider inverted"></div>
     </section>
     <div class="container">
-        <div class="row">
+        <div class="row category">
             <div class="col-12 col-lg-4">
-                <a onclick="lista(1)" href="lista.php">
+                <a id="1" href="lista.php">
                     <div class="card cardtype" id="bares">
                         <img src="img/home_bares.jpg" alt="Bares">
                         <div class="card-img-overlay">
@@ -35,7 +38,7 @@
                 </a>
             </div>
             <div class="col-12 col-lg-4">
-                <a onclick="lista(2)" href="lista.php">
+                <a id="2" href="lista.php">
                     <div class="card cardtype" id="restaurantes">
                         <img src="img/home_restaurantes.jpg" alt="Restaurantes" style="border-radius: 14px">
                         <div class="card-img-overlay">
@@ -45,7 +48,7 @@
                 </a>
             </div>
             <div class="col-12 col-lg-4">
-                <a onclick="lista(3)" href="lista.php">
+                <a id="3" href="lista.php">
                     <div class="card cardtype" id="discotecas">
                         <img src="img/home_discotecas.jpg" alt="Discotecas" style="border-radius: 14px">
                         <div class="card-img-overlay">

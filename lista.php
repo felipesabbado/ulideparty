@@ -10,6 +10,9 @@
 
     <!-- JS -->
     <script src="javascripts/spot-list.js"></script>
+
+    <!-- Jquery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
