@@ -111,11 +111,7 @@ const styles_map = [
 
 async function initMap() {
     let json
-    if (url.search("localhost")) {
-        json = await getDataOFF()
-    } else {
-        json = await getDataON()
-    }
+    json = await getData()
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 12.5,
         center: citymap.lisboa.center,
@@ -156,27 +152,13 @@ async function initMap() {
     }
 }
 
-async function getDataON(){
+async function getData(){
     /** online version **/
 
     var targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
 
 
     const response = await fetch(targetUrl)
-    const data = await response.json()
-    console.log(data)
-    return data
-}
-
-async function getDataOFF(){
-    /** offline version **/
-
-    var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
-        targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
-
-
-    const response = await fetch(
-        proxyUrl + targetUrl)
     const data = await response.json()
     console.log(data)
     return data
