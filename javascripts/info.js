@@ -226,6 +226,11 @@ async function updateOnload() {
         }
     })
 
+    /*************************** Editar Local *************************************/
+    elementBtnEdit.addEventListener("click", async function () {
+        window.location.href = "dashboard/editar_local.php"
+    })
+
 }
 
 async function favFunction(elementBtnFavorite) {

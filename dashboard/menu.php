@@ -72,20 +72,9 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="has-sub">
-                        <a class="js-arrow" href="#">
+                    <li>
+                        <a href="locais.php">
                             <i class="fas fa-check"></i>Meus Locais</a>
-                        <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
-                            <li>
-                                <a href="local01.php">Local 1</a>
-                            </li>
-                            <li>
-                                <a href="local02.html">Local 2</a>
-                            </li>
-                            <li>
-                                <a href="local03.html">Local 3</a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="has-sub">
                         <a class="js-arrow" href="#">
@@ -155,7 +144,7 @@
                         </ul>
                     </li>
                     <li class='user manager'>
-                        <a href='local01.php'><i class='fas fa-check'></i>Meus Locais</a>
+                        <a href='locais.php'><i class='fas fa-check'></i>Meus Locais</a>
                     </li>
                     <li class='has-sub user'>
                         <a class='js-arrow' href='#'>
