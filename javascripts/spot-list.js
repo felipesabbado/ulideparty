@@ -1,6 +1,10 @@
 let categoria = localStorage.getItem("categoria")
 
 console.log(categoria)
+let i = 0
+let executed = false
+let spots
+let limit
 
 async function getData(){
 
@@ -16,16 +20,19 @@ async function loadSpots() {
 
     let element = document.getElementById("lista_spots")
 
-    let spots = await getData()
+    if (!executed) {
+        spots = await getData()
+        limit = (Object.keys(spots).length > 5) ? 6: Object.keys(spots).length
+        console.log(limit, "limit1")
+        executed = true
+    }
 
-    console.log(spots)
 
     let html = ""
     let url
     let avg
 
-    for (let i = 0; i < Object.keys(spots).length; i++) {
-
+    for (i ; i < limit; i++) {
         url = "https://res.cloudinary.com/ulide-party/image/upload/v1652352355/spots/" + spots[i].ph_photo_path
         avg = parseFloat(spots[i].avg).toFixed(2)
 
@@ -47,6 +54,15 @@ async function loadSpots() {
                 </div></a>
             </div>`
     }
+
+    if (limit+6 < Object.keys(spots).length) {
+        limit +=6
+    } else {
+        limit += Object.keys(spots).length - limit
+    }
+
+    console.log(limit, "limit2")
+
 
     element.innerHTML += html
     for (let i = 0; i < Object.keys(spots).length; i++) {
