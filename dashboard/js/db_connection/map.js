@@ -1,14 +1,6 @@
 let url = window.location.href
-const citymap = {
-    lisboa: {
-        center: { lat: 38.736946, lng: -9.142685 },
-        population: 504718,
-    },
-    Porto: {
-        center: { lat: 41.15, lng: -8.61024 },
-        population: 214349,
-    },
-};
+let id = JSON.parse(localStorage.getItem("user")).us_tu_id
+let userId = JSON.parse(localStorage.getItem("user")).us_id
 
 const styles_map = [
     { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
@@ -125,73 +117,76 @@ const icons = {
 };
 
 async function initMap() {
-    let json
-    if (url.search("localhost")) {
-        json = await getDataOFF()
-    } else {
-        json = await getDataON()
-    }
-    var myLatlng = new google.maps.LatLng(parseFloat(json[0].sp_lat), parseFloat(json[0].sp_long));
+    let json = await getData()
 
-    var mapOptions = {
-        zoom: 12.5,
-        center: myLatlng,
-        styles: styles_map,
-        // hide: [
-        //     {
-        //         featureType: "all",
-        //         stylers: [{ visibility: "off" }],
-        //     },
-        // ],
-    }
-    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    if(id == 2) {
+        // Map Marker
+        // var myLatlng = new google.maps.LatLng(parseFloat(json[0].sp_lat), parseFloat(json[0].sp_long));
 
-
-    let url_icon = "";
-    for (let i = 0; i < json.length; i++) {
-
-        console.log(json[i].sp_st_id)
-        if(json[i].sp_st_id === 1){
-            url_icon = icons.bar.url
-        } else if (json[i].sp_st_id === 2) {
-            url_icon = icons.rest.url
-        } else{
-            url_icon = icons.disco.url
+        var mapOptions = {
+            zoom: 12.5,
+            center: { lat: 38.736946, lng: -9.142685 }, // Lisboa,
+            styles: styles_map,
         }
-        var marker = new google.maps.Marker({
-            icon: url_icon,
-            position: new google.maps.LatLng(parseFloat(json[i].sp_lat), parseFloat(json[i].sp_long)),
-            title:json[i].sp_name,
-            animation: google.maps.Animation.DROP,
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+
+        let url_icon = "";
+        for (let i = 0; i < json.length; i++) {
+
+            console.log(json[i].sp_st_id)
+            if(json[i].sp_st_id === 1){
+                url_icon = icons.bar.url
+            } else if (json[i].sp_st_id === 2) {
+                url_icon = icons.rest.url
+            } else{
+                url_icon = icons.disco.url
+            }
+            var marker = new google.maps.Marker({
+                icon: url_icon,
+                position: new google.maps.LatLng(parseFloat(json[i].sp_lat), parseFloat(json[i].sp_long)),
+                title:json[i].sp_name,
+                animation: google.maps.Animation.DROP,
+
+            });
+
+            marker.setMap(map);
+        }
+    } else if (id == 3) {
+        // Map Circle
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 12.5,
+            center: { lat: 38.736946, lng: -9.142685 }, // Lisboa
+            mapTypeId: "terrain",
+            styles: styles_map ,
 
         });
 
-        marker.setMap(map);
+        for (let i = 0; i < json.length; i++) {
+            const cityCircle = new google.maps.Circle({
+                strokeColor: "#ffb500",
+                strokeOpacity: 0.8,
+                strokeWeight: 2,
+                fillColor: "#ffb500",
+                fillOpacity: 0.35,
+                map,
+                center: { lat: json[i].sp_lat, lng: json[i].sp_long },
+                // center: citymap.lisboa.center,
+                radius: Math.sqrt(json[i].sp_views) * 10,
+            });
+        }
     }
+
 
 }
 
-async function getDataON(){
+async function getData(){
     /** online version **/
 
-    var targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
+    var targetUrl = 'https://ulide-party-api.herokuapp.com/api/favSpots/us_id/' + userId;
 
 
     const response = await fetch(targetUrl)
-    const data = await response.json()
-    console.log(data)
-    return data
-}
-
-async function getDataOFF(){
-    /** offline version **/
-
-    var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
-        targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
-
-
-    const response = await fetch(
-        proxyUrl + targetUrl)
     const data = await response.json()
     console.log(data)
     return data

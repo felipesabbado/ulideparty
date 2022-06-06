@@ -7,8 +7,11 @@ $(document).ready(function() {
         tu[i].style.display = 'none'
     }
 
+    let elementMapArea = document.querySelector('#mapArea')
+
     if(Number(user.us_tu_id) === 1) {
         document.querySelector(".admin").style.display = 'inline'
+        elementMapArea.style.display = 'none'
     } else if (Number(user.us_tu_id) === 2) {
         let tu_user = document.querySelectorAll(".user")
         for(let i = 0; i < tu_user.length; i++) {

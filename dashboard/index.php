@@ -53,12 +53,12 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <div class="card shadow2">
+                                <div id="mapArea" class="card shadow2">
                                     <div class="card-header">
                                         <h4><i class="fa fa-map"></i> Mapa</h4>
                                     </div>
-                                    <div class="card-body">
-                                        <?php include 'map.php' ?>
+                                    <div id="mapBody" class="card-body">
+                                        <?php include "map.php" ?>
                                     </div>
                                 </div>
                             </div>
