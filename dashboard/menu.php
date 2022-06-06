@@ -47,7 +47,7 @@
             <div class="container-fluid">
                 <div class="header-mobile-inner">
                     <a class="logo" href="index.php">
-                        <img src="images/icon/BrancoPreto.png" height="50" width="58" alt="CoolAdmin" />
+                        <img src="images/logos/logo_g.png" alt="logo" />
                     </a>
                     <button class="hamburger hamburger--slider" type="button">
                   <span class="hamburger-box">
@@ -80,17 +80,9 @@
                         <a href="locais.php">
                             <i class="fas fa-check"></i>Meus Locais</a>
                     </li>
-                    <li class="has-sub">
-                        <a class="js-arrow" href="#">
+                    <li>
+                        <a href="grupos.php">
                             <i class="fas fa-user"></i>Grupos</a>
-                        <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
-                            <li>
-                                <a href="grupo01.php">Grupo 1</a>
-                            </li>
-                            <li>
-                                <a href="grupo02.html">Grupo 2</a>
-                            </li>
-                        </ul>
                     </li>
                     <li>
                         <a href="favorito.php">
@@ -126,7 +118,7 @@
     <aside class='menu-sidebar d-none d-lg-block'>
         <div class='logo'>
             <a href='#'>
-                <img src='images/icon/BrancoPreto.png' alt='Logo Mono' height='179' width='52'/>
+                <img src='images/logos/logo_m.png' alt='Logo'/>
             </a>
         </div>
         <div class='menu-sidebar__content js-scrollbar1'>
@@ -150,17 +142,9 @@
                     <li class='user manager'>
                         <a href='locais.php'><i class='fas fa-check'></i>Meus Locais</a>
                     </li>
-                    <li class='has-sub user'>
-                        <a class='js-arrow' href='#'>
-                            <i class='fas fa-user'></i>Grupos</a>
-                        <ul class='list-unstyled navbar__sub-list js-sub-list'>
-                            <li>
-                                <a href='grupo01.php'>Grupo 1</a>
-                            </li>
-                            <li>
-                                <a href='grupo02.html'>Grupo 2</a>
-                            </li>
-                        </ul>
+                    <li>
+                        <a href="grupos.php">
+                            <i class="fas fa-user"></i>Grupos</a>
                     </li>
                     <li class="user">
                         <a href='favorito.php'><i class='fas fa-user'></i>Favoritos</a>
@@ -203,7 +187,7 @@
                                     <div class="info clearfix">
                                         <div class="image">
                                             <a href="#">
-                                                <img src="images/icon/avatar-01.jpg" alt="John Doe"/>
+                                                <img src="images/icon/avatar-01.jpg" alt="Logo-icon"/>
                                             </a>
                                         </div>
                                         <div class="content">
@@ -215,12 +199,8 @@
                                     </div>
                                     <div class="account-dropdown__body">
                                         <div class="account-dropdown__item">
-                                            <a href="#">
-                                                <i class="zmdi zmdi-account"></i>Account</a>
-                                        </div>
-                                        <div class="account-dropdown__item">
-                                            <a href="#">
-                                                <i class="zmdi zmdi-settings"></i>Setting</a>
+                                            <a href="perfil_utilizador.php">
+                                                <i class="zmdi zmdi-account"></i>Meu Perfil</a>
                                         </div>
                                     </div>
                                     <div class="account-dropdown__footer">
