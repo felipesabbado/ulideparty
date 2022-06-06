@@ -1,5 +1,6 @@
 let url = window.location.href
 let id = JSON.parse(localStorage.getItem("user")).us_tu_id
+let userId = JSON.parse(localStorage.getItem("user")).us_id
 
 const styles_map = [
     { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
@@ -116,20 +117,15 @@ const icons = {
 };
 
 async function initMap() {
-    let json
-    if (url.search("localhost")) {
-        json = await getDataOFF()
-    } else {
-        json = await getDataON()
-    }
+    let json = await getData()
 
     if(id == 2) {
         // Map Marker
-        var myLatlng = new google.maps.LatLng(parseFloat(json[0].sp_lat), parseFloat(json[0].sp_long));
+        // var myLatlng = new google.maps.LatLng(parseFloat(json[0].sp_lat), parseFloat(json[0].sp_long));
 
         var mapOptions = {
             zoom: 12.5,
-            center: myLatlng,
+            center: { lat: 38.736946, lng: -9.142685 }, // Lisboa,
             styles: styles_map,
         }
         var map = new google.maps.Map(document.getElementById("map"), mapOptions);
@@ -157,6 +153,7 @@ async function initMap() {
             marker.setMap(map);
         }
     } else if (id == 3) {
+        // Map Circle
         const map = new google.maps.Map(document.getElementById("map"), {
             zoom: 12.5,
             center: { lat: 38.736946, lng: -9.142685 }, // Lisboa
@@ -183,27 +180,13 @@ async function initMap() {
 
 }
 
-async function getDataON(){
+async function getData(){
     /** online version **/
 
-    var targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
+    var targetUrl = 'https://ulide-party-api.herokuapp.com/api/favSpots/us_id/' + userId;
 
 
     const response = await fetch(targetUrl)
-    const data = await response.json()
-    console.log(data)
-    return data
-}
-
-async function getDataOFF(){
-    /** offline version **/
-
-    var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
-        targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
-
-
-    const response = await fetch(
-        proxyUrl + targetUrl)
     const data = await response.json()
     console.log(data)
     return data
