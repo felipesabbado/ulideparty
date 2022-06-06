@@ -46,7 +46,7 @@
         <div class="header-mobile__bar">
             <div class="container-fluid">
                 <div class="header-mobile-inner">
-                    <a class="logo" href="index.php">
+                    <a class="logo" href="../index.php">
                         <img src="images/logos/logo_g.png" alt="logo" />
                     </a>
                     <button class="hamburger hamburger--slider" type="button">
@@ -117,7 +117,7 @@
     <!-- MENU SIDEBAR-->
     <aside class='menu-sidebar d-none d-lg-block'>
         <div class='logo'>
-            <a href='#'>
+            <a href='../index.php'>
                 <img src='images/logos/logo_m.png' alt='Logo'/>
             </a>
         </div>
@@ -165,16 +165,8 @@
     <header class="header-desktop">
         <div class="section__content section__content--p30">
             <div class="container-fluid">
-                <div class="header-wrap">
-                    <form class="form-header" action="" method="POST">
-                        <label>
-                            <input class="au-input au-input--xl au-input-border" type="text" name="search" placeholder="Procure por locais" />
-                        </label>
-                        <button class="au-btn--submit au-btn-radius" type="submit">
-                            <i class="zmdi zmdi-search"></i>
-                        </button>
-                    </form>
-                    <div class="header-button justify-content-end">
+                <div class="header-wrap justify-content-end">
+                    <div class="header-button">
                         <div class="account-wrap">
                             <div class="account-item clearfix js-item-menu">
                                 <div class="image">

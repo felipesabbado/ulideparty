@@ -41,7 +41,7 @@
 </head>
 <div class="container" id="nav-container">
     <nav class="navbar navbar-expand-lg fixed-top">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.php">
             <img id="main-logo" src="img/logos/logo-icon-75x75.png" alt="Ulide Party Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
