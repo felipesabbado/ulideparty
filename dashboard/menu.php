@@ -8,6 +8,10 @@
     <!-- Title Page-->
     <title>Ulide Party - Dashboard</title>
 
+    <!-- CSS -->
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
+
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
     <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
