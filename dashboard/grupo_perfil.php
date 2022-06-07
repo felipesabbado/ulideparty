@@ -10,7 +10,7 @@
     <title>Ulide Party - Dashboard</title>
 
     <!--JS-->
-    <script src="js/grupo.js"></script>
+    <script src="js/messages.js"></script>
 </head>
 
 <body class="animsition">
@@ -40,52 +40,26 @@
                                 <div class="au-card au-card--no-pad m-b-40">
                                     <div class="au-card-title p-t-20 p-b-20" style="background-image:url('images/bg-title-02.jpg');">
                                         <div class="bg-overlay bg-overlay--blue"></div>
-                                        <h3>
-                                            <i class="zmdi zmdi-comment-text"></i>Mensagens</h3>
-                                        <button class="au-btn-plus">
-                                            <i class="zmdi zmdi-account-add"></i>
-                                        </button>
+                                        <h3><i class="zmdi zmdi-comment-text"></i>Mensagens</h3>
                                     </div>
                                     <div class="au-inbox-wrap">
                                         <div class="au-chat au-chat--border">
-                                            <div class="au-chat__title">
-                                                <div class="au-chat-info">
-                                                    <div class="avatar-wrap online">
-                                                        <div class="avatar avatar--small">
-                                                            <img src="images/icon/avatar-02.jpg" alt="John Smith">
-                                                        </div>
-                                                    </div>
-                                                    <span class="nick">
-                                                        <a href="#">John Smith</a>
-                                                    </span>
-                                                </div>
+                                            <div class="col-12 text" id="text">
+                                                <ul class='message' id='message'></ul>
                                             </div>
-                                            <div class="au-chat__content au-chat__content2 js-scrollbar5">
-                                                <div class="recei-mess-wrap">
-                                                    <span class="mess-time">12 Min ago</span>
-                                                    <div class="recei-mess__inner">
-                                                        <div class="avatar avatar--tiny">
-                                                            <img src="images/icon/avatar-02.jpg" alt="John Smith">
-                                                        </div>
-                                                        <div class="recei-mess-list">
-                                                            <div class="recei-mess">Lorem ipsum dolor sit amet elit</div>
-                                                            <div class="recei-mess">Donec tempor viverra</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="send-mess-wrap">
-                                                    <span class="mess-time">30 Sec ago</span>
-                                                    <div class="send-mess__inner">
-                                                        <div class="send-mess-list">
-                                                            <div class="send-mess">Lorem ipsum dolor sit amet elit</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="au-chat-textfield">
-                                                <form class="au-form-icon">
-                                                    <input class="au-input au-input--full au-input--h65" type="text" placeholder="Type a message">
-                                                    <button class="au-input-icon">
+
+                                            <!-- Caixa para enviar texto -->
+                                            <div class="au-chat-textfield chatbox" id="chatbox">
+                                                <form class="au-form-icon form-container" method="post" onsubmit="return postMessage()">
+                                                    <input class="au-input au-input--full au-input--h65" type="text" placeholder="Digite uma mensagem" name="msg" id="msg" required="">
+                                                    <!--<div class="chatbox" id="chatbox">
+                                                        <h2>Message</h2>
+                                                        <form class="form-container" onsubmit="postMessage()">
+                                                            <textarea type="text" placeholder="Type Text.." name="msg" id="msg" required=""></textarea>
+                                                            <button type="submit" class="btn btn-info btn-lg btn-send">Send</button>
+                                                        </form>
+                                                    </div>-->
+                                                    <button id="btnSubmitMsg" class="au-input-icon" type="submit">
                                                         <i class="zmdi zmdi-mail-send"></i>
                                                     </button>
                                                 </form>
