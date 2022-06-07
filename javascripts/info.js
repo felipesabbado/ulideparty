@@ -141,9 +141,13 @@ async function updateOnload() {
     let elementDescription = document.getElementById("sp_description")
     let elementBodyModalEval = document.getElementById("bodyModalEval")
 
+    let elementLocalName = document.querySelectorAll(".localname")
     let elementBtnEdit = document.querySelector("#btnEdit")
     let elementAddress = document.querySelector("#sp_address")
 
+    for (let i = 0; i < elementLocalName.length; i++) {
+        elementLocalName[i].innerText = spot.sp_name
+    }
 
     elementLocation.innerText = geocoding.results[0].formatted_address
     elementAddress.innerText = geocoding.results[0].formatted_address

@@ -111,6 +111,7 @@ section {
 .header {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/lisboa.png") 0 25% no-repeat;
     height: 600px;
+    background-size: cover;
 }
 
 .header#rest {
