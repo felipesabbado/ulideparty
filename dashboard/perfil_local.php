@@ -69,10 +69,10 @@
                                     <div class="row">
                                         <div id="info-buttons" class="col">
                                             <button class="b-style" id="btnFav"></button>
-                                            <button class="b-style-off" id="btnComment">
+                                            <button class="b-style" id="btnComment">
                                                 <i class="fi fi-sr-comment"></i> Avaliar
                                             </button>
-                                            <button id="btnEdit" class="b-style-off">
+                                            <button id="btnEdit" class="b-style">
                                                 <i class="fi fi-br-edit"></i> Editar local
                                             </button>
 

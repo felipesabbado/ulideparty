@@ -1,5 +1,5 @@
 let spot_id = localStorage.getItem("sp_id")
-alert(spot_id)
+console.log(spot_id)
 const citymap = {
     lisboa: {
         center: { lat: 38.736946, lng: -9.142685 },

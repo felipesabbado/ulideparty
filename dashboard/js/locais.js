@@ -3,7 +3,7 @@ $(document).ready(function () {
         window.location.href = 'editar_local.php';
     })
 
-    $('#btnSubmit').click(function (event) {
+    $('#btnEnviar').click(function (event) {
         // prevent form default behaviour
         event.preventDefault();
 
@@ -26,4 +26,9 @@ $(document).ready(function () {
 
         alert(tg_names)
     });
+
+    $('#btnCriar').click(function () {
+        window.location.href = 'criar_local.php';
+    });
+
 });

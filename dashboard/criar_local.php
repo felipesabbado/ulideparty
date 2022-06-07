@@ -10,6 +10,7 @@
 
     <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
+    <link href="css/style.css" rel="stylesheet" media="all">
 
 </head>
 <body class="animsition">
@@ -29,7 +30,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="overview-wrap">
-                                <h2 class="title-1">Sugerir edição</h2><span class="verificado" hidden><i class="fa fa-check"></i> verificado</span>
+                                <h2 class="title-1">Criar Local</h2><span class="verificado" hidden><i class="fa fa-check"></i> verificado</span>
                             </div>
                         </div>
                     </div>
@@ -69,7 +70,7 @@
 
                                                         <!-- Enviar Imagem -->
                                                         <label for="sp_image">Enviar Imagem</label><br>
-                                                        <input class="b-style" id="sp_image" type="file" name="filetoupload"><br><br>
+                                                        <input id="sp_image" type="file" name="filetoupload"><br>
                                                     </div>
 
                                                     <div class="col-6">
@@ -86,7 +87,6 @@
                                                 <input class="b-style" id="btnEnviar" type="submit" value="Enviar">
                                             </form>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -102,11 +102,7 @@
 
 </div>
 
-<!-- Jquery JS-->
-<script src="vendor/jquery-3.2.1.min.js"></script>
-
 <!-- Main JS-->
-<script src="js/main.js"></script>
 <script src="js/locais.js"></script>
 </body>
 
