@@ -140,7 +140,7 @@
                                                     <p>Email: <span id="sp_email"></span></p>
                                                 </div>
                                                 <div id="local-map" class="col-6 p-0 card-body">
-                                                    <?php include "map.php" ?>
+                                                    <?php include "mapSpot.php" ?>
                                                 </div>
                                             </div>
                                         </div>
