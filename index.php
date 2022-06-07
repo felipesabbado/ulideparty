@@ -17,7 +17,7 @@
 </header>
 <main>
     <section>
-        <div class="container-fluid header bg-cover">
+        <div class="container-fluid header">
             <div class="row justify-content-center">
                 <div class="col-12 text-center"><img src="img/logos/logo_g.png" alt="Ulide Party Logo"></div>
                 <div class="col-12 text-center slogan"><h1>A diversão começa aqui!</h1></div>
