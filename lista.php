@@ -38,7 +38,7 @@
         <div class="row justify-content-center">
             <button onclick="loadSpots()">Mostrar mais</button>
         </div>
-    </div>
+</div>
     <!-- End of List Area -->
 
 </main>

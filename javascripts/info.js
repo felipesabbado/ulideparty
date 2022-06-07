@@ -9,12 +9,10 @@ if (localStorage.getItem("user") !== null) {
 
 let first = true
 
-async function getSpot(id) {
+async function getSpotInfo(id) {
     const targetUrl = `https://ulide-party-api.herokuapp.com/api/spots/update/${id}`;
-
-
     const response = await fetch(targetUrl)
-    return await response.json()
+    return response.json()
 
 }
 
@@ -122,7 +120,9 @@ function userDoentLogin(elementBtnFavorite) {
 }
 
 async function updateOnload() {
-    let spot = await getSpot(spot_id)
+    let spot = await getSpotInfo(spot_id)
+    console.log(spot)
+    console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
     console.log(spot)
     let tags = await getTags(spot_id)
     let photos = await getPhotos(spot_id)
