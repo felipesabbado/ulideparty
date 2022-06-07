@@ -45,7 +45,7 @@
                                             <!-- Formulário Geral editar local -->
                                             <form id="editarLocal" method="post" onsubmit="">
                                                 <div class="row">
-                                                    <div class="col-6">
+                                                    <div class="col-6" id="form">
                                                         <label for="sp_name">Nome do local</label>
                                                         <input id="sp_name" type="text" class="form-control" placeholder="Nome do local">
                                                         <label for="sp_address">Endereço</label>
@@ -60,12 +60,10 @@
                                                         <label for="disco">Discotecas</label><br>
 
                                                         <label for="tg_name">Tags</label><br>
-                                                        <input type="checkbox" id="tag1" name="tg_name" value="Tag1">
-                                                        <label for="tag1"> Tag1</label>
-                                                        <input type="checkbox" id="tag2" name="tg_name" value="Tag2">
-                                                        <label for="tag2"> Tag2</label>
-                                                        <input type="checkbox" id="tag3" name="tg_name" value="Tag3">
-                                                        <label for="tag3"> Tag3</label><br>
+                                                        <div class="col-12" id="tagsForm">
+
+                                                        </div>
+
 
                                                         <!-- Enviar Imagem -->
                                                         <label for="sp_image">Enviar Imagem</label><br>
