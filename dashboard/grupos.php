@@ -8,9 +8,6 @@
 
     <!-- Title Page-->
     <title>Ulide Party - Dashboard</title>
-
-    <!-- JS -->
-    <script type="application/javascript" src="js/index.js"></script>
 </head>
 
 <body class="animsition">

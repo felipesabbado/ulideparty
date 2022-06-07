@@ -28,9 +28,10 @@ $(document).ready(function() {
         success: function(response) {
             let html = ""
             for (let i = 0; i < response.length; i++) {
-                html += response[i].gr_name + "<br>"
+                html += `<a id="${i}" href="grupo_perfil.php?${i}">${response[i].gr_name}</a><br>`
             }
             document.querySelector("#groups").innerHTML = html
+            sessionStorage.setItem("group", JSON.stringify(response))
         },
         error: function (response) {
             $("#btnSubmit").prop("disabled", false)

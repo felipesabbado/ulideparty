@@ -8,6 +8,9 @@
 
     <!-- Title Page-->
     <title>Ulide Party - Dashboard</title>
+
+    <!--JS-->
+    <script src="js/grupo.js"></script>
 </head>
 
 <body class="animsition">
@@ -27,7 +30,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">Nome do Grupo</h2>
+                                    <h2 id="group_name" class="title-1">Nome do Grupo</h2>
                                 </div>
                             </div>
                         </div>
