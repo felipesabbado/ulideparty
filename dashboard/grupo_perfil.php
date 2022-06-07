@@ -44,7 +44,7 @@
                                     </div>
                                     <div class="au-inbox-wrap">
                                         <div class="au-chat au-chat--border">
-                                            <div class="col-12 text" id="text">
+                                            <div class="text" id="text">
                                                 <ul class='message' id='message'></ul>
                                             </div>
 
@@ -68,137 +68,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Menu de opções do grupo -->
-                            <div class="col-6">
-                                <div class="au-card au-card--no-pad m-b-40">
-                                    <div class="au-card-title p-t-20 p-b-20" style="background-image:url('images/bg-title-02.jpg');">
-                                        <div class="bg-overlay bg-overlay--blue"></div>
-                                        <h3><i class="zmdi zmdi-menu"></i>Opções</h3>
-                                    </div>
-                                    <div class="au-inbox-wrap">
-                                        <div class="au-message">
-                                            <div class="au-message__noti">
-                                                <p>Notificação</p>
-                                            </div>
-                                            <div class="au-task-list">
-                                                <div class="au-task__item">
-                                                    <div class="au-message__item-inner">
-                                                        <p><i class="fa fa-check"></i> Criar votação</p>
-                                                        <button type="button" class="btn btn-primary btn-sm">
-                                                            <i class="fa fa-star"></i>&nbsp; Botão</button>
-                                                    </div>
-                                                </div>
-                                                <div class="au-task__item">
-                                                    <div class="au-message__item-inner">
-                                                        <p><i class="fa fa-check"></i> Sugerir local</p>
-                                                    </div>
-                                                </div>
-                                                <div class="au-task__item">
-                                                    <div class="au-message__item-inner">
-                                                        <p><i class="fa fa-check"></i> Enviar fotos</p>
-                                                    </div>
-                                                </div>
-                                                <div class="au-task__item">
-                                                    <div class="au-message__item-inner">
-                                                        <p><i class="zmdi zmdi-battery"></i> Opção 4</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                             <!-- Amigos/Membros do Grupo -->
                             <div class="col-6">
-                                <div class="au-card au-card--no-pad m-b-40">
-                                    <div class="au-card-title p-t-20 p-b-20" style="background-image:url('images/bg-title-02.jpg');">
-                                        <div class="bg-overlay bg-overlay--blue"></div>
-                                        <h3><i class="zmdi zmdi-accounts"></i>Membros</h3>
-                                        <button class="au-btn-plus">
-                                            <i class="zmdi zmdi-plus"></i>
-                                        </button>
+                                <div class="card minHeight shadow2">
+                                    <div class="card-header">
+                                        <h4><i class="fa fa-users"></i> Meus amigos</h4>
                                     </div>
-                                    <div class="au-inbox-wrap">
-                                        <div class="au-message">
-                                            <div class="au-message__noti">
-                                                <p>Você tem <span>2</span> novas solicitações</p>
-                                            </div>
-                                            <div class="au-task-list">
-                                                <div class="au-task__item">
-                                                    <div class="au-message__item-inner">
-                                                        <div class="au-message__item-text">
-                                                            <div class="avatar-wrap">
-                                                                <div class="avatar">
-                                                                    <img src="images/icon/avatar-02.jpg" alt="John Smith">
-                                                                </div>
-                                                            </div>
-                                                            <div class="text">
-                                                                <h5 class="name">Michelle Sims</h5>
-                                                                <p>Have sent a photo</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="au-message__item-time">
-                                                            <span>12 Min ago</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="au-task__item">
-                                                    <div class="au-message__item-inner">
-                                                        <div class="au-message__item-text">
-                                                            <div class="avatar-wrap online">
-                                                                <div class="avatar">
-                                                                    <img src="images/icon/avatar-03.jpg" alt="Nicholas Martinez">
-                                                                </div>
-                                                            </div>
-                                                            <div class="text">
-                                                                <h5 class="name">Nicholas Martinez</h5>
-                                                                <p>You are now connected on message</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="au-message__item-time">
-                                                            <span>11:00 PM</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="au-task__item">
-                                                    <div class="au-message__item-inner">
-                                                        <div class="au-message__item-text">
-                                                            <div class="avatar-wrap online">
-                                                                <div class="avatar">
-                                                                    <img src="images/icon/avatar-04.jpg" alt="Michelle Sims">
-                                                                </div>
-                                                            </div>
-                                                            <div class="text">
-                                                                <h5 class="name">John Smith</h5>
-                                                                <p>Lorem ipsum dolor sit amet</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="au-message__item-time">
-                                                            <span>Yesterday</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="au-task__item">
-                                                    <div class="au-message__item-inner">
-                                                        <div class="au-message__item-text">
-                                                            <div class="avatar-wrap">
-                                                                <div class="avatar">
-                                                                    <img src="images/icon/avatar-05.jpg" alt="Michelle Sims">
-                                                                </div>
-                                                            </div>
-                                                            <div class="text">
-                                                                <h5 class="name">John Dee</h5>
-                                                                <p>Purus feugiat finibus</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="au-message__item-time">
-                                                            <span>Sunday</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <div id="friends" class="card-body"></div>
                                 </div>
                             </div>
 

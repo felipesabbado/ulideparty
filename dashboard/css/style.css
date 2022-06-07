@@ -20,6 +20,61 @@
     display: none;
 }
 
+/* Chat */
+
+.demo {
+    list-style: none;
+    padding: 10px 20px;
+    width: auto;
+    background-color: var(--BGSilver);
+    margin-top: 5px;
+    border-radius: 0.5em;
+}
+
+.boxmsgUser {
+    display: flex;
+    justify-content: end;
+}
+
+.boxmsgGuest {
+    display: flex;
+    justify-content: start;
+}
+
+.demo#user {
+    text-align: end;
+    color: var(--RussianViolet);
+    margin-right: 40px;
+}
+
+.demo#guest {
+    margin-left: 40px;
+    color: var(--MediumBlue);
+}
+
+#chatbox input {
+    color: var(--BGSilver);
+    background-color: var(--BGOnix);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--BGSilver);
+    background-color: var(--BGOnix);
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+#btnSubmitMsg i {
+    color: var(--HoneyYellow);
+}
+
 /* ----- Typography ----- */
 
 body {

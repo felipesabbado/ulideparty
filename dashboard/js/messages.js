@@ -1,12 +1,21 @@
 let num = 0
 let json1
-let user = JSON.parse(sessionStorage.getItem("user"))
+let user = JSON.parse(localStorage.getItem("user"))
+
+let queryString = window.location.search;
+let type = queryString.substring(1,queryString.length)
+let group = JSON.parse(sessionStorage.getItem("group"))
+console.log(group[type])
 
 async function messages1() {
     let html = "<ul class='message' id='message'>";
     let completelist = document.getElementById("text");
     for (let i = 0; i < json1.length; i++) {
-        html += "<li id='demo' class='demo'>" + json1[i].umg_um.um_me_id.me_text + "</li>"
+        if (json1[i].umg_um.um_us.us_id == user.us_id) {
+            html += `<div class="boxmsgUser"><li id='user' class='demo'><span>${json1[i].umg_um.um_us.us_name}:<br> ${json1[i].umg_um.um_me_id.me_text}</span></li></div>`
+        } else {
+            html += `<div class="boxmsgGuest"><li id='guest' class='demo'><span>${json1[i].umg_um.um_us.us_name}:<br> ${json1[i].umg_um.um_me_id.me_text}</span></li></div>`
+        }
     }
     html += "</ul>"
     completelist.innerHTML += html
@@ -14,10 +23,6 @@ async function messages1() {
 }
 
 async function removeOld() {
-    let queryString = window.location.search;
-    let type = queryString.substring(1,queryString.length)
-    let group = JSON.parse(sessionStorage.getItem("group"))
-    console.log(group[type])
 
     let elementGroupName = document.querySelector("#group_name")
     elementGroupName.innerHTML = group[type].gr_name
