@@ -60,13 +60,9 @@
                                                         <input class="sp_st_id" type="radio" id="disco" name="sp_st_id" value="3">
                                                         <label for="disco">Discotecas</label><br>
 
-                                                        <label for="tg_name">Tags</label><br>
-                                                        <input type="checkbox" id="tag1" name="tg_name" value="Tag1">
-                                                        <label for="tag1"> Tag1</label>
-                                                        <input type="checkbox" id="tag2" name="tg_name" value="Tag2">
-                                                        <label for="tag2"> Tag2</label>
-                                                        <input type="checkbox" id="tag3" name="tg_name" value="Tag3">
-                                                        <label for="tag3"> Tag3</label><br>
+                                                        <div id="tagsForm">
+
+                                                        </div>
 
                                                         <!-- Enviar Imagem -->
                                                         <label for="sp_image">Enviar Imagem</label><br>
@@ -103,7 +99,7 @@
 </div>
 
 <!-- Main JS-->
-<script src="js/locais.js"></script>
+<script src="js/criarLocais.js"></script>
 </body>
 
 </html>

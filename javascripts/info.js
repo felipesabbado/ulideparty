@@ -147,11 +147,11 @@ async function updateOnload() {
 
     elementLocation.innerText = geocoding.results[0].formatted_address
     elementAddress.innerText = geocoding.results[0].formatted_address
-
-    let avg = parseFloat(photos[0].avg).toFixed(1)
+    let avg = (photos[0].avg === undefined) ?  0 : parseFloat(photos[0].avg).toFixed(1)
+    let count = (photos[0].count === undefined) ?  0 : parseInt(photos[0].count)
     console.log(avg)
     elementRate.innerHTML = avg + ' <i class="fi-sr-star"></i>'
-    elementCountRate.innerText = photos[0].count + " Avaliaçoes"
+    elementCountRate.innerText = count + " Avaliaçoes"
 
     let tagsStr = getTagsFormatted(tags);
 

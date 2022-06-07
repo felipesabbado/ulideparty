@@ -1,15 +1,3 @@
-let sp_id = localStorage.getItem("sp_id")
-
-
-async function getSpots(id){
-
-    const targetUrl = `https://ulide-party-api.herokuapp.com/api/spots/${id}`;
-
-
-    const response = await fetch(targetUrl)
-    return await response.json()
-}
-
 async function getTags(){
 
     const targetUrl = `https://ulide-party-api.herokuapp.com/api/tags`;
@@ -19,19 +7,18 @@ async function getTags(){
     return await response.json()
 }
 
-async function getGeocodingEdit(search) {
+async function getGeocodingMsg(search) {
     const targetUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${search}&key=AIzaSyDk31YFxoBBRi15FKVX3-9rF-Vr8vpGfSQ`;
-    alert(targetUrl)
 
 
     const response = await fetch(targetUrl)
     return await response.json()
 }
 
-async function putData(url = '', data = {}) {
+async function postData(url = '', data = {}) {
     // Default options are marked with *
     const response = await fetch(url, {
-        method: 'PUT', // *GET, POST, PUT, DELETE, etc.
+        method: 'POST', // *GET, POST, PUT, DELETE, etc.
         mode: 'cors', // no-cors, *cors, same-origin
         cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
         credentials: 'same-origin', // include, *same-origin, omit
@@ -59,24 +46,12 @@ function addTagsOnPage(tags) {
 }
 
 window.onload =  async function onload() {
+    alert("Para criar um local, preencha os campos abaixo e clique em 'Criar Local'")
     let tags = await getTags()
     addTagsOnPage(tags)
 
-    let spots = await getSpots(sp_id)
 
     let elementBtnEnviar = document.getElementById("btnEnviar")
-
-    let search = spots.sp_lat + " " + spots.sp_long
-    console.log(search)
-    let geocoding = await getGeocodingEdit(search)
-
-    let sp_name = document.getElementById('sp_name').value = spots.sp_name
-    let sp_address = document.getElementById('sp_address').value = geocoding.results[0].formatted_address
-    let sp_description = document.getElementById('sp_description').value = spots.sp_description
-    let sp_phone = document.getElementById('sp_phone').value = spots.sp_tel
-    let sp_email = document.getElementById('sp_email').value = spots.sp_email
-    let sp_st_id = $("input[name='sp_st_id']:checked").val()
-    let tg_name = document.getElementsByName('tg_name')
 
     elementBtnEnviar.addEventListener("click", async function(){
         // prevent form default behaviour
@@ -85,13 +60,15 @@ window.onload =  async function onload() {
         // disabled the submit button
         $("#btnSubmit").prop("disabled", true);
 
-        sp_name = document.getElementById('sp_name').value
-        sp_address = document.getElementById('sp_address').value
-        sp_description = document.getElementById('sp_description').value
-        sp_phone = document.getElementById('sp_phone').value
-        sp_email = document.getElementById('sp_email').value
-        sp_st_id = $("input[name='sp_st_id']:checked").val()
-        tg_name = document.getElementsByName('tg_name')
+        let sp_name = document.getElementById('sp_name').value
+        let sp_address = document.getElementById('sp_address').value
+        let sp_description = document.getElementById('sp_description').value
+        let sp_phone = document.getElementById('sp_phone').value
+        let sp_email = document.getElementById('sp_email').value
+        let sp_st_id = $("input[name='sp_st_id']:checked").val()
+        let tg_name = document.getElementsByName('tg_name')
+
+
 
         let tg_names = []
         for (let i = 0; i < tg_name.length; i++) {
@@ -99,13 +76,12 @@ window.onload =  async function onload() {
                 tg_names.push(tg_name[i].value)
             }
         }
-
-        let latLong = await getGeocodingEdit(sp_address)
-
+        alert(sp_address)
+        let latLong = await getGeocodingMsg(sp_address)
         let lat = latLong.results[0].geometry.location.lat
         let long = latLong.results[0].geometry.location.lng
 
-
+        console.log(lat, long)
         console.log(sp_name, "sp_name")
         console.log(sp_address, "sp_address")
         console.log(sp_description, "sp_description")
@@ -119,13 +95,14 @@ window.onload =  async function onload() {
             sp_location: `POINT(${lat} ${long})`,
             sp_description: sp_description,
             sp_tel: sp_phone,
+            sp_bio: sp_description,
+            sp_st_id: sp_st_id,
             sp_email: sp_email,
         }
 
-
         console.log(JSON.stringify(data))
-        let result = await putData(`https://ulide-party-api.herokuapp.com/api/spots/`+ sp_id, data)
+        let result = await postData(`https://ulide-party-api.herokuapp.com/api/spots`, data)
         console.log(result, "result")
-        //location.href = "../../info.php"
+        location.href = "../../index.php"
     })
 }

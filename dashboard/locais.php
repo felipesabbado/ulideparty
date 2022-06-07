@@ -39,7 +39,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 align-bottom">
-                                <button id="btnCriar" class="b-style">
+                                <button id="btnCriar" class="b-style" >
                                     <i class="fi fi-rr-add-document"></i> Criar local
                                 </button>
                             </div>
@@ -77,9 +77,14 @@
         </div>
         <!-- END PAGE CONTAINER-->
     </div>
-
+    <script>
+        let elementBtnCriar = document.getElementById("btnCriar")
+        elementBtnCriar.addEventListener("click", async function(){
+            location.href = "criar_local.php"
+        })
+    </script>
     <!-- JS -->
-    <script src="js/locais.js"></script>
+<!--    <script src="js/locais.js"></script>-->
 </body>
 
 </html>
