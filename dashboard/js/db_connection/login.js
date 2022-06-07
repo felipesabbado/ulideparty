@@ -19,8 +19,7 @@ $(document).ready(function() {
             success: function(response) {
                 alert("Login Efetuado com Sucesso!")
                 localStorage.setItem("user", JSON.stringify(response))
-                window.location = "index.php"
-                //document.location.replace('index.php')
+                window.location = "../index.php"
             },
             error: function (response) {
                 sound.play()
