@@ -58,7 +58,7 @@ async function loadSpots() {
     if (limit+6 < Object.keys(spots).length) {
         limit +=6
     } else {
-        limit += Object.keys(spots).length - limit
+        limit = Object.keys(spots).length
     }
 
     console.log(limit, "limit2")
