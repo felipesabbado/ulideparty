@@ -103,6 +103,9 @@ window.onload =  async function onload() {
         console.log(JSON.stringify(data))
         let result = await postData(`https://ulide-party-api.herokuapp.com/api/spots`, data)
         console.log(result, "result")
-        location.href = "../../index.php"
+        let elementPhSender = document.getElementById("phSender")
+        localStorage.setItem("sp_ph_id", result.sp_id)
+        alert(result.sp_id)
+        location.href = "form.php"
     })
 }
