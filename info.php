@@ -31,19 +31,19 @@
                     <div class="carousel-item active">
                         <img src="img/rest01.webp" class="d-block w-100" alt="Descrição 01">
                         <div class="carousel-caption d-md-block">
-                            <h2>Local 01</h2>
+                            <h2 class="localname">Local 01</h2>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/rest02.webp" class="d-block w-100" alt="Descrição 02">
                         <div class="carousel-caption d-md-block">
-                            <h2>Local 02</h2>
+                            <h2 class="localname">Local 02</h2>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/rest03.webp" class="d-block w-100" alt="Descrição 03">
                         <div class="carousel-caption d-md-block">
-                            <h2>Local 03</h2>
+                            <h2 class="localname">Local 03</h2>
                         </div>
                     </div>
                 </div>
