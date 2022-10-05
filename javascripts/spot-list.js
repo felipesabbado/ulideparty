@@ -61,6 +61,7 @@ async function loadSpots() {
         limit = Object.keys(spots).length
     }
 
+
     console.log(limit, "limit2")
 
 
@@ -77,6 +78,7 @@ function goToInfo(id) {
 }
 
 window.addEventListener("load", function () {
+
     if (categoria == 1){
         document.querySelector("#title_category").innerText = "Bares"
         document.querySelector("#subtitle_category").innerText = "Descobre os melhores bares de Lisboa"
