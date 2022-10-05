@@ -6,7 +6,7 @@ $(document).ready(function() {
     }
 
     $.ajax({
-        url: `https://ulide-party-api.herokuapp.com/api/users/${user.us_id}`,
+        url: linkApi+`api/users/${user.us_id}`,
         type: "GET",
         dataType: 'json',
         success: function(response) {
@@ -22,7 +22,7 @@ $(document).ready(function() {
     });
 
     $.ajax({
-        url: `https://ulide-party-api.herokuapp.com/api/groups/user/${user.us_id}`,
+        url: linkApi+`api/groups/user/${user.us_id}`,
         type: "GET",
         dataType: 'json',
         success: function(response) {
@@ -39,7 +39,7 @@ $(document).ready(function() {
     });
 
     $.ajax({
-        url: `https://ulide-party-api.herokuapp.com/api/groups/friends/user/${user.us_id}`,
+        url: linkApi+`api/groups/friends/user/${user.us_id}`,
         type: "GET",
         dataType: 'json',
         success: function(response) {
@@ -53,5 +53,4 @@ $(document).ready(function() {
             $("#btnSubmit").prop("disabled", false)
         }
     });
-
 });

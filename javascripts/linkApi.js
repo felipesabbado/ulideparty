@@ -1,0 +1,1 @@
+var linkApi = "https://ulide-party-api.herokuapp.com/";

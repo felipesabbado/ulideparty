@@ -1,6 +1,6 @@
 async function getTags(){
 
-    const targetUrl = `https://ulide-party-api.herokuapp.com/api/tags`;
+    const targetUrl = linkApi+`api/tags`;
 
 
     const response = await fetch(targetUrl)
@@ -81,14 +81,6 @@ window.onload =  async function onload() {
         let lat = latLong.results[0].geometry.location.lat
         let long = latLong.results[0].geometry.location.lng
 
-        console.log(lat, long)
-        console.log(sp_name, "sp_name")
-        console.log(sp_address, "sp_address")
-        console.log(sp_description, "sp_description")
-        console.log(sp_phone, "sp_phone")
-        console.log(sp_email, "sp_email")
-        console.log(tg_names)
-        console.log(sp_st_id)
 
         let data = {
             sp_name: sp_name,
@@ -101,14 +93,12 @@ window.onload =  async function onload() {
         }
 
         console.log(JSON.stringify(data))
-        let result = await postData(`https://ulide-party-api.herokuapp.com/api/spots`, data)
-        console.log(result, "result")
+        let result = await postData(linkApi+`api/spots`, data)
+        console.log(result, "result"+("ideas"))
         let elementPhSender = document.getElementById("phSender")
         localStorage.setItem("sp_ph_id", result.sp_id)
         alert(result.sp_id)
         location.href = "form.php"
     })
 }
-
-// do you want to have sex?
 

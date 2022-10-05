@@ -182,7 +182,7 @@ async function initMap() {
 async function getData(){
     /** online version **/
 
-    var targetUrl = 'https://ulide-party-api.herokuapp.com/api/favSpots/us_id/' + userId;
+    var targetUrl = linkApi+'api/favSpots/us_id/' + userId;
 
 
     const response = await fetch(targetUrl)

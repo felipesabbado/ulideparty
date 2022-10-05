@@ -111,11 +111,7 @@ const styles_map = [
 
 async function initMap() {
     let json
-    if (url.search("localhost")) {
-        json = await getDataOFF()
-    } else {
-        json = await getDataON()
-    }
+    json = await getDataON()
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 12.5,
         center: citymap.lisboa.center,
@@ -123,23 +119,6 @@ async function initMap() {
         styles: styles_map ,
 
     });
-
-    // Construct the circle for each value in citymap.
-    // Note: We scale the area of the circle based on the population.
-    // for (const spot in json) {
-    //     // Add the circle for this city to the map.
-    //     const cityCircle = new google.maps.Circle({
-    //         strokeColor: "#FF0000",
-    //         strokeOpacity: 0.8,
-    //         strokeWeight: 2,
-    //         fillColor: "#FF0000",
-    //         fillOpacity: 0.35,
-    //         map,
-    //         center: { lat: spot.st_x, lng: spot.st_y },
-    //         radius: Math.sqrt(spot.sp_view) * 100,
-    //     });
-    // }
-
 
     for (let i = 0; i < json.length; i++) {
         const cityCircle = new google.maps.Circle({
@@ -159,7 +138,7 @@ async function initMap() {
 async function getDataON(){
     /** online version **/
 
-    var targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
+    var targetUrl = linkApi+'api/spots'
 
 
     const response = await fetch(targetUrl)
@@ -168,18 +147,5 @@ async function getDataON(){
     return data
 }
 
-async function getDataOFF(){
-    /** offline version **/
-
-    var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
-        targetUrl = 'https://ulide-party-api.herokuapp.com/api/spots'
-
-
-    const response = await fetch(
-        proxyUrl + targetUrl)
-    const data = await response.json()
-    console.log(data)
-    return data
-}
 
 window.initMap = initMap;
