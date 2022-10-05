@@ -7,6 +7,6 @@
 <body>
 <div id="map"></div>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzxokzot6z-K89lAaUy4mnPMTqlLzvmuY&callback=initMap&v=weekly" defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVuGglcnrCBpBgymT_2Q2zIBCjHr1NDsM&callback=initMap&v=weekly" defer></script>
 </body>
 </html>

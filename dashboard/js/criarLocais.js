@@ -8,7 +8,7 @@ async function getTags(){
 }
 
 async function getGeocodingMsg(search) {
-    const targetUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${search}&key=AIzaSyDk31YFxoBBRi15FKVX3-9rF-Vr8vpGfSQ`;
+    const targetUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${search}&key=AIzaSyDVuGglcnrCBpBgymT_2Q2zIBCjHr1NDsM`;
 
 
     const response = await fetch(targetUrl)
