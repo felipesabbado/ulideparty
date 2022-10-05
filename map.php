@@ -25,7 +25,7 @@
 </div>
 <div id="map"></div>
 <script src="javascripts/mapMarker.js" charset="utf-8"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk31YFxoBBRi15FKVX3-9rF-Vr8vpGfSQ&callback=initMap"
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVuGglcnrCBpBgymT_2Q2zIBCjHr1NDsM&callback=initMap"
         async defer></script>
 <script>
     async function getLocation() {
