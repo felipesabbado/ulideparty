@@ -10,14 +10,14 @@ if (localStorage.getItem("user") !== null) {
 let first = true
 
 async function getSpotInfo(id) {
-    const targetUrl = linkApi+`api/spots/update/${id}`;
+    const targetUrl = linkApi+`/api/spots/update/${id}`;
     const response = await fetch(targetUrl)
     return response.json()
 
 }
 
 async function deleteFavSpot(us_id, sp_id) {
-     const targetUrl = linkApi+`api/favSpots/us_id/${us_id}/sp_id/${sp_id}`;
+     const targetUrl = linkApi+`/api/favSpots/us_id/${us_id}/sp_id/${sp_id}`;
     //
     //
     // const response = await fetch(targetUrl, {
@@ -34,7 +34,7 @@ async function deleteFavSpot(us_id, sp_id) {
 }
 
 async function getEvaluations(id) {
-    const targetUrl = linkApi+`api/spotEvaluations/${id}`;
+    const targetUrl = linkApi+`/api/spotEvaluations/${id}`;
 
 
     const response = await fetch(targetUrl)
@@ -42,7 +42,7 @@ async function getEvaluations(id) {
 }
 
 async function getTags(id) {
-    const targetUrl = linkApi+`api/tags/spot/${id}`;
+    const targetUrl = linkApi+`/api/tags/spot/${id}`;
 
 
     const response = await fetch(targetUrl)
@@ -50,7 +50,7 @@ async function getTags(id) {
 }
 
 async function getFavSpotsByUsIdAndSpId(us_id, sp_id) {
-    const targetUrl = linkApi+`api/favSpots/us_id/${us_id}/sp_id/${sp_id}`;
+    const targetUrl = linkApi+`/api/favSpots/us_id/${us_id}/sp_id/${sp_id}`;
 
     const response = await fetch(targetUrl)
     console.log(response)
@@ -58,7 +58,7 @@ async function getFavSpotsByUsIdAndSpId(us_id, sp_id) {
 }
 
 async function getPhotos(id) {
-    const targetUrl = linkApi+`api/spots/${id}/photo/avg`;
+    const targetUrl = linkApi+`/api/spots/${id}/photo/avg`;
 
 
     const response = await fetch(targetUrl)
@@ -222,7 +222,7 @@ async function updateOnload() {
                     se_comment: comment,
                     se_rate: rate
                 }
-                await postData(linkApi+"api/spotEvaluations", data)
+                await postData(linkApi+"/api/spotEvaluations", data)
                 window.location.reload()
                 $("#modal-eval").modal("hide");
             })
@@ -245,7 +245,7 @@ async function favFunction(elementBtnFavorite) {
         }
         if (!first) {
             elementBtnFavorite.innerHTML = `<i class="fi fi-sr-heart"></i> Desfavoritar`
-            await postData(linkApi+"api/favSpots", data)
+            await postData(linkApi+"/api/favSpots", data)
         } else {
             elementBtnFavorite.innerHTML = `<i class="fi fi-br-heart"></i> Favoritar`
             first = false

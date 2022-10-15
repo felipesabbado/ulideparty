@@ -138,7 +138,7 @@ async function initMap() {
 async function getDataON(){
     /** online version **/
 
-    var targetUrl = linkApi+'api/spots'
+    var targetUrl = linkApi+'/api/spots'
 
 
     const response = await fetch(targetUrl)

@@ -3,7 +3,7 @@ let sp_id = localStorage.getItem("sp_id")
 
 async function getSpots(id){
 
-    const targetUrl = linkApi+`api/spots/${id}`;
+    const targetUrl = linkApi+`/api/spots/${id}`;
 
 
     const response = await fetch(targetUrl)
@@ -12,7 +12,7 @@ async function getSpots(id){
 
 async function getTags(){
 
-    const targetUrl = linkApi+`api/tags`;
+    const targetUrl = linkApi+`/api/tags`;
 
 
     const response = await fetch(targetUrl)
@@ -124,7 +124,7 @@ window.onload =  async function onload() {
 
 
         console.log(JSON.stringify(data))
-        let result = await putData(linkApi+`api/spots/`+ sp_id, data)
+        let result = await putData(linkApi+`/api/spots/`+ sp_id, data)
         console.log(result, "result")
         //location.href = "../../info.php"
     })

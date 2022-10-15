@@ -35,7 +35,7 @@ async function removeOld() {
 }
 
 async function getData(){
-    let targetUrl = linkApi+'api/userMessagesGroups/group/' + group[type].gr_id;
+    let targetUrl = linkApi+'/api/userMessagesGroups/group/' + group[type].gr_id;
 
 
     const response = await fetch(targetUrl)
@@ -58,7 +58,7 @@ function postMessage() {
     const text = $(this).find("input[name='msg']").val();
 
     let xhr = new XMLHttpRequest();
-    let url = linkApi+"api/userMessagesGroups";
+    let url = linkApi+"/api/userMessagesGroups";
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function () {

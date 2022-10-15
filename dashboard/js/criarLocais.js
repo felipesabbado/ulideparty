@@ -1,6 +1,6 @@
 async function getTags(){
 
-    const targetUrl = linkApi+`api/tags`;
+    const targetUrl = linkApi+`/api/tags`;
 
 
     const response = await fetch(targetUrl)
@@ -93,7 +93,7 @@ window.onload =  async function onload() {
         }
 
         console.log(JSON.stringify(data))
-        let result = await postData(linkApi+`api/spots`, data)
+        let result = await postData(linkApi+`/api/spots`, data)
         console.log(result, "result"+("ideas"))
         let elementPhSender = document.getElementById("phSender")
         localStorage.setItem("sp_ph_id", result.sp_id)

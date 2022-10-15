@@ -8,7 +8,7 @@ let limit
 
 async function getData(){
 
-    const targetUrl = linkApi+`api/spots/type/${categoria}/listUse`;
+    const targetUrl = linkApi+`/api/spots/type/${categoria}/listUse`;
 
 
     const response = await fetch(targetUrl)
