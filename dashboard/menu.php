@@ -7,7 +7,8 @@
 
     <!-- Title Page-->
     <title>Ulide Party - Dashboard</title>
-    <script src="../javascripts/linkApi.js"></script>
+    <script src="../generic/linkApi.js"></script>
+    <script src="../generic/crudFunctions.js"></script>
     <!-- CSS -->
     <link type="text/css" rel="stylesheet" href="css/style.css">
 

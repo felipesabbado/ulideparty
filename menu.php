@@ -7,7 +7,8 @@
 
     <!-- Title Page -->
     <title>Ulide Party</title>
-    <script src="javascripts/linkApi.js"></script>
+    <script src="generic/linkApi.js"></script>
+    <script src="generic/crudFunctions.js"></script>
     <!-- Fonts CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">

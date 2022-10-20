@@ -79,7 +79,7 @@ function getTagsFormatted(tagsJson) {
 }
 
 async function getGeocoding(search) {
-    const targetUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${search}&key=AIzaSyDVuGglcnrCBpBgymT_2Q2zIBCjHr1NDsM`;
+    const targetUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${search}&key=`+key;
 
 
     const response = await fetch(targetUrl)
