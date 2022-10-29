@@ -78,14 +78,6 @@ function getTagsFormatted(tagsJson) {
     return strTags
 }
 
-async function getGeocoding(search) {
-    const targetUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${search}&key=`+googleKey;
-
-
-    const response = await fetch(targetUrl)
-    return await response.json()
-}
-
 async function postData(url = '', data = {}) {
     // Default options are marked with *
     const response = await fetch(url, {
@@ -120,7 +112,7 @@ function userDoesntLogin(elementBtnFavorite) {
 }
 
 async function updateOnload() {
-    let spot = await getSpotInfo(spot_id)
+    let spot = await getData(linkApi+`/api/spots/update/${spot_id}`)
     console.log(spot)
 
     let tags = await getTags(spot_id)
@@ -128,7 +120,7 @@ async function updateOnload() {
 
     let search = spot.sp_lat + " " + spot.sp_long
     console.log(search)
-    let geocoding = await getGeocoding(search)
+    let geocoding = await getData(`https://maps.googleapis.com/maps/api/geocode/json?address=${search}&key=`+googleKey)
 
     let elementTags = document.getElementById("sp_tags")
     let elementPhotos = document.getElementById("sp_photo")

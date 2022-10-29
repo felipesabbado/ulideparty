@@ -6,22 +6,12 @@ let executed = false
 let spots
 let limit
 
-async function getData(){
-
-    const targetUrl = linkApi+`/api/spots/type/${categoria}/listUse`;
-
-
-    const response = await fetch(targetUrl)
-    return await response.json()
-}
-
 async function loadSpots() {
-
 
     let element = document.getElementById("lista_spots")
 
     if (!executed) {
-        spots = await getData()
+        spots = await getData(linkApi+`/api/spots/type/${categoria}/listUse`)
         limit = (Object.keys(spots).length > 5) ? 6: Object.keys(spots).length
         console.log(limit, "limit1")
         executed = true
@@ -74,7 +64,6 @@ async function loadSpots() {
 function goToInfo(id) {
     console.log(id)
     localStorage.setItem("sp_id", id)
-    // document.location.assign("info.php")
 }
 
 window.addEventListener("load", function () {

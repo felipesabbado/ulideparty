@@ -111,7 +111,7 @@ const styles_map = [
 
 async function initMap() {
     let json
-    json = await getDataON()
+    json = await getData(linkApi+'/api/spots')
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 12.5,
         center: citymap.lisboa.center,
@@ -134,18 +134,4 @@ async function initMap() {
         });
     }
 }
-
-async function getDataON(){
-    /** online version **/
-
-    var targetUrl = linkApi+'/api/spots'
-
-
-    const response = await fetch(targetUrl)
-    const data = await response.json()
-    console.log(data)
-    return data
-}
-
-
 window.initMap = initMap;

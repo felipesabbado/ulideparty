@@ -113,7 +113,7 @@ async function initMap() {
     },
     styles: styles_map
   };
-  let spotJson = await getSpot(spot_id)
+  let spotJson = await getData(linkApi+`/api/spots/${spot_id}`)
   console.log({ lat: spotJson.sp_lat, lng: spotJson.sp_long})
 
   map = new google.maps.Map(document.getElementById("map"), myOptions);
@@ -224,19 +224,6 @@ function animateLine(line) {
 
     }
 
-    // console.log("Zoom Level :" + zoomLevel);
-    // console.log("Mark Speed :" + markSpeed);
-
-
 }, 100);
 
-}
-
-async function getSpot(id) {
-  const targetUrl = linkApi+`/api/spots/${id}`;
-
-
-
-  const response = await fetch(targetUrl)
-  return await response.json()
 }

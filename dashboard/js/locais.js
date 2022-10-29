@@ -1,32 +1,6 @@
 let sp_id = localStorage.getItem("sp_id")
 
 
-async function getSpots(id){
-
-    const targetUrl = linkApi+`/api/spots/${id}`;
-
-
-    const response = await fetch(targetUrl)
-    return await response.json()
-}
-
-async function getTags(){
-
-    const targetUrl = linkApi+`/api/tags`;
-
-
-    const response = await fetch(targetUrl)
-    return await response.json()
-}
-
-async function getGeocodingEdit(search) {
-    const targetUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${search}&key=`+key;
-
-
-    const response = await fetch(targetUrl)
-    return await response.json()
-}
-
 async function putData(url = '', data = {}) {
     // Default options are marked with *
     const response = await fetch(url, {

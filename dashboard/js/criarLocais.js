@@ -1,19 +1,4 @@
-async function getTags(){
 
-    const targetUrl = linkApi+`/api/tags`;
-
-
-    const response = await fetch(targetUrl)
-    return await response.json()
-}
-
-async function getGeocodingMsg(search) {
-    const targetUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${search}&key=`+key;
-
-
-    const response = await fetch(targetUrl)
-    return await response.json()
-}
 
 async function postData(url = '', data = {}) {
     // Default options are marked with *
