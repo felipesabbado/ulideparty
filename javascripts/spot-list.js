@@ -33,7 +33,7 @@ async function loadSpots() {
     let avg
 
     for (i ; i < limit; i++) {
-        url = "https://res.cloudinary.com/ulide-party/image/upload/v1652352355/spots/" + spots[i].ph_photo_path
+        url = "https://res.cloudinary.com/ulide-party/image/upload/v1652352355/spots/" + spots[i].ph_name
         avg = parseFloat(spots[i].avg).toFixed(2)
 
         console.log(avg)

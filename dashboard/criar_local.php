@@ -75,19 +75,19 @@
                                                         <textarea id="sp_description" class="form-control" rows="5" placeholder="Descrição do local"></textarea>
                                                     </div>
                                                 </div>
-                                                <div class="row align-items-end">
+                                               <!-- <div class="row align-items-end">
                                                     <div class="col-6">
                                                         <input class="b-style" type="reset" value="Limpar">
                                                         <input class="b-style" id="btnEnviar" type="submit" value="Enviar">
                                                     </div>
                                                     <div id="phSender" class="col-6">
                                                         <form action="http://ulide-party-api.herokuapp.com/api/image/save/spots/20" method="post" enctype="multipart/form-data">
-                                                            <!-- Enviar Imagem -->
+
                                                             <label for="sp_image">Agora envie uma Imagem</label><br>
                                                             <input class="b-style" type="file" name="filetoupload">
                                                             <input class="b-style" type="submit" >
                                                         </form>
-                                                    </div>
+                                                    </div>-->
                                                 </div>
                                             </form>
                                         </div>

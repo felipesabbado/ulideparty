@@ -162,7 +162,7 @@ window.initMap = initMap;
 
 
 async function getData(){
-    const targetUrl = linkApi+'api/spots/' + spot_id
+    const targetUrl = linkApi+'/api/spots/' + spot_id
 
 
     const response = await fetch(targetUrl)

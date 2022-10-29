@@ -15,7 +15,7 @@ $(document).ready(function() {
         }; //Array
 
         $.ajax({
-            url : linkApi+"api/users", // Url of backend (can be python, php, etc..)
+            url : linkApi+"/api/users", // Url of backend (can be python, php, etc..)
             type: "POST", // data type (can be get, post, put, delete)
             data : formData, // data in json format
             async : false, // enable or disable async (optional, but suggested as false if you need to populate data afterwards)

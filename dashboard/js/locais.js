@@ -20,8 +20,7 @@ async function getTags(){
 }
 
 async function getGeocodingEdit(search) {
-    const targetUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${search}&key=AIzaSyCzxokzot6z-K89lAaUy4mnPMTqlLzvmuY`;
-    alert(targetUrl)
+    const targetUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${search}&key=`+key;
 
 
     const response = await fetch(targetUrl)

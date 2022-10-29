@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     $('#btnLogin').on('click', function(event) {
 
         // prevent form default behaviour
@@ -13,7 +12,7 @@ $(document).ready(function() {
         let sound = new Audio('../sounds/faustao-errou.mp3')
 
         $.ajax({
-            url: linkApi+`api/users/login?us_name=${name}&us_password=${password}`,
+            url: `https://ulide-party-api.herokuapp.com/api/users/login?us_name=${name}&us_password=${password}`,
             type: "GET",
             dataType: 'json',
             success: function(response) {

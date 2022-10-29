@@ -236,6 +236,7 @@ async function getSpot(id) {
   const targetUrl = linkApi+`/api/spots/${id}`;
 
 
+
   const response = await fetch(targetUrl)
   return await response.json()
 }
