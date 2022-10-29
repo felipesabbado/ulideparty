@@ -1,6 +1,4 @@
 async function getData(link){
-    console.log(link)
-    console.log("estou aqui")
     const response = await fetch(link)
     return await response.json()
 }
