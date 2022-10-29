@@ -7,10 +7,10 @@
 
     <!-- Title Page-->
     <title>Ulide Party - Dashboard</title>
-    <script src="../generic/linkApi.js"></script>
-    <script src="../generic/crudFunctions.js"></script>
     <!-- CSS -->
     <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
@@ -39,6 +39,8 @@
     <link href="css/theme.css" rel="stylesheet" media="all">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    <script src="../generic/linkApi.js"></script>
+    <script src="../generic/crudFunctions.js"></script>
 </head>
 <body>
     <!-- HEADER MOBILE-->
