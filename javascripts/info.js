@@ -9,12 +9,6 @@ if (localStorage.getItem("user") !== null) {
 
 let first = true
 
-async function getSpotInfo(id) {
-    const targetUrl = linkApi+`/api/spots/update/${id}`;
-    const response = await fetch(targetUrl)
-    return response.json()
-
-}
 
 async function deleteFavSpot(us_id, sp_id) {
      const targetUrl = linkApi+`/api/favSpots/us_id/${us_id}/sp_id/${sp_id}`;
@@ -33,37 +27,6 @@ async function deleteFavSpot(us_id, sp_id) {
     })
 }
 
-async function getEvaluations(id) {
-    const targetUrl = linkApi+`/api/spotEvaluations/${id}`;
-
-
-    const response = await fetch(targetUrl)
-    return await response.json()
-}
-
-async function getTags(id) {
-    const targetUrl = linkApi+`/api/tags/spot/${id}`;
-
-
-    const response = await fetch(targetUrl)
-    return await response.json()
-}
-
-async function getFavSpotsByUsIdAndSpId(us_id, sp_id) {
-    const targetUrl = linkApi+`/api/favSpots/us_id/${us_id}/sp_id/${sp_id}`;
-
-    const response = await fetch(targetUrl)
-    console.log(response)
-    return await response.json()
-}
-
-async function getPhotos(id) {
-    const targetUrl = linkApi+`/api/spots/${id}/photo/avg`;
-
-
-    const response = await fetch(targetUrl)
-    return await response.json()
-}
 
 function getTagsFormatted(tagsJson) {
     console.log(tagsJson)
@@ -115,8 +78,8 @@ async function updateOnload() {
     let spot = await getData(linkApi+`/api/spots/update/${spot_id}`)
     console.log(spot)
 
-    let tags = await getTags(spot_id)
-    let photos = await getPhotos(spot_id)
+    let tags = await getData(linkApi+`/api/tags/spot/${spot_id}`)
+    let photos = await getData(linkApi+`/api/spots/${spot_id}/photo/avg`)
 
     let search = spot.sp_lat + " " + spot.sp_long
     console.log(search)
@@ -163,7 +126,7 @@ async function updateOnload() {
     /********************** AVALIAÇOES ********************/
 
     let elementEvaluations = document.getElementById("sp_evaluations")
-    let evaluationJson = await getEvaluations(spot_id)
+    let evaluationJson = await getData(linkApi+`/api/spotEvaluations/${spot_id}`)
 
     for (let i = 0; i < Object.keys(evaluationJson).length; i++) {
         elementEvaluations.innerHTML += `<div class="card">
@@ -229,7 +192,7 @@ async function updateOnload() {
 }
 
 async function favFunction(elementBtnFavorite) {
-    let favSpots = await getFavSpotsByUsIdAndSpId(user.us_id, spot_id)
+    let favSpots = await getData(linkApi+`/api/favSpots/us_id/${user.us_id}/sp_id/${spot_id}`)
     if (Object.keys(favSpots).length < 1) {
         let data = {
             us_id: user.us_id,

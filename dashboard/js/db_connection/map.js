@@ -116,7 +116,7 @@ const icons = {
 };
 
 async function initMap() {
-    let json = await getData()
+    let json = await getData(linkApi+'/api/favSpots/us_id/' + userId)
 
     if(id == 2) {
         // Map Marker
@@ -179,16 +179,6 @@ async function initMap() {
 
 }
 
-async function getData(){
-    /** online version **/
 
-    var targetUrl = linkApi+'/api/favSpots/us_id/' + userId;
-
-
-    const response = await fetch(targetUrl)
-    const data = await response.json()
-    console.log(data)
-    return data
-}
 
 window.initMap = initMap;

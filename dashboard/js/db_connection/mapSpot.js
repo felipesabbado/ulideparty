@@ -125,7 +125,7 @@ const icons = {
 };
 
 async function initMap() {
-    const json = await getData()
+    const json = await getData(linkApi+'/api/spots/' + spot_id)
     var myLatlng = new google.maps.LatLng(parseFloat(json.sp_lat), parseFloat(json.sp_long));
 
     var mapOptions = {
@@ -161,12 +161,4 @@ async function initMap() {
 window.initMap = initMap;
 
 
-async function getData(){
-    const targetUrl = linkApi+'/api/spots/' + spot_id
 
-
-    const response = await fetch(targetUrl)
-    const data = await response.json()
-    console.log(data)
-    return data
-}

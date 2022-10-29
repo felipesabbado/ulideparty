@@ -32,7 +32,7 @@ function addTagsOnPage(tags) {
 
 window.onload =  async function onload() {
     alert("Para criar um local, preencha os campos abaixo e clique em 'Criar Local'")
-    let tags = await getTags()
+    let tags = await getData(linkApi+`/api/tags`)
     addTagsOnPage(tags)
 
 
@@ -62,7 +62,7 @@ window.onload =  async function onload() {
             }
         }
         alert(sp_address)
-        let latLong = await getGeocodingMsg(sp_address)
+        let latLong = await getData(`https://maps.googleapis.com/maps/api/geocode/json?address=${sp_address}&key=`+googleKey)
         let lat = latLong.results[0].geometry.location.lat
         let long = latLong.results[0].geometry.location.lng
 

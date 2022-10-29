@@ -27,19 +27,11 @@ async function removeOld() {
     let elementGroupName = document.querySelector("#group_name")
     elementGroupName.innerHTML = group[type].gr_name
 
-    json1 = await getData()
+    json1 = await getData(linkApi+'/api/userMessagesGroups/group/' + group[type].gr_id)
     const element = document.getElementById("message");
     console.log(json1)
     element.remove();
     await messages1()
-}
-
-async function getData(){
-    let targetUrl = linkApi+'/api/userMessagesGroups/group/' + group[type].gr_id;
-
-
-    const response = await fetch(targetUrl)
-    return await response.json()
 }
 
 setInterval(removeOld, 5000)

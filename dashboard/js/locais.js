@@ -32,16 +32,16 @@ function addTagsOnPage(tags) {
 }
 
 window.onload =  async function onload() {
-    let tags = await getTags()
+    let tags = await getData(linkApi+`/api/tags`)
     addTagsOnPage(tags)
 
-    let spots = await getSpots(sp_id)
+    let spots = await getData(linkApi+`/api/spots/${sp_id}`)
 
     let elementBtnEnviar = document.getElementById("btnEnviar")
 
     let search = spots.sp_lat + " " + spots.sp_long
     console.log(search)
-    let geocoding = await getGeocodingEdit(search)
+    let geocoding = await getData(`https://maps.googleapis.com/maps/api/geocode/json?address=${search}&key=`+googleKey)
 
     let sp_name = document.getElementById('sp_name').value = spots.sp_name
     let sp_address = document.getElementById('sp_address').value = geocoding.results[0].formatted_address
@@ -73,7 +73,7 @@ window.onload =  async function onload() {
             }
         }
 
-        let latLong = await getGeocodingEdit(sp_address)
+        let latLong = await getData(`https://maps.googleapis.com/maps/api/geocode/json?address=${sp_address}&key=`+googleKey)
 
         let lat = latLong.results[0].geometry.location.lat
         let long = latLong.results[0].geometry.location.lng
