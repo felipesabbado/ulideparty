@@ -72,8 +72,11 @@ header, .navbar {
     padding-bottom: 0;
 }
 
-#logo {
+#main-logo {
+    position: absolute;
+    margin-top: -37.5px;
     width: 75px;
+    transition: width 1s;
 }
 
 .navbar-brand {
@@ -100,7 +103,7 @@ header, .navbar {
 
 #main-logo:hover {
     position: absolute;
-    width: 85px;
+    width: 95px;
 }
 
 section {
